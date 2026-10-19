@@ -1,0 +1,16 @@
+{
+  "n_failed": 34,
+  "clean_detection": "31/34",
+  "threshold": 0.0424,
+  "sensor_noise": {
+    "noise_0.01": "31/34",
+    "noise_0.02": "31/34",
+    "noise_0.05": "31/34",
+    "noise_0.1": "31/34"
+  },
+  "axis_dropout": {
+    "n_bearing_axis_dropout_trials": 68,
+    "min_detection": "30/34",
+    "median_detection": "31/34"
+  }
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Separating Failure-Bound Degradation from Benign Drift: A Drift-Robust, Rate-Normalized Early-Warning Detector with Theoretical Guarantees"
+type: software
+authors:
+  - name: "Anonymous Authors"
+version: 1.0.0
+date-released: 2026-10-19
+identifiers:
+  - type: url
+    value: "https://github.com/<org>/RNED"
+keywords:
+  - run-to-failure
+  - bearing prognostics
+  - early failure warning
+  - out-of-distribution detection
+  - rate normalization
+  - edge computing
+license: MIT
+

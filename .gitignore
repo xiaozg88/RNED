@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# raw archives and extracted raw data (large; see data/README.md)
+data/raw/
+data/raw_*/
+data/raw_ims/
+data/raw_femto/
+data/raw_xjtu/
+data/hora_reference/
+tools/
+*.zip
+*.rar
+*.7z
+
+# OS / editor
+.DS_Store
+*.swp
+
