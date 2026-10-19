@@ -34,7 +34,7 @@ ax.fill_between(xx, 0.8 * np.exp(-0.5 * (xx - 0.0) ** 2), color=COLORS[0], alpha
 ax.fill_between(xx, 0.8 * np.exp(-0.5 * (xx - 1.4) ** 2), color=COLORS[1], alpha=0.18)
 ax.set_xlabel("OOD score")
 ax.set_ylabel("density")
-ax.set_title("cross-condition fault OOD (MCC5, hard)", fontsize=FONT_SIZE)
+ax.set_title("MCC5 cross-condition fault OOD (compound fault)", fontsize=FONT_SIZE)
 ax.text(0.5, 0.06, "score distributions overlap\nacross conditions\n(AUROC 49.9-53.8)", transform=ax.transAxes, ha="center", fontsize=FONT_SIZE - 1)
 ax.set_ylim(0, 1.0)
 ax.legend(frameon=False, loc="upper right")
