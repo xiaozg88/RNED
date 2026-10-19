@@ -152,10 +152,11 @@ If you use this code, please cite:
   title = {Separating Failure-Bound Degradation from Benign Drift:
            A Drift-Robust, Rate-Normalized Early-Warning Detector with
            Theoretical Guarantees},
-  author = {Anonymous},
+  author = {Xiao, Zhiguo and Guo, Yujing and Shao, Yanqi and Chen, Guangteng
+            and Hou, Dingbo and Liu, Yuanyuan and Cao, Xinyao and Liu, Junli},
   journal = {IEEE Internet of Things Journal (submitted)},
   year = {2026},
-  note = {Code: https://github.com/<org>/RNED}
+  note = {Code: https://github.com/xiaozg88/RNED}
 }
 ```
 

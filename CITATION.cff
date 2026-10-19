@@ -3,12 +3,27 @@ message: "If you use this software, please cite the paper below."
 title: "Separating Failure-Bound Degradation from Benign Drift: A Drift-Robust, Rate-Normalized Early-Warning Detector with Theoretical Guarantees"
 type: software
 authors:
-  - name: "Anonymous Authors"
+  - given-names: Zhiguo
+    family-names: Xiao
+  - given-names: Yujing
+    family-names: Guo
+  - given-names: Yanqi
+    family-names: Shao
+  - given-names: Guangteng
+    family-names: Chen
+  - given-names: Dingbo
+    family-names: Hou
+  - given-names: Yuanyuan
+    family-names: Liu
+  - given-names: Xinyao
+    family-names: Cao
+  - given-names: Junli
+    family-names: Liu
 version: 1.0.0
 date-released: 2026-10-19
 identifiers:
   - type: url
-    value: "https://github.com/<org>/RNED"
+    value: "https://github.com/xiaozg88/RNED"
 keywords:
   - run-to-failure
   - bearing prognostics
