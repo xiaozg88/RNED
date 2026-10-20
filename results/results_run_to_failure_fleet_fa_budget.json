@@ -1,0 +1,132 @@
+{
+  "inputs": {
+    "p_seg_axis": 0.185,
+    "p_seg_bearing": 0.22,
+    "segment_snapshots": 150,
+    "data_driven_excess_bound_M": 4.428,
+    "per_snapshot_rate_axis_est": 0.00136,
+    "same_rig_censored_fa_0_of_8_cp_ci95_pct": [
+      0.0,
+      36.9
+    ],
+    "cross_rig_proxy_cp_ci95_pct": [
+      9.3,
+      31.4
+    ]
+  },
+  "fleet_budget_cross_rig": [
+    {
+      "fleet_size_machines": 1,
+      "axes": 2,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.3358,
+      "expected_false_alarms_per_segment": 0.37
+    },
+    {
+      "fleet_size_machines": 5,
+      "axes": 10,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.8707,
+      "expected_false_alarms_per_segment": 1.85
+    },
+    {
+      "fleet_size_machines": 10,
+      "axes": 20,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.9833,
+      "expected_false_alarms_per_segment": 3.7
+    },
+    {
+      "fleet_size_machines": 50,
+      "axes": 100,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 18.5
+    },
+    {
+      "fleet_size_machines": 100,
+      "axes": 200,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 37.0
+    },
+    {
+      "fleet_size_machines": 500,
+      "axes": 1000,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 185.0
+    },
+    {
+      "fleet_size_machines": 1000,
+      "axes": 2000,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 370.0
+    }
+  ],
+  "fleet_rescaling_for_5pct": [
+    {
+      "fleet_size_machines": 1,
+      "required_per_axis_segment_fa_for_5pct_fleet": 0.025321,
+      "tightening_factor_vs_18.5pct": 7.3
+    },
+    {
+      "fleet_size_machines": 5,
+      "required_per_axis_segment_fa_for_5pct_fleet": 0.005116,
+      "tightening_factor_vs_18.5pct": 36.2
+    },
+    {
+      "fleet_size_machines": 10,
+      "required_per_axis_segment_fa_for_5pct_fleet": 0.002561,
+      "tightening_factor_vs_18.5pct": 72.2
+    },
+    {
+      "fleet_size_machines": 50,
+      "required_per_axis_segment_fa_for_5pct_fleet": 0.000513,
+      "tightening_factor_vs_18.5pct": 360.8
+    },
+    {
+      "fleet_size_machines": 100,
+      "required_per_axis_segment_fa_for_5pct_fleet": 0.000256,
+      "tightening_factor_vs_18.5pct": 721.4
+    },
+    {
+      "fleet_size_machines": 500,
+      "required_per_axis_segment_fa_for_5pct_fleet": 5.1e-05,
+      "tightening_factor_vs_18.5pct": 3606.8
+    },
+    {
+      "fleet_size_machines": 1000,
+      "required_per_axis_segment_fa_for_5pct_fleet": 2.6e-05,
+      "tightening_factor_vs_18.5pct": 7213.5
+    }
+  ],
+  "proposition4_fleet_union_bound": [
+    {
+      "monitoring_start_n0": 30,
+      "per_axis_anytime_bound": 0.9977555114543117,
+      "fleet_union_bound_m1000": 1.0
+    },
+    {
+      "monitoring_start_n0": 60,
+      "per_axis_anytime_bound": 0.9955160606374551,
+      "fleet_union_bound_m1000": 1.0
+    },
+    {
+      "monitoring_start_n0": 120,
+      "per_axis_anytime_bound": 0.9910522269871174,
+      "fleet_union_bound_m1000": 1.0
+    },
+    {
+      "monitoring_start_n0": 240,
+      "per_axis_anytime_bound": 0.9821845166161247,
+      "fleet_union_bound_m1000": 1.0
+    },
+    {
+      "monitoring_start_n0": 480,
+      "per_axis_anytime_bound": 0.9646864246804506,
+      "fleet_union_bound_m1000": 1.0
+    }
+  ]
+}

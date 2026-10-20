@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
-title: "Separating Failure-Bound Degradation from Benign Drift: A Drift-Robust, Rate-Normalized Early-Warning Detector with Theoretical Guarantees"
+title: "Separating Failure-Bound Degradation from Benign Drift: A Rate-Normalized Early-Warning Detector with Fleet-Scale False-Alarm Analysis"
 type: software
 authors:
   - given-names: Zhiguo

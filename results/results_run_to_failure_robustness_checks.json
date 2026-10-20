@@ -1,0 +1,58 @@
+{
+  "fleet_independence": {
+    "n_bearings": 27,
+    "n_axes": 54,
+    "p_axis": 0.18518518518518517,
+    "p_bearing": 0.2222222222222222,
+    "mixed_alarm_bearings": 2,
+    "n_alarm_bearings": 6,
+    "bootstrap_p_axis_ci": [
+      0.05555555555555555,
+      0.33333333333333326
+    ],
+    "fleet100_expected_fa_per_epoch": {
+      "point": 37.03703703703704,
+      "bootstrap_ci": [
+        11.11111111111111,
+        66.66666666666666
+      ]
+    },
+    "fleet100_p_ge1": {
+      "point": 1.0,
+      "bootstrap_ci": [
+        0.9999891536589796,
+        1.0
+      ]
+    }
+  },
+  "femto_misses": {
+    "detected_median_max_rms_ratio": 7.819443054360766,
+    "missed_median_max_rms_ratio": 4.154222659341237,
+    "detected_median_cumulative_excess": 306.5158610516857,
+    "missed_median_cumulative_excess": 62.27809570025109,
+    "missed_bearings": [
+      {
+        "bearing": "Bearing1_5",
+        "max_rms_ratio": 4.154222659341237,
+        "cumulative_excess": 62.27809570025109
+      },
+      {
+        "bearing": "Bearing1_6",
+        "max_rms_ratio": 3.8509767529661296,
+        "cumulative_excess": 66.03423773960331
+      },
+      {
+        "bearing": "Bearing2_4",
+        "max_rms_ratio": 5.579986803947017,
+        "cumulative_excess": 24.743050104544533
+      }
+    ]
+  },
+  "mixing_decay": {
+    "n_censored_axes": 10,
+    "acf_lag1": 0.9224943227054123,
+    "acf_lag5": 0.8961222067135847,
+    "acf_lag20": 0.7957263586453105,
+    "fitted_powerlaw_exponent_a": 0.18
+  }
+}
