@@ -1,8 +1,0 @@
-{
-  "mu_hat": 0.015302714698892722,
-  "zero_fa_threshold": 0.0424,
-  "markov_bound_mu_over_T": 0.36091308252105475,
-  "n_censored": 8,
-  "n_failed": 4,
-  "note": "P(R_t > T) <= mu/T by Markov; mu = mean per-snapshot excess over censored axes."
-}

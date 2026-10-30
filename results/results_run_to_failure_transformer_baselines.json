@@ -1,161 +1,164 @@
 {
+  "schema_version": "2.0",
+  "status": "corrected eval-mode and causal monitoring audit",
+  "source": "results_sg1026_1_deep_score_audit.json",
   "models": {
-    "tranad": [
+    "transformer_ae": [
       {
         "seed": 0,
-        "zero_fa_threshold": 243546.18947358645,
+        "zero_fa_threshold": 244488.19078125,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       },
       {
         "seed": 1,
-        "zero_fa_threshold": 243951.5647054353,
+        "zero_fa_threshold": 243619.133125,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       },
       {
         "seed": 2,
-        "zero_fa_threshold": 243756.13617641936,
+        "zero_fa_threshold": 243906.02046875,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       }
     ],
-    "transformer_ae": [
+    "tranad": [
       {
         "seed": 0,
-        "zero_fa_threshold": 244510.0632242296,
+        "zero_fa_threshold": 243960.639375,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       },
       {
         "seed": 1,
-        "zero_fa_threshold": 244388.5791443171,
+        "zero_fa_threshold": 243714.56234375,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       },
       {
         "seed": 2,
-        "zero_fa_threshold": 243644.4736140332,
+        "zero_fa_threshold": 243432.85125,
         "total_detected": 20,
         "total_n": 34,
         "per_dataset": {
-          "femto": {
-            "n": 17,
-            "n_detected": 8,
-            "detection_rate": 47.05882352941177,
-            "median_lead_pct_life": 25.69324303301967
-          },
           "ims": {
             "n": 4,
             "n_detected": 3,
             "detection_rate": 75.0,
-            "median_lead_pct_life": 0.20753512132822477
+            "median_lead_pct_life": 0.20556609740670462
           },
           "xjtu": {
             "n": 13,
             "n_detected": 9,
             "detection_rate": 69.23076923076923,
-            "median_lead_pct_life": 1.6129032258064515
+            "median_lead_pct_life": 1.2219959266802445
+          },
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.053646370829036
           }
         }
       }

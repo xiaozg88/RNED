@@ -1,195 +1,88 @@
-# RNED — Rate-Normalized Excess Early-Warning Detector
+# BA-RNED v20 Public Code Release
 
-Official code for the paper:
+This directory is the self-contained code and evidence release for the manuscript
+**Budget-Aware Event-Level Rate-Normalized Early Warning for Bearings in
+Industrial IoT: Validation in a Virtual IoT Environment** (v20).
 
-> **Budget-Aware Event-Level Rate-Normalized Early Warning for Bearings in
-> Industrial IoT: Validation in a Virtual IoT Environment**
-> *(submitted to IEEE Internet of Things Journal)*
+It contains all derived feature tables, deterministic experiment scripts,
+precomputed evidence files, v20 manuscript sources, figure generators, and
+SHA-256 manifests needed to audit the reported analyses. Raw public datasets are
+not redistributed; `data/README.md` records their source and acquisition paths.
 
-The complete, self-contained public-code directory for manuscript v20 is
-[`code_v20/`](code_v20/README.md). It contains all v20 experiment scripts,
-frozen derived features, precomputed evidence, figure generators, manuscript
-sources, dependencies, and a SHA-256 release manifest. Start there when cloning
-the repository for review or reproduction.
-
-RNED is a label-free, causal, fixed-threshold, edge-deployable early-warning
-detector for run-to-failure bearings. It reduces the failure-versus-drift
-discriminative signal to the **cumulative excess** of RMS above a $1.2\times$
-early-life baseline, and its online form is the **rate-normalized (time-averaged)
-excess** compared against a single fixed threshold. On three public
-run-to-failure datasets (NASA IMS, XJTU-SY, FEMTO/PRONOSTIA; 44 bearings) it
-detects **31 of 34 failed bearings** at the calibrated zero-false-alarm operating
-point, with median lead times of **14.5% / 46.3% / 36.0%** of life, in 0.03235 ms
-and 0.0383 mJ per window without an accelerator.
-
-## Overview
-
-- **Problem.** Early failure warning under a zero-false-alarm constraint must
-  separate *failure-bound degradation* from *benign drift*, not merely detect
-  deviation from a healthy baseline.
-- **Mechanism audit.** $E_{\mathrm{cum}}=\sum_{i=61}^{N}e_i$ with
-  $e_i=\max(r_i-c,0)$, $r_i=f_i/b$, $c=1.2$ — fully separates IMS failed vs.
-  censored bearings (AUROC 100, exact permutation $p=0.00202$).
-- **Online detector.** $R_t=S_t/(t-60)$, $S_t=S_{t-1}+e_t$, latching alarm
-  $\tau=\min\{t\ge90:R_t>T\}$, threshold calibrated once on the censored set.
-- **Theory.** Two qualitative propositions are retained: unbounded positive-drift
-  accumulators cannot use a fixed zero-false-alarm threshold indefinitely, while
-  the rate has duration-invariant mean and first-order scale equivariance. They
-  do not provide a numeric finite-population false-alarm guarantee.
-
-## Manuscript
-
-The complete audited Chinese source and the English v20 translation are generated
-from version-controlled scripts:
+## Quick Start
 
 ```bash
-python paper/build_v20_full_manuscript.py
-python paper/build_v20_full_english.py
-python paper/md_to_docx.py paper/manuscript_zh_v20_full.md paper/正文_中文_v20.docx
-```
-
-Outputs are `paper/manuscript_zh_v20_full.md`, `paper/manuscript_en_v20_full.tex`,
-`paper/references_v20.bib`, and the regenerated Word manuscript. The English LaTeX
-file uses `references_v20.bib`, which contains exactly the 31 retained references.
-
-## Quick start
-
-The pre-extracted feature tables ship with this repo, so **no raw-data download
-is needed** to reproduce every number in the paper.
-
-```bash
-python -m venv .venv && source .venv/bin/activate   # or use your own env
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-
-# Headline result: 31/34 detection, lead times, zero-FA threshold
-python experiments/run_to_failure_early_warning.py
+python experiments/run_v20_reproduction.py --list
+python experiments/run_v20_reproduction.py core
 ```
 
-This writes `results/results_run_to_failure_early_warning.json` with
-`n_failed=34`, `n_censored=8`, `zero_fa_threshold ≈ 0.0424`, and per-dataset
-detection `4/4 (IMS)`, `13/13 (XJTU-SY)`, `14/17 (FEMTO)` (total **31/34**).
+The core chain reproduces the headline detector, mechanism audit, classical
+baselines, significance tests, ablations, boundary analyses, D1 comparison,
+fleet analysis, virtual IoT network, and the v20 claim audit. Optional deep
+baselines require PyTorch and are run with the `baselines` mode. The full
+chain, including external and exploratory analyses, is the `all` mode.
 
-## Experiments ↔ paper
+Hardware-specific latency and energy numbers in `results/results_run_to_failure_edge_benchmark.json`
+were measured on a six-core Jetson Orin NX. Re-running that benchmark on another
+machine updates the platform measurement but does not invalidate the frozen
+Jetson evidence. The virtual network and detector experiments are deterministic.
 
-All scripts read features from `data/features/` and write results to `results/`.
+## Evidence Map
 
-| Script (`experiments/`) | Produces | Paper |
+| Manuscript area | Primary command | Evidence |
 |---|---|---|
-| `run_to_failure_ood.py` | AUROC / FPR95 per method & dataset + cross-condition rows | §4.1, Table III |
-| `run_to_failure_failure_vs_drift.py` | $E_{\mathrm{cum}}$ separation, AUROC/permutation | §4.2 |
-| `run_to_failure_early_warning.py` | 31/34, lead times, $c$-sweep | §4.3, headline |
-| `run_to_failure_classical_baselines.py` | CUSUM/SPRT/Shewhart/EWMA comparison | §4.4, Table IV |
-| `run_to_failure_detector_significance.py` | paired McNemar + Holm | §4.4 |
-| `run_to_failure_feature_ablation.py` | per-feature detection & lead time | §4.5, Table V |
-| `run_to_failure_protocol_sensitivity.py` | baseline/run-in/min-monitor sweeps | §4.6 |
-| `run_to_failure_robustness.py` | noise & axis-dropout robustness | §4.6 |
-| `run_to_failure_ae_baseline.py` | reconstruction-AE baseline | §4.1 |
-| `run_to_failure_lstmae_baseline.py` | LSTM-AE baseline (needs `torch`) | §4.1 |
-| `run_to_failure_edge_benchmark.py` | latency / energy on Jetson Orin NX | §4.6 |
-| `run_to_failure_modern_baselines.py` | window-level MLP-AE / LSTM-AE / Deep SVDD online baselines (needs `torch`) | §4.4, App. B |
-| `run_to_failure_ewma_sprt_sweep.py` | EWMA λ and SPRT prior parameter sweeps | §4.6, App. B |
-| `run_to_failure_threshold_epsilon_sweep.py` | zero-FA threshold margin factor (1.01) sweep | §4.6, App. B |
-| `run_to_failure_cross_dataset_fa_proxy.py` | cross-rig false-alarm proxy from early-life pseudo-health segments (point estimate + 95% CI) | §4.3, App. B |
-| `run_to_failure_transformer_baselines.py` | causal Transformer-AE + TranAD online baselines (needs `torch`) | §4.4, App. B |
-| `run_to_failure_rul_baseline.py` | supervised RUL-thresholded alarm baseline, in-sample (favorable to baseline; needs `torch`) | §4.4, App. B |
-| `run_to_failure_fleet_fa_budget.py` | fleet-scale false-alarm budget (probability arithmetic) | §4.8 |
-| `run_to_failure_normalized_accumulators.py` | normalized CUSUM/SPRT fairness check | §4.4, App. B |
-| `run_to_failure_robustness_checks.py` | fleet bootstrap, FEMTO-miss analysis, mixing-coefficient check | §4.3/§4.8/§5.2 |
+| Headline 31/34, lead times, 0/8 calibration | `python experiments/run_to_failure_early_warning.py` | `results/results_run_to_failure_early_warning.json` |
+| Failure-vs-drift cumulative-excess mechanism | `python experiments/run_to_failure_failure_vs_drift.py` | `results/results_run_to_failure_failure_vs_drift.json` |
+| Degradation OOD and cross-condition boundary | `python experiments/run_to_failure_ood.py` | `results/results_run_to_failure_ood.csv`, `results/results_run_to_failure_ood_summary.json` |
+| Classical baselines and significance | `python experiments/run_to_failure_classical_baselines.py`; `python experiments/run_to_failure_detector_significance.py` | corresponding JSON files |
+| Modern/Transformer/RUL baselines | `python experiments/run_v20_reproduction.py baselines` | corresponding JSON files |
+| D1 endpoint versus causal semantics | `python experiments/run_sg1026_1_public_d1_rms_protocol_replication.py`; `python experiments/run_iotj_v20_risk_resolution_audit.py` | corresponding JSON files |
+| Feature and mechanism ablations | `python experiments/run_to_failure_feature_ablation.py`; `python experiments/run_to_failure_rate_acceleration.py`; `python experiments/run_to_failure_cross_axis_persistence.py` | corresponding JSON files |
+| Robustness and protocol sensitivity | `python experiments/run_v20_reproduction.py core` | robustness, sensitivity, sweep, and normalized-accumulator JSON files |
+| Healthy-evidence ladder | `python experiments/run_to_failure_cwru_normal_stress.py`; `python experiments/run_to_failure_cross_dataset_fa_proxy.py`; `python experiments/run_iotj_v20_risk_resolution_audit.py` | corresponding JSON files |
+| Fleet budget | `python experiments/run_to_failure_fleet_fa_budget.py` | `results/results_run_to_failure_fleet_fa_budget.json` |
+| Virtual IoT loss/retry/deduplication | `python experiments/run_bcsy_iot_validation_simulation.py` | `results/results_bcsy_iot_validation_simulation.json` |
+| v20 claim audit | `python experiments/run_iotj_v20_risk_resolution_audit.py` | `results/results_iotj_v20_risk_resolution_audit.json` |
 
-Figures are generated by the scripts in `figures/`:
-
-```bash
-python figures/gen_fig1_architecture.py
-python figures/gen_fig1_two_problems.py     # -> fig2_two_problems.pdf
-python figures/gen_fig2_failure_vs_drift.py # -> fig4_failure_vs_drift.pdf
-python figures/gen_fig3_rate_vs_cumulative.py
-python figures/gen_fig5_operating_curve.py
-python figures/gen_fig6_negative_transfer.py # -> fig3_negative_transfer.pdf
-python figures/gen_fig7_rate_length_invariance.py
-python figures/gen_fig8_fleet_false_alarm.py
-```
-
-Pre-rendered PDFs of all seven figures are included in `figures/`.
-
-## Data
-
-### Pre-extracted features (included)
-
-`data/features/` contains the per-snapshot, per-axis feature tables
-(`rms`, `kurtosis_pearson`, `skewness`, `variance`, `peak2peak`) for all three
-datasets — self-extracted from the raw signals and verified against reference
-tables to machine precision ($\approx10^{-14}$). These five CSVs (~16 MB) are
-all you need to run the experiments.
-
-| File | Dataset | Bearings |
-|---|---|---|
-| `test1.csv`, `test2.csv`, `test3.csv` | NASA IMS | 12 (4 failed + 8 censored) |
-| `xjtu_features.csv` | XJTU-SY | 15 (all failed) |
-| `femto_features.csv` | FEMTO/PRONOSTIA | 17 |
-
-### Re-deriving features from raw signals (optional)
-
-The extraction pipeline in `src/` re-derives these tables from the raw archives.
-The raw archives are **not included** (≈2.5 GB total); download URLs and SHA-256
-checksums are listed in [`data/README.md`](data/README.md). Extraction requires
-building the local `7z` / `unrar` binaries (p7zip 16.02 and unrar 7.00 from
-source; no root needed). After placing the raw archives under `data/`:
-
-```bash
-python src/run_extraction_pipeline.py --rerun
-```
-
-## Results (precomputed)
-
-All paper results are precomputed in `results/` so they can be diffed against
-the manuscript without re-running. The `experiments/` scripts are idempotent and
-overwrite these files on each run.
-
-## Requirements
-
-- Python $\ge$3.9; `numpy`, `pandas`, `scipy`, `scikit-learn`, `matplotlib`.
-- `torch` is only required for the two neural baselines
-  (`run_to_failure_ae_baseline.py`, `run_to_failure_lstmae_baseline.py`).
-- The core detector (`run_to_failure_early_warning.py`,
-  `run_to_failure_classical_baselines.py`, etc.) needs only `numpy` + `pandas` + `scipy`.
-
-Tested with Python 3.10 and torch 2.1 (CUDA optional). See `requirements.txt`.
-
-## Repository layout
+## Directory Layout
 
 ```text
 RNED/
-├── code_v20/      # complete self-contained v20 public-code release
-├── experiments/   # development experiment scripts; authoritative v20 copy is code_v20/
-├── src/           # feature-extraction pipeline (raw signals -> data/features)
-├── data/features/ # pre-extracted feature tables (included)
-├── figures/       # figure-generation scripts + rendered PDF/PNG figures
-├── paper/         # v20 manuscript sources, builders, references, and Word output
-├── results/       # precomputed JSON/CSV results
-├── requirements.txt
-├── LICENSE
-├── CITATION.cff
-└── README.md
+├── experiments/    deterministic analyses and one-command reproduction entry
+├── src/            raw-data extraction and feature verification pipeline
+├── data/features/  frozen derived feature tables used by the paper
+├── data/benchmark/ small immutable benchmark windows
+├── results/        frozen outputs for every included analysis
+├── figures/        v20 figure PDFs and generation scripts
+├── paper/          v20 LaTeX/Markdown sources and claim audit
+├── MANIFEST.json   byte-level SHA-256 manifest
+├── MANIFEST.md     human-readable manifest
+└── requirements.txt
 ```
 
-## License
+## Reproducibility Boundaries
 
-MIT. See [LICENSE](LICENSE).
+- The primary IMS, XJTU-SY, and FEMTO/PRONOSTIA feature tables are included.
+- External feature tables for CWRU, MCC5, LDM_UPB, KAIST, Ferrara E6, and UNSW
+  analyses are included where they are used by v20 evidence scripts.
+- Raw waveforms and proprietary archives are not redistributed.
+- The synthetic multi-rig and network experiments are protocol stress tests,
+  not real multi-node, radio-channel, broker, ADC, or field validation.
+- The v20 claim audit labels the synthetic and hardware-specific evidence
+  boundaries explicitly.
 
-## Citation
+To rederive primary features from permitted raw archives, follow `data/README.md`
+and run `python src/run_extraction_pipeline.py` where applicable. The included
+frozen CSV files allow all shipped analyses to run without raw-data downloads.
 
-If you use this code, please cite:
+## Integrity Check
 
-```bibtex
-@article{rned2026,
-  title = {Budget-Aware Event-Level Rate-Normalized Early Warning
-           for Bearings in Industrial IoT: Validation in a
-           Virtual IoT Environment},
-  author = {Xiao, Zhiguo and Guo, Yujing and Shao, Yanqi and Chen, Guangteng
-            and Hou, Dingbo and Liu, Yuanyuan and Cao, Xinyao and Liu, Junli},
-  journal = {IEEE Internet of Things Journal (submitted)},
-  year = {2026},
-  note = {Code: https://github.com/xiaozg88/RNED}
-}
+```bash
+python verify_release.py
 ```
 
+The verifier checks every file recorded in `MANIFEST.json` and reports byte-level
+SHA-256 mismatches. It does not execute experiments.

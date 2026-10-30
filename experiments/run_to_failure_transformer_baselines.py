@@ -23,6 +23,7 @@ import json
 import math
 import os
 import sys
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -35,6 +36,8 @@ if str(ROOT / "experiments") not in sys.path:
     sys.path.insert(0, str(ROOT / "experiments"))
 import run_to_failure_ood as ood  # noqa: E402
 
+warnings.filterwarnings("ignore", message="Converting mask without torch.bool dtype to bool")
+
 FEATURES = ood.FEATURES
 SEEDS = (0, 1, 2)
 EPOCHS = 200
@@ -45,8 +48,9 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 def causal_mask(length: int) -> torch.Tensor:
-    mask = torch.full((length, length), float("-inf"), device=DEVICE)
-    return torch.triu(mask, diagonal=1)  # 0 on and below diagonal, -inf above
+    return torch.triu(
+        torch.ones((length, length), dtype=torch.bool, device=DEVICE), diagonal=1
+    )
 
 
 class CausalTransformerAE(nn.Module):
@@ -99,32 +103,42 @@ def _zscore(x: np.ndarray, base: np.ndarray) -> np.ndarray:
     return (x - mu[None, :]) / sd[None, :]
 
 
+def _causal_chunked_forward(forward, z: np.ndarray, block: int = 128) -> np.ndarray:
+    """Evaluate a strictly causal model with bounded prefix attention."""
+    outputs = []
+    for start in range(0, z.shape[0], block):
+        end = min(z.shape[0], start + block)
+        prefix = torch.tensor(z[:end], dtype=torch.float32, device=DEVICE).unsqueeze(0)
+        with torch.no_grad():
+            prediction = forward(prefix)[0, -end + start :].cpu().numpy()
+        outputs.append(prediction)
+    return np.concatenate(outputs, axis=0)
+
+
 def transformer_ae_score(x: np.ndarray, seed: int) -> np.ndarray:
     z = _zscore(x, x[10:60])
-    zt = torch.tensor(z, dtype=torch.float32, device=DEVICE).unsqueeze(0)
     torch.manual_seed(seed)
     np.random.seed(seed)
     model = CausalTransformerAE(x.shape[1]).to(DEVICE)
     opt = torch.optim.Adam(model.parameters(), lr=LR)
-    zid = zt[:, 10:60, :]
+    zid = torch.tensor(z[10:60], dtype=torch.float32, device=DEVICE).unsqueeze(0)
     for _ in range(EPOCHS):
         opt.zero_grad()
         rec = model(zid)
         loss = ((rec - zid) ** 2).mean()
         loss.backward()
         opt.step()
-    with torch.no_grad():
-        rec = model(zt)
-    return ((z - rec[0].cpu().numpy()) ** 2).mean(axis=1)
+    model.eval()
+    rec = _causal_chunked_forward(model, z)
+    return ((z - rec) ** 2).mean(axis=1)
 
 
 def tranad_score(x: np.ndarray, seed: int) -> np.ndarray:
     z = _zscore(x, x[10:60])
-    zt = torch.tensor(z, dtype=torch.float32, device=DEVICE).unsqueeze(0)
     torch.manual_seed(seed)
     np.random.seed(seed)
     model = TranAD(x.shape[1]).to(DEVICE)
-    zid = zt[:, 10:60, :]
+    zid = torch.tensor(z[10:60], dtype=torch.float32, device=DEVICE).unsqueeze(0)
     # Phase 1: plain reconstruction for both encoders.
     opt = torch.optim.Adam(model.parameters(), lr=LR)
     for _ in range(EPOCHS // 2):
@@ -154,9 +168,11 @@ def tranad_score(x: np.ndarray, seed: int) -> np.ndarray:
         loss_focus = -((rec_f2 - zid) ** 2).mean()
         loss_focus.backward()
         opt_focus.step()
-    with torch.no_grad():
-        rec = model.reconstruct_focus(model.encode(zt))
-    return ((z - rec[0].cpu().numpy()) ** 2).mean(axis=1)
+    model.eval()
+    rec = _causal_chunked_forward(
+        lambda prefix: model.reconstruct_focus(model.encode(prefix)), z
+    )
+    return ((z - rec) ** 2).mean(axis=1)
 
 
 SCORERS = {
