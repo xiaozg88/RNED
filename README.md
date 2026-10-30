@@ -2,8 +2,8 @@
 
 Official code for the paper:
 
-> **Separating Failure-Bound Degradation from Benign Drift:
-> A Rate-Normalized Early-Warning Detector with Fleet-Scale False-Alarm Analysis**
+> **Budget-Aware Event-Level Rate-Normalized Early Warning for Bearings in
+> Industrial IoT: Validation in a Virtual IoT Environment**
 > *(submitted to IEEE Internet of Things Journal)*
 
 RNED is a label-free, causal, fixed-threshold, edge-deployable early-warning
@@ -12,28 +12,39 @@ discriminative signal to the **cumulative excess** of RMS above a $1.2\times$
 early-life baseline, and its online form is the **rate-normalized (time-averaged)
 excess** compared against a single fixed threshold. On three public
 run-to-failure datasets (NASA IMS, XJTU-SY, FEMTO/PRONOSTIA; 44 bearings) it
-detects **31 of 34 failed bearings** at a zero-false-alarm operating point, with
-median lead times of **14.5% / 46.3% / 36.0%** of life, in 0.032 ms and about
-0.038 mJ per window without an accelerator.
+detects **31 of 34 failed bearings** at the calibrated zero-false-alarm operating
+point, with median lead times of **14.5% / 46.3% / 36.0%** of life, in 0.03235 ms
+and 0.0383 mJ per window without an accelerator.
 
 ## Overview
 
 - **Problem.** Early failure warning under a zero-false-alarm constraint must
   separate *failure-bound degradation* from *benign drift*, not merely detect
   deviation from a healthy baseline.
-- **Offline discriminant (RQ2).** $E_{\mathrm{cum}}=\sum_{i=61}^{N}e_i$ with
+- **Mechanism audit.** $E_{\mathrm{cum}}=\sum_{i=61}^{N}e_i$ with
   $e_i=\max(r_i-c,0)$, $r_i=f_i/b$, $c=1.2$ — fully separates IMS failed vs.
   censored bearings (AUROC 100, exact permutation $p=0.00202$).
-- **Online detector (RQ3).** $R_t=S_t/(t-60)$, $S_t=S_{t-1}+e_t$, latching alarm
+- **Online detector.** $R_t=S_t/(t-60)$, $S_t=S_{t-1}+e_t$, latching alarm
   $\tau=\min\{t\ge90:R_t>T\}$, threshold calibrated once on the censored set.
-- **Theory.** Five propositions: (1) unbounded accumulators must fail;
-  (2) length invariance / scale equivariance of the rate; (3) pointwise
-  false-alarm bounds (Markov / Hoeffding); (4) an anytime-valid time-uniform
-  bound (Hoeffding supermartingale + Ville's inequality); (5) a pointwise
-  bound under weakly dependent ($\varphi$-mixing) excess via Berbee
-  blocking/coupling (Yu 1994). On this data the i.i.d.\ / fast-mixing
-  assumptions fail, so Propositions 3(b)/4/5 are form guarantees rather than
-  numeric ones.
+- **Theory.** Two qualitative propositions are retained: unbounded positive-drift
+  accumulators cannot use a fixed zero-false-alarm threshold indefinitely, while
+  the rate has duration-invariant mean and first-order scale equivariance. They
+  do not provide a numeric finite-population false-alarm guarantee.
+
+## Manuscript
+
+The complete audited Chinese source and the English v20 translation are generated
+from version-controlled scripts:
+
+```bash
+python paper/build_v20_full_manuscript.py
+python paper/build_v20_full_english.py
+python paper/md_to_docx.py paper/manuscript_zh_v20_full.md paper/正文_中文_v20.docx
+```
+
+Outputs are `paper/manuscript_zh_v20_full.md`, `paper/manuscript_en_v20_full.tex`,
+`paper/references_v20.bib`, and the regenerated Word manuscript. The English LaTeX
+file uses `references_v20.bib`, which contains exactly the 31 retained references.
 
 ## Quick start
 
@@ -145,7 +156,8 @@ RNED/
 ├── experiments/   # 12 experiment scripts (one per paper result)
 ├── src/           # feature-extraction pipeline (raw signals -> data/features)
 ├── data/features/ # pre-extracted feature tables (included)
-├── figures/       # figure-generation scripts + 7 rendered PDFs
+├── figures/       # figure-generation scripts + rendered PDF/PNG figures
+├── paper/         # v20 manuscript sources, builders, references, and Word output
 ├── results/       # precomputed JSON/CSV results
 ├── requirements.txt
 ├── LICENSE
@@ -163,9 +175,9 @@ If you use this code, please cite:
 
 ```bibtex
 @article{rned2026,
-  title = {Separating Failure-Bound Degradation from Benign Drift:
-           A Rate-Normalized Early-Warning Detector with
-           Fleet-Scale False-Alarm Analysis},
+  title = {Budget-Aware Event-Level Rate-Normalized Early Warning
+           for Bearings in Industrial IoT: Validation in a
+           Virtual IoT Environment},
   author = {Xiao, Zhiguo and Guo, Yujing and Shao, Yanqi and Chen, Guangteng
             and Hou, Dingbo and Liu, Yuanyuan and Cao, Xinyao and Liu, Junli},
   journal = {IEEE Internet of Things Journal (submitted)},

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
-title: "Separating Failure-Bound Degradation from Benign Drift: A Rate-Normalized Early-Warning Detector with Fleet-Scale False-Alarm Analysis"
+title: "Budget-Aware Event-Level Rate-Normalized Early Warning for Bearings in Industrial IoT: Validation in a Virtual IoT Environment"
 type: software
 authors:
   - given-names: Zhiguo
@@ -19,8 +19,8 @@ authors:
     family-names: Cao
   - given-names: Junli
     family-names: Liu
-version: 1.0.0
-date-released: 2026-10-19
+version: 20.0.0
+date-released: 2026-10-30
 identifiers:
   - type: url
     value: "https://github.com/xiaozg88/RNED"
