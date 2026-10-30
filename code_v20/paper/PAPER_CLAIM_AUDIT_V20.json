@@ -1,0 +1,48 @@
+{
+  "schema_version": "paper_claim_audit_v20_v1",
+  "paper_files": [
+    "paper/manuscript_zh_v20.md",
+    "paper/manuscript_en_v20.tex"
+  ],
+  "primary_evidence": "results/results_iotj_v20_risk_resolution_audit.json",
+  "audit_date": "2026-10-30",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "overall_verdict": "PASS_WITH_LIMITATIONS",
+  "claims": [
+    {"id":"primary_detection","paper_value":"31/34","evidence_value":"31/34","status":"exact_match"},
+    {"id":"primary_ci","paper_value":"76.3--98.1%","evidence_value":"0.7632247257--0.9814204966","status":"rounding_ok"},
+    {"id":"per_dataset","paper_value":"4/4, 13/13, 14/17","evidence_value":"same","status":"exact_match"},
+    {"id":"median_leads","paper_value":"14.5%, 46.3%, 36.0%","evidence_value":"14.5179, 46.2963, 35.9827","status":"rounding_ok"},
+    {"id":"ims_calibration","paper_value":"0/8","evidence_value":"0/8","status":"exact_match"},
+    {"id":"ims_loeo","paper_value":"1/8","evidence_value":"1/8","status":"exact_match"},
+    {"id":"cwru_normal","paper_value":"0/3 machines","evidence_value":"0/3","status":"exact_match"},
+    {"id":"early_proxy","paper_value":"6/27","evidence_value":"6/27","status":"exact_match"},
+    {"id":"virtual_multi_rig","paper_value":"2/24, 8.33%, CI 2.32--25.85%","evidence_value":"2/24, 8.3333%, 2.3159--25.8488%","status":"rounding_ok"},
+    {"id":"virtual_failures","paper_value":"8/8","evidence_value":"8/8","status":"exact_match"},
+    {"id":"d1_endpoint","paper_value":"33/34; 2/8 reference episodes","evidence_value":"33/34; 2/8","status":"exact_match"},
+    {"id":"d1_causal","paper_value":"34/34 failed; 8/8 healthy; 40.1% median lead","evidence_value":"34/34; 8/8; 40.0926%","status":"rounding_ok"},
+    {"id":"discordant_pairs","paper_value":"6 favorable, 0 unfavorable; Holm p=0.0625","evidence_value":"same","status":"exact_match"},
+    {"id":"beta_posterior","paper_value":"mean 0.875; CI 0.590--0.996; direction 0.992","evidence_value":"0.875; 0.5903836--0.9963897; 0.9921875","status":"rounding_ok"},
+    {"id":"edge","paper_value":"0.03235 ms; 18265.9/s; 0.0383 mJ","evidence_value":"same","status":"exact_match"},
+    {"id":"network_baseline","paper_value":"100%; p95 88.59 ms; 98.043% byte reduction","evidence_value":"100%; 88.5916; 98.043%","status":"rounding_ok"},
+    {"id":"network_5pct","paper_value":"99.654%; p95 87.41 ms; duplicates 4.841%","evidence_value":"99.6542%; 87.4108; 4.8408%","status":"rounding_ok"},
+    {"id":"network_10pct_1retry","paper_value":"98.999%; p95 92.61 ms; duplicates 7.618%","evidence_value":"98.9988%; 92.6119; 7.6177%","status":"rounding_ok"},
+    {"id":"network_10pct_3retries","paper_value":"100%; p95 84.70 ms; duplicates 9.643%","evidence_value":"100%; 84.6992; 9.6433%","status":"rounding_ok"},
+    {"id":"fleet_example","paper_value":"1% event probability gives 39.5% at 50 and 63.4% at 100","evidence_value":"39.499%; 63.397%","status":"rounding_ok"},
+    {"id":"acceptance_estimate","paper_value":"transparent estimate >58%; not editorial prediction","evidence_value":"0.6081894; stop=true; same-family","status":"exact_match"}
+  ],
+  "summary": {
+    "claims_verified": 21,
+    "exact_match": 11,
+    "rounding_ok": 10,
+    "mismatch": 0,
+    "unsupported_claim": 0
+  },
+  "limitations": [
+    "Same-family audit; no independent external reviewer.",
+    "The virtual IoT environment is not a physical network deployment.",
+    "Independent real healthy-censored multi-rig data remain unavailable.",
+    "The acceptance score is not an editorial probability."
+  ]
+}

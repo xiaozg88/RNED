@@ -1,0 +1,1480 @@
+{
+  "dataset": "Open multimodal dataset for rolling bearing degradation",
+  "source_metadata_version": "1.1.0",
+  "audit_status": "complete",
+  "archives": {
+    "260313-ManA-Pos1.zip": {
+      "archive": "260313-ManA-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260313-ManA-Pos1.zip/content",
+      "declared_size_bytes": 936248770,
+      "declared_md5": "dc72d32bc84a230da4e3fea47c40adfd",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 510,
+      "n_tdms_snapshots": 502,
+      "readme": {
+        "test_duration": "8h21m",
+        "stop_condition": "ISO exceeded (13.81 mm/s)",
+        "final_rms": null
+      },
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": true,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not healthy censored trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260313-ManA-Pos2.zip": {
+      "archive": "260313-ManA-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260313-ManA-Pos2.zip/content",
+      "declared_size_bytes": 985542115,
+      "declared_md5": "97307adb19c618b68036a0d93d2ad035",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 540,
+      "n_tdms_snapshots": 532,
+      "readme": {
+        "test_duration": "8h51m",
+        "stop_condition": "rms acceleration (25.97 m/s2)",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260313-ManA-Pos5.zip": {
+      "archive": "260313-ManA-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260313-ManA-Pos5.zip/content",
+      "declared_size_bytes": 984271816,
+      "declared_md5": "687c930b5c606df48db408fa5d6f539e",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 525,
+      "n_tdms_snapshots": 517,
+      "readme": {
+        "test_duration": "8h37m",
+        "stop_condition": "ISO exceeded (19.46 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260401-ManB-Pos1.zip": {
+      "archive": "260401-ManB-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260401-ManB-Pos1.zip/content",
+      "declared_size_bytes": 729801429,
+      "declared_md5": "8e1d8f22395eb2d5157076330926b2a2",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 411,
+      "n_tdms_snapshots": 403,
+      "readme": {
+        "test_duration": "6h42m",
+        "stop_condition": "ISO exceeded (14.51 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260429-ManB-Pos5.zip": {
+      "archive": "260429-ManB-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260429-ManB-Pos5.zip/content",
+      "declared_size_bytes": 18903060040,
+      "declared_md5": "488a2943f7e16f5e7684f8b97c30bebf",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 9990,
+      "n_tdms_snapshots": 9982,
+      "readme": {
+        "test_duration": "166h21m",
+        "stop_condition": "rms exceeded (25.46 m/s2)",
+        "final_rms": 25.46
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260507-ManB-Pos2.zip": {
+      "archive": "260507-ManB-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260507-ManB-Pos2.zip/content",
+      "declared_size_bytes": 35926977530,
+      "declared_md5": "34ff22d30f9524242dc436d12df0f3d0",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 19232,
+      "n_tdms_snapshots": 19224,
+      "readme": {
+        "test_duration": "320h30m",
+        "stop_condition": "rms exceeded (27.89 m/s2)",
+        "final_rms": 27.89
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260507-ManB-Pos3.zip": {
+      "archive": "260507-ManB-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260507-ManB-Pos3.zip/content",
+      "declared_size_bytes": 43303303376,
+      "declared_md5": "0a539b17ad9c5c94110f3783fc07632c",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 22858,
+      "n_tdms_snapshots": 22850,
+      "readme": {
+        "test_duration": "380h48m",
+        "stop_condition": "rms exceeded (26.02 m/s2)",
+        "final_rms": 26.02
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260507-ManB-Pos4.zip": {
+      "archive": "260507-ManB-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260507-ManB-Pos4.zip/content",
+      "declared_size_bytes": 42655116216,
+      "declared_md5": "cb55957971d3410bc23a313c55f136bc",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 22501,
+      "n_tdms_snapshots": 22493,
+      "readme": {
+        "test_duration": "374h54m",
+        "stop_condition": "rms exceeded (25.14 m/s2)",
+        "final_rms": 25.14
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260507-ManB-Pos5.zip": {
+      "archive": "260507-ManB-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260507-ManB-Pos5.zip/content",
+      "declared_size_bytes": 27142226336,
+      "declared_md5": "b9ff4c606a87c85423f9c9935de95975",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 14570,
+      "n_tdms_snapshots": 14562,
+      "readme": {
+        "test_duration": "242h42m",
+        "stop_condition": "rms exceeded (27.34 m/s2)",
+        "final_rms": 27.34
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260604-ManC-Pos2.zip": {
+      "archive": "260604-ManC-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260604-ManC-Pos2.zip/content",
+      "declared_size_bytes": 1586185933,
+      "declared_md5": "6a396043cafaa2401e0c733a0d29715d",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 747,
+      "n_tdms_snapshots": 739,
+      "readme": {
+        "test_duration": "12h19m",
+        "stop_condition": "ISO exceeded (13.58 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260604-ManC-Pos3.zip": {
+      "archive": "260604-ManC-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260604-ManC-Pos3.zip/content",
+      "declared_size_bytes": 808698111,
+      "declared_md5": "b29a3f42f31c85ec2230f804433a32a8",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 272,
+      "n_tdms_snapshots": 264,
+      "readme": {
+        "test_duration": "4h24m",
+        "stop_condition": "rms exceeded (30.63 m/s2)",
+        "final_rms": 30.63
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260604-ManC-Pos5.zip": {
+      "archive": "260604-ManC-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260604-ManC-Pos5.zip/content",
+      "declared_size_bytes": 683976624,
+      "declared_md5": "6681658b881e77ec756add710169177f",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 250,
+      "n_tdms_snapshots": 242,
+      "readme": {
+        "test_duration": "4h02m",
+        "stop_condition": "motor velocity exceeded",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260615-ManC-Pos2.zip": {
+      "archive": "260615-ManC-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260615-ManC-Pos2.zip/content",
+      "declared_size_bytes": 15686321679,
+      "declared_md5": "f5a2ab2922b932c16aaec3c209f69777",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 8062,
+      "n_tdms_snapshots": 8054,
+      "readme": {
+        "test_duration": "134h13m",
+        "stop_condition": "ISO exceeded (10.04 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260615-ManC-Pos3.zip": {
+      "archive": "260615-ManC-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260615-ManC-Pos3.zip/content",
+      "declared_size_bytes": 1044102630,
+      "declared_md5": "38859710d44fdd2c51cbf8022eb3c2d0",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 529,
+      "n_tdms_snapshots": 521,
+      "readme": {
+        "test_duration": "8h40m",
+        "stop_condition": "rms exceeded (25.85 m/s2)",
+        "final_rms": 25.85
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260615-ManC-Pos4.zip": {
+      "archive": "260615-ManC-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260615-ManC-Pos4.zip/content",
+      "declared_size_bytes": 11660843081,
+      "declared_md5": "1ca6a987a51603e3cb3d711801e30c1f",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 6263,
+      "n_tdms_snapshots": 6255,
+      "readme": {
+        "test_duration": "104h14m",
+        "stop_condition": "rms exceeded (25.76 m/s2)",
+        "final_rms": 25.76
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260615-ManC-Pos5.zip": {
+      "archive": "260615-ManC-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260615-ManC-Pos5.zip/content",
+      "declared_size_bytes": 18579252827,
+      "declared_md5": "88d814d159a8595bfc22ca5ab8dd75f5",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 10232,
+      "n_tdms_snapshots": 10224,
+      "readme": {
+        "test_duration": "170h23m",
+        "stop_condition": "rms exceeded (25.42 m/s2)",
+        "final_rms": 25.42
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260624-ManC-Pos1.zip": {
+      "archive": "260624-ManC-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260624-ManC-Pos1.zip/content",
+      "declared_size_bytes": 7246467636,
+      "declared_md5": "4052ff6c73a10b7aac7882657e60ddcb",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 3753,
+      "n_tdms_snapshots": 3745,
+      "readme": {
+        "test_duration": "62h24m",
+        "stop_condition": "ISO exceeded (10.04 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260624-ManC-Pos2.zip": {
+      "archive": "260624-ManC-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260624-ManC-Pos2.zip/content",
+      "declared_size_bytes": 11998739334,
+      "declared_md5": "ff438d437e0c8de8ce44c33a255c8280",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 6319,
+      "n_tdms_snapshots": 6311,
+      "readme": {
+        "test_duration": "105h11m",
+        "stop_condition": "rms exceeded (28.84 m/s2)",
+        "final_rms": 28.84
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260624-ManC-Pos4.zip": {
+      "archive": "260624-ManC-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260624-ManC-Pos4.zip/content",
+      "declared_size_bytes": 19015840728,
+      "declared_md5": "7f65ce00ba516dba57bec8ad42d74bd4",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 9541,
+      "n_tdms_snapshots": 9533,
+      "readme": {
+        "test_duration": "158h52m",
+        "stop_condition": "rms exceeded (25.38 m/s2)",
+        "final_rms": 25.38
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260624-ManC-Pos5.zip": {
+      "archive": "260624-ManC-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260624-ManC-Pos5.zip/content",
+      "declared_size_bytes": 826528786,
+      "declared_md5": "99e2ec6bde76b6203b9ac0f6167ef3a0",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 461,
+      "n_tdms_snapshots": 453,
+      "readme": {
+        "test_duration": "7h34m",
+        "stop_condition": "rms exceeded (25.74 m/s2)",
+        "final_rms": 25.74
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260702-ManC-Pos1.zip": {
+      "archive": "260702-ManC-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260702-ManC-Pos1.zip/content",
+      "declared_size_bytes": 1982579696,
+      "declared_md5": "13e31a895d89985e2f0b51a3bad54ea9",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 1048,
+      "n_tdms_snapshots": 1040,
+      "readme": {
+        "test_duration": "17h19m",
+        "stop_condition": "ISO exceeded (13.44 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260702-ManC-Pos2.zip": {
+      "archive": "260702-ManC-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260702-ManC-Pos2.zip/content",
+      "declared_size_bytes": 21223761485,
+      "declared_md5": "f333eb6a3ecfde25709f486b1ea45005",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 10680,
+      "n_tdms_snapshots": 10672,
+      "readme": {
+        "test_duration": "177h51m",
+        "stop_condition": "motor velocity exceeded",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260702-ManC-Pos3.zip": {
+      "archive": "260702-ManC-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260702-ManC-Pos3.zip/content",
+      "declared_size_bytes": 10337305974,
+      "declared_md5": "e1e590e3ccbc6603ca47ca6e6568ad7a",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 5120,
+      "n_tdms_snapshots": 5112,
+      "readme": {
+        "test_duration": "85h11m",
+        "stop_condition": "rms exceeded (25.17 m/s2)",
+        "final_rms": 25.17
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260702-ManC-Pos5.zip": {
+      "archive": "260702-ManC-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260702-ManC-Pos5.zip/content",
+      "declared_size_bytes": 7889636707,
+      "declared_md5": "a339f3baa5f2c4573784ba2d41164a6b",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 4073,
+      "n_tdms_snapshots": 4065,
+      "readme": {
+        "test_duration": "67h44m",
+        "stop_condition": "rms exceeded (51.32 m/s2)",
+        "final_rms": 51.32
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260717-ManC-Pos1.zip": {
+      "archive": "260717-ManC-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260717-ManC-Pos1.zip/content",
+      "declared_size_bytes": 8863941378,
+      "declared_md5": "788e2f1732f9d135bf507b111e428d1a",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 4406,
+      "n_tdms_snapshots": 4398,
+      "readme": {
+        "test_duration": "73h17m",
+        "stop_condition": "rms exceeded (25.41 m/s2)",
+        "final_rms": 25.41
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260717-ManC-Pos2.zip": {
+      "archive": "260717-ManC-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260717-ManC-Pos2.zip/content",
+      "declared_size_bytes": 4869738027,
+      "declared_md5": "e8b14461a1305da9a6840d849da1d75d",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 2474,
+      "n_tdms_snapshots": 2466,
+      "readme": {
+        "test_duration": "41h05m",
+        "stop_condition": "ISO exceeded (15.08 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260717-ManC-Pos3.zip": {
+      "archive": "260717-ManC-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260717-ManC-Pos3.zip/content",
+      "declared_size_bytes": 15278584589,
+      "declared_md5": "9fa8476a636d01e000c6294f3bd00f6f",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 7582,
+      "n_tdms_snapshots": 7574,
+      "readme": {
+        "test_duration": "126h13m",
+        "stop_condition": "rms exceeded (25.29 m/s2)",
+        "final_rms": 25.29
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260717-ManC-Pos4.zip": {
+      "archive": "260717-ManC-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260717-ManC-Pos4.zip/content",
+      "declared_size_bytes": 27772421718,
+      "declared_md5": "bb71f32421c31cef9a57c2ad4f86df38",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 14467,
+      "n_tdms_snapshots": 14459,
+      "readme": {
+        "test_duration": "240h58m",
+        "stop_condition": "rms exceeded (25.12 m/s2)",
+        "final_rms": 25.12
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260717-ManC-Pos5.zip": {
+      "archive": "260717-ManC-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260717-ManC-Pos5.zip/content",
+      "declared_size_bytes": 15424788579,
+      "declared_md5": "370be058bf38c01072581d67bd0e15b3",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 7860,
+      "n_tdms_snapshots": 7852,
+      "readme": {
+        "test_duration": "130h51m",
+        "stop_condition": "rms exceeded (25.39 m/s2)",
+        "final_rms": 25.39
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260730-ManB-Pos1.zip": {
+      "archive": "260730-ManB-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260730-ManB-Pos1.zip/content",
+      "declared_size_bytes": 176402627,
+      "declared_md5": "9d6282bf08591a4e1b414a9d7b5b4581",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 96,
+      "n_tdms_snapshots": 88,
+      "readme": {
+        "test_duration": "1h28m",
+        "stop_condition": "rms exceeded (28.13 m/s2)",
+        "final_rms": 28.13
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": false,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "ineligible",
+      "eligibility_reasons": [
+        "only 88 snapshots (<90)",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260730-ManB-Pos2.zip": {
+      "archive": "260730-ManB-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260730-ManB-Pos2.zip/content",
+      "declared_size_bytes": 800825018,
+      "declared_md5": "842528f5a3a494571b0fb968ff461249",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 358,
+      "n_tdms_snapshots": 350,
+      "readme": {
+        "test_duration": "5h50m",
+        "stop_condition": "rms exceeded (25.23 m/s2)",
+        "final_rms": 25.23
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260730-ManB-Pos4.zip": {
+      "archive": "260730-ManB-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260730-ManB-Pos4.zip/content",
+      "declared_size_bytes": 20773019929,
+      "declared_md5": "0621050e9801889a6e9d9b2d5fa7273f",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 10727,
+      "n_tdms_snapshots": 10719,
+      "readme": {
+        "test_duration": "178h38m",
+        "stop_condition": "rms exceeded (26.81 m/s2)",
+        "final_rms": 26.81
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260811-ManB-Pos1.zip": {
+      "archive": "260811-ManB-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260811-ManB-Pos1.zip/content",
+      "declared_size_bytes": 573486309,
+      "declared_md5": "8f23ca7b3a52f3be8aa76c60668145c6",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 301,
+      "n_tdms_snapshots": 293,
+      "readme": {
+        "test_duration": "4h53m",
+        "stop_condition": "rms exceeded (51.94 m/s2)",
+        "final_rms": 51.94
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260811-ManB-Pos2.zip": {
+      "archive": "260811-ManB-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260811-ManB-Pos2.zip/content",
+      "declared_size_bytes": 11019035944,
+      "declared_md5": "8f044d75cbbe54b86ad52e7c41dda95b",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 5987,
+      "n_tdms_snapshots": 5979,
+      "readme": {
+        "test_duration": "99h38m",
+        "stop_condition": "ISO exceeded (14.55 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260811-ManB-Pos4.zip": {
+      "archive": "260811-ManB-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260811-ManB-Pos4.zip/content",
+      "declared_size_bytes": 14191066496,
+      "declared_md5": "ac0366a8286a413e3613320cada28600",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 7384,
+      "n_tdms_snapshots": 7376,
+      "readme": {
+        "test_duration": "122h55m",
+        "stop_condition": "rms exceeded (26.21 m/s2)",
+        "final_rms": 26.21
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260811-ManB-Pos5.zip": {
+      "archive": "260811-ManB-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260811-ManB-Pos5.zip/content",
+      "declared_size_bytes": 2913393475,
+      "declared_md5": "54a1c26dc24cf0af26da00b7d4e28f2e",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 1502,
+      "n_tdms_snapshots": 1494,
+      "readme": {
+        "test_duration": "24h53m",
+        "stop_condition": "rms exceeded (43.11 m/s2)",
+        "final_rms": 43.11
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260818-ManD-Pos1.zip": {
+      "archive": "260818-ManD-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260818-ManD-Pos1.zip/content",
+      "declared_size_bytes": 6315659878,
+      "declared_md5": "ea03ecf339f45be3da7964d411347eeb",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 3440,
+      "n_tdms_snapshots": 3432,
+      "readme": {
+        "test_duration": "57h12m",
+        "stop_condition": "rms exceeded (28.84 m/s2)",
+        "final_rms": 28.84
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260818-ManD-Pos2.zip": {
+      "archive": "260818-ManD-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260818-ManD-Pos2.zip/content",
+      "declared_size_bytes": 1434781248,
+      "declared_md5": "dc155aa78a390469c1d12e3be33ff2cf",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 763,
+      "n_tdms_snapshots": 755,
+      "readme": {
+        "test_duration": "12h34m",
+        "stop_condition": "ISO exceeded (10.59 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260818-ManD-Pos3.zip": {
+      "archive": "260818-ManD-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260818-ManD-Pos3.zip/content",
+      "declared_size_bytes": 1316889794,
+      "declared_md5": "83735c4fb77818de230f2b9e04561a01",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 689,
+      "n_tdms_snapshots": 681,
+      "readme": {
+        "test_duration": "11h20m",
+        "stop_condition": "rms exceeded (26.03 m/s2)",
+        "final_rms": 26.03
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260818-ManD-Pos4.zip": {
+      "archive": "260818-ManD-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260818-ManD-Pos4.zip/content",
+      "declared_size_bytes": 13672028867,
+      "declared_md5": "840b722cceb4ecbce413a86539c9e1d9",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 7065,
+      "n_tdms_snapshots": 7057,
+      "readme": {
+        "test_duration": "117h35m",
+        "stop_condition": "rms exceeded (25.87 m/s2)",
+        "final_rms": 25.87
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260818-ManD-Pos5.zip": {
+      "archive": "260818-ManD-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260818-ManD-Pos5.zip/content",
+      "declared_size_bytes": 7448812780,
+      "declared_md5": "cce52b73c7e3d0ee55435e88441249a0",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 3887,
+      "n_tdms_snapshots": 3879,
+      "readme": {
+        "test_duration": "64h36m",
+        "stop_condition": "motor torque exceeded",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260825-ManD-Pos1.zip": {
+      "archive": "260825-ManD-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260825-ManD-Pos1.zip/content",
+      "declared_size_bytes": 8212719101,
+      "declared_md5": "0864f1f83da64c1d4f5b51bad743eca1",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 4274,
+      "n_tdms_snapshots": 4266,
+      "readme": {
+        "test_duration": "71h05m",
+        "stop_condition": "motor torque exceeded",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260825-ManD-Pos3.zip": {
+      "archive": "260825-ManD-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260825-ManD-Pos3.zip/content",
+      "declared_size_bytes": 8672938943,
+      "declared_md5": "e0a7ba71d49bb018f6f82e3b3805bd9b",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 4395,
+      "n_tdms_snapshots": 4387,
+      "readme": {
+        "test_duration": "73h06m",
+        "stop_condition": "rms exceeded (35.70 m/s2)",
+        "final_rms": 35.7
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260825-ManD-Pos4.zip": {
+      "archive": "260825-ManD-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260825-ManD-Pos4.zip/content",
+      "declared_size_bytes": 2389518700,
+      "declared_md5": "b7cec0f7cf9d270e345a0f3b5df6e218",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 1298,
+      "n_tdms_snapshots": 1290,
+      "readme": {
+        "test_duration": "21h29m",
+        "stop_condition": "ISO exceeded (13.33 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260825-ManD-Pos5.zip": {
+      "archive": "260825-ManD-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260825-ManD-Pos5.zip/content",
+      "declared_size_bytes": 6821938419,
+      "declared_md5": "6e9624bbbf9baff607133195f9c3c2e9",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 3612,
+      "n_tdms_snapshots": 3604,
+      "readme": {
+        "test_duration": "60h03m",
+        "stop_condition": "rms exceeded (29.29 m/s2)",
+        "final_rms": 29.29
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260902-ManD-Pos3.zip": {
+      "archive": "260902-ManD-Pos3.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260902-ManD-Pos3.zip/content",
+      "declared_size_bytes": 4602097609,
+      "declared_md5": "4d1248f5eac4e8fb85fe60e14a17a489",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 2329,
+      "n_tdms_snapshots": 2321,
+      "readme": {
+        "test_duration": "38h40m",
+        "stop_condition": "rms exceeded (26.65 m/s2)",
+        "final_rms": 26.65
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260902-ManD-Pos4.zip": {
+      "archive": "260902-ManD-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260902-ManD-Pos4.zip/content",
+      "declared_size_bytes": 16709174903,
+      "declared_md5": "6f0e4c15ac6f5bb753d596388d5dcdbe",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 9057,
+      "n_tdms_snapshots": 9049,
+      "readme": {
+        "test_duration": "150h48m",
+        "stop_condition": "rms exceeded (33.38 m/s2)",
+        "final_rms": 33.38
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260910-ManA-Pos1.zip": {
+      "archive": "260910-ManA-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260910-ManA-Pos1.zip/content",
+      "declared_size_bytes": 627502540,
+      "declared_md5": "0a6db4ec492668321b4041a09658e6f8",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 323,
+      "n_tdms_snapshots": 315,
+      "readme": {
+        "test_duration": "5h15m",
+        "stop_condition": "ISO exceeded (11.56 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260910-ManA-Pos2.zip": {
+      "archive": "260910-ManA-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260910-ManA-Pos2.zip/content",
+      "declared_size_bytes": 1876554352,
+      "declared_md5": "fe95a49a73119846beb70d9fc5317b18",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 944,
+      "n_tdms_snapshots": 936,
+      "readme": {
+        "test_duration": "15h36m",
+        "stop_condition": "rms exceeded (26.97 m/s2)",
+        "final_rms": 26.97
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260910-ManA-Pos4.zip": {
+      "archive": "260910-ManA-Pos4.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260910-ManA-Pos4.zip/content",
+      "declared_size_bytes": 5313284786,
+      "declared_md5": "f059ed2e65be0071c21d06be72e6ce70",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 2672,
+      "n_tdms_snapshots": 2664,
+      "readme": {
+        "test_duration": "44h24m",
+        "stop_condition": "rms exceeded (25.32 m/s2)",
+        "final_rms": 25.32
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260910-ManA-Pos5.zip": {
+      "archive": "260910-ManA-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260910-ManA-Pos5.zip/content",
+      "declared_size_bytes": 910893626,
+      "declared_md5": "2aea8129fa13ca9668c223b83387b1bd",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 462,
+      "n_tdms_snapshots": 454,
+      "readme": {
+        "test_duration": "7h32",
+        "stop_condition": "motor velocity exceeded",
+        "final_rms": null
+      },
+      "stop_condition_type": "other",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260916-ManA-Pos1.zip": {
+      "archive": "260916-ManA-Pos1.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260916-ManA-Pos1.zip/content",
+      "declared_size_bytes": 684208828,
+      "declared_md5": "d40b0e27a1a7b33743cc7a9159f686e1",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 357,
+      "n_tdms_snapshots": 349,
+      "readme": {
+        "test_duration": "5h49m",
+        "stop_condition": "ISO exceeded (10.15 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260916-ManA-Pos2.zip": {
+      "archive": "260916-ManA-Pos2.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260916-ManA-Pos2.zip/content",
+      "declared_size_bytes": 817587315,
+      "declared_md5": "f5ff180492d571244057aaff47fb52f3",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 421,
+      "n_tdms_snapshots": 413,
+      "readme": {
+        "test_duration": "6h52m",
+        "stop_condition": "rms exceeded (26.52 m/s2)",
+        "final_rms": 26.52
+      },
+      "stop_condition_type": "rms",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    },
+    "260916-ManA-Pos5.zip": {
+      "archive": "260916-ManA-Pos5.zip",
+      "url": "https://datarepo.eosc.cz/api/records/hjbxn-0yc34/files/260916-ManA-Pos5.zip/content",
+      "declared_size_bytes": 936601570,
+      "declared_md5": "e081f4593f114a9b5be3a08b8a42e19f",
+      "audit_method": "HTTP Range ZIP central directory + readme member",
+      "n_central_entries": 485,
+      "n_tdms_snapshots": 477,
+      "readme": {
+        "test_duration": "7h57m",
+        "stop_condition": "ISO exceeded (10.89 mm/s)",
+        "final_rms": null
+      },
+      "stop_condition_type": "iso",
+      "vibration_channel_evidence": "sample archive has one accelerometer TDMS channel; no per-archive multimodal channel audit",
+      "inferred_vibration_axes": 1,
+      "failure_protocol_eligible": true,
+      "cross_axis_protocol_eligible": false,
+      "healthy_censored_trajectory": false,
+      "overall_eligibility": "historical_layer_supplement_only",
+      "eligibility_reasons": [
+        "at least 90 snapshots",
+        "single vibration channel",
+        "run-to-failure stop, not an administratively censored healthy trajectory"
+      ],
+      "audit_status": "ok"
+    }
+  },
+  "summary": {
+    "n_archives_total": 54,
+    "n_archives_processed": 54,
+    "n_archives_audited": 54,
+    "n_errors": 0,
+    "n_with_at_least_90_snapshots": 53,
+    "snapshot_min": 88,
+    "snapshot_median": 3604,
+    "snapshot_max": 22850,
+    "n_non_rms_stop_conditions": 20,
+    "n_iso_stop_conditions": 13,
+    "n_multiaxis_or_healthy_censored": 0,
+    "main_validation_eligible": false,
+    "decision": "supplement-only: insufficient snapshots on sampled archive; single-axis design; no healthy censored fleet"
+  },
+  "generated_at_utc": "2026-10-22T11:27:45.953080+00:00"
+}

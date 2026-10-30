@@ -1,0 +1,70 @@
+[
+  {
+    "bearing": "B01",
+    "condition": "dynamic load",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 89,
+    "baseline_value": 1169.5168437177,
+    "alarm_value": 754.56795376596,
+    "relative_change_pct": -35.48036885323399
+  },
+  {
+    "bearing": "B01",
+    "condition": "static load",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 89,
+    "baseline_value": 3348.56589061792,
+    "alarm_value": 3545.43204623404,
+    "relative_change_pct": 5.879118465839461
+  },
+  {
+    "bearing": "B01",
+    "condition": "speed",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 89,
+    "baseline_value": 2732.30758195307,
+    "alarm_value": 3483.25933189834,
+    "relative_change_pct": 27.484158624940935
+  },
+  {
+    "bearing": "B01",
+    "hierarchical_alarm_index": 29,
+    "alarm_snapshot": 89,
+    "n_snapshots": 377,
+    "lead_pct_life": 90.85173501577287
+  },
+  {
+    "bearing": "B11",
+    "condition": "dynamic load",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 711,
+    "baseline_value": 1000.0,
+    "alarm_value": 1000.0,
+    "relative_change_pct": 0.0
+  },
+  {
+    "bearing": "B11",
+    "condition": "static load",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 711,
+    "baseline_value": 3000.0,
+    "alarm_value": 3000.0,
+    "relative_change_pct": 0.0
+  },
+  {
+    "bearing": "B11",
+    "condition": "speed",
+    "baseline_snapshot": 59,
+    "alarm_snapshot": 711,
+    "baseline_value": 2294.93981622277,
+    "alarm_value": 1909.61803785933,
+    "relative_change_pct": -16.790060272588725
+  },
+  {
+    "bearing": "B11",
+    "hierarchical_alarm_index": 651,
+    "alarm_snapshot": 711,
+    "n_snapshots": 1953,
+    "lead_pct_life": 65.61014263074485
+  }
+]

@@ -6,6 +6,12 @@ Official code for the paper:
 > Industrial IoT: Validation in a Virtual IoT Environment**
 > *(submitted to IEEE Internet of Things Journal)*
 
+The complete, self-contained public-code directory for manuscript v20 is
+[`code_v20/`](code_v20/README.md). It contains all v20 experiment scripts,
+frozen derived features, precomputed evidence, figure generators, manuscript
+sources, dependencies, and a SHA-256 release manifest. Start there when cloning
+the repository for review or reproduction.
+
 RNED is a label-free, causal, fixed-threshold, edge-deployable early-warning
 detector for run-to-failure bearings. It reduces the failure-versus-drift
 discriminative signal to the **cumulative excess** of RMS above a $1.2\times$
@@ -153,7 +159,8 @@ Tested with Python 3.10 and torch 2.1 (CUDA optional). See `requirements.txt`.
 
 ```text
 RNED/
-├── experiments/   # 12 experiment scripts (one per paper result)
+├── code_v20/      # complete self-contained v20 public-code release
+├── experiments/   # development experiment scripts; authoritative v20 copy is code_v20/
 ├── src/           # feature-extraction pipeline (raw signals -> data/features)
 ├── data/features/ # pre-extracted feature tables (included)
 ├── figures/       # figure-generation scripts + rendered PDF/PNG figures

@@ -1,0 +1,2369 @@
+{
+  "experiment_status": "exploratory; no paper-main upgrade without independent validation",
+  "n_bearings_evaluated": 42,
+  "n_failed": 34,
+  "n_censored": 8,
+  "priority_1_cross_axis_event_mechanism": {
+    "protocol": {
+      "window": 10,
+      "minimum_monitor_snapshots": 30,
+      "calibration_margin": 1.01,
+      "weights": {
+        "historical_rate": 0.3,
+        "persistence": 0.2,
+        "irreversibility": 0.2,
+        "cross_axis": 0.2,
+        "acceleration": 0.1
+      },
+      "status": "exploratory_post_hoc"
+    },
+    "thresholds": {
+      "historical_rate": 0.042407782315012583,
+      "persistence": 1.01,
+      "irreversibility": 1.01,
+      "cross_axis": 0.24602807750741626,
+      "acceleration": 3.5276674371768806
+    },
+    "composite_threshold": 0.7889228162114965,
+    "results": {
+      "historical_rate": {
+        "threshold": 0.042407782315012583,
+        "n_failed": 34,
+        "n_detected": 31,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 28.81679389312977,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 14,
+            "median_lead_pct_life": 35.98272138228942
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 4,
+            "median_lead_pct_life": 14.517861273586464
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "median_lead_pct_life": 46.2962962962963
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2143,
+          "femto_Bearing1_2": 29,
+          "femto_Bearing1_3": 1575,
+          "femto_Bearing1_4": 1047,
+          "femto_Bearing1_5": 2403,
+          "femto_Bearing1_6": 2388,
+          "femto_Bearing1_7": 2193,
+          "femto_Bearing2_1": 91,
+          "femto_Bearing2_2": 152,
+          "femto_Bearing2_3": 206,
+          "femto_Bearing2_4": 691,
+          "femto_Bearing2_5": 29,
+          "femto_Bearing2_6": 636,
+          "femto_Bearing2_7": 102,
+          "femto_Bearing3_1": 438,
+          "femto_Bearing3_2": 1564,
+          "femto_Bearing3_3": 29,
+          "ims_test1_b3": 2084,
+          "ims_test1_b4": 1492,
+          "ims_test2_b1": 661,
+          "ims_test3_b3": 6249,
+          "xjtu_Bearing1_1": 29,
+          "xjtu_Bearing1_2": 29,
+          "xjtu_Bearing1_3": 29,
+          "xjtu_Bearing1_4": 61,
+          "xjtu_Bearing2_1": 403,
+          "xjtu_Bearing2_2": 29,
+          "xjtu_Bearing2_3": 98,
+          "xjtu_Bearing2_5": 90,
+          "xjtu_Bearing3_1": 2408,
+          "xjtu_Bearing3_2": 1823,
+          "xjtu_Bearing3_3": 286,
+          "xjtu_Bearing3_4": 1397,
+          "xjtu_Bearing3_5": 29,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "cross_axis_recent": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 32,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 13.695025761948461,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 17,
+            "median_lead_pct_life": 10.02551950419249
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 2,
+            "median_lead_pct_life": 12.356870229007633
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "median_lead_pct_life": 17.364532019704434
+          }
+        },
+        "missed_bearings": [
+          "ims_test2_b1",
+          "ims_test3_b3"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2468,
+          "femto_Bearing1_2": 768,
+          "femto_Bearing1_3": 1569,
+          "femto_Bearing1_4": 1029,
+          "femto_Bearing1_5": 2385,
+          "femto_Bearing1_6": 1589,
+          "femto_Bearing1_7": 2153,
+          "femto_Bearing2_1": 223,
+          "femto_Bearing2_2": 219,
+          "femto_Bearing2_3": 209,
+          "femto_Bearing2_4": 684,
+          "femto_Bearing2_5": 57,
+          "femto_Bearing2_6": 628,
+          "femto_Bearing2_7": 165,
+          "femto_Bearing3_1": 433,
+          "femto_Bearing3_2": 1555,
+          "femto_Bearing3_3": 280,
+          "ims_test1_b3": 2061,
+          "ims_test1_b4": 1613,
+          "ims_test2_b1": 924,
+          "ims_test3_b3": 6264,
+          "xjtu_Bearing1_1": 29,
+          "xjtu_Bearing1_2": 29,
+          "xjtu_Bearing1_3": 32,
+          "xjtu_Bearing1_4": 61,
+          "xjtu_Bearing2_1": 395,
+          "xjtu_Bearing2_2": 29,
+          "xjtu_Bearing2_3": 257,
+          "xjtu_Bearing2_5": 109,
+          "xjtu_Bearing3_1": 2349,
+          "xjtu_Bearing3_2": 2013,
+          "xjtu_Bearing3_3": 284,
+          "xjtu_Bearing3_4": 1364,
+          "xjtu_Bearing3_5": 52,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "persistence_only": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 0,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": null,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_1",
+          "femto_Bearing1_2",
+          "femto_Bearing1_3",
+          "femto_Bearing1_4",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_1",
+          "femto_Bearing2_2",
+          "femto_Bearing2_3",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5",
+          "femto_Bearing2_6",
+          "femto_Bearing2_7",
+          "femto_Bearing3_1",
+          "femto_Bearing3_2",
+          "femto_Bearing3_3",
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "ims_test2_b1",
+          "ims_test3_b3",
+          "xjtu_Bearing1_1",
+          "xjtu_Bearing1_2",
+          "xjtu_Bearing1_3",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing2_1",
+          "xjtu_Bearing2_2",
+          "xjtu_Bearing2_3",
+          "xjtu_Bearing2_5",
+          "xjtu_Bearing3_1",
+          "xjtu_Bearing3_2",
+          "xjtu_Bearing3_3",
+          "xjtu_Bearing3_4",
+          "xjtu_Bearing3_5"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2743,
+          "femto_Bearing1_2": 811,
+          "femto_Bearing1_3": 2315,
+          "femto_Bearing1_4": 1368,
+          "femto_Bearing1_5": 2403,
+          "femto_Bearing1_6": 2388,
+          "femto_Bearing1_7": 2199,
+          "femto_Bearing2_1": 851,
+          "femto_Bearing2_2": 737,
+          "femto_Bearing2_3": 1895,
+          "femto_Bearing2_4": 691,
+          "femto_Bearing2_5": 2251,
+          "femto_Bearing2_6": 641,
+          "femto_Bearing2_7": 170,
+          "femto_Bearing3_1": 455,
+          "femto_Bearing3_2": 1577,
+          "femto_Bearing3_3": 374,
+          "ims_test1_b3": 2096,
+          "ims_test1_b4": 2096,
+          "ims_test2_b1": 924,
+          "ims_test3_b3": 6264,
+          "xjtu_Bearing1_1": 63,
+          "xjtu_Bearing1_2": 101,
+          "xjtu_Bearing1_3": 98,
+          "xjtu_Bearing1_4": 62,
+          "xjtu_Bearing2_1": 431,
+          "xjtu_Bearing2_2": 101,
+          "xjtu_Bearing2_3": 473,
+          "xjtu_Bearing2_5": 279,
+          "xjtu_Bearing3_1": 2478,
+          "xjtu_Bearing3_2": 2436,
+          "xjtu_Bearing3_3": 311,
+          "xjtu_Bearing3_4": 1455,
+          "xjtu_Bearing3_5": 54,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "irreversibility_only": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 0,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": null,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 0,
+            "median_lead_pct_life": null
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_1",
+          "femto_Bearing1_2",
+          "femto_Bearing1_3",
+          "femto_Bearing1_4",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_1",
+          "femto_Bearing2_2",
+          "femto_Bearing2_3",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5",
+          "femto_Bearing2_6",
+          "femto_Bearing2_7",
+          "femto_Bearing3_1",
+          "femto_Bearing3_2",
+          "femto_Bearing3_3",
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "ims_test2_b1",
+          "ims_test3_b3",
+          "xjtu_Bearing1_1",
+          "xjtu_Bearing1_2",
+          "xjtu_Bearing1_3",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing2_1",
+          "xjtu_Bearing2_2",
+          "xjtu_Bearing2_3",
+          "xjtu_Bearing2_5",
+          "xjtu_Bearing3_1",
+          "xjtu_Bearing3_2",
+          "xjtu_Bearing3_3",
+          "xjtu_Bearing3_4",
+          "xjtu_Bearing3_5"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2743,
+          "femto_Bearing1_2": 811,
+          "femto_Bearing1_3": 2315,
+          "femto_Bearing1_4": 1368,
+          "femto_Bearing1_5": 2403,
+          "femto_Bearing1_6": 2388,
+          "femto_Bearing1_7": 2199,
+          "femto_Bearing2_1": 851,
+          "femto_Bearing2_2": 737,
+          "femto_Bearing2_3": 1895,
+          "femto_Bearing2_4": 691,
+          "femto_Bearing2_5": 2251,
+          "femto_Bearing2_6": 641,
+          "femto_Bearing2_7": 170,
+          "femto_Bearing3_1": 455,
+          "femto_Bearing3_2": 1577,
+          "femto_Bearing3_3": 374,
+          "ims_test1_b3": 2096,
+          "ims_test1_b4": 2096,
+          "ims_test2_b1": 924,
+          "ims_test3_b3": 6264,
+          "xjtu_Bearing1_1": 63,
+          "xjtu_Bearing1_2": 101,
+          "xjtu_Bearing1_3": 98,
+          "xjtu_Bearing1_4": 62,
+          "xjtu_Bearing2_1": 431,
+          "xjtu_Bearing2_2": 101,
+          "xjtu_Bearing2_3": 473,
+          "xjtu_Bearing2_5": 279,
+          "xjtu_Bearing3_1": 2478,
+          "xjtu_Bearing3_2": 2436,
+          "xjtu_Bearing3_3": 311,
+          "xjtu_Bearing3_4": 1455,
+          "xjtu_Bearing3_5": 54,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "acceleration_only": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 22,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 1.7701656933960024,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 11,
+            "median_lead_pct_life": 1.2759752096244987
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 2,
+            "median_lead_pct_life": 0.6227090278814417
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "median_lead_pct_life": 4.408352668213457
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_2",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5",
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_1",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing2_2",
+          "xjtu_Bearing3_5"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2708,
+          "femto_Bearing1_2": 809,
+          "femto_Bearing1_3": 1685,
+          "femto_Bearing1_4": 1057,
+          "femto_Bearing1_5": 2403,
+          "femto_Bearing1_6": 2388,
+          "femto_Bearing1_7": 2199,
+          "femto_Bearing2_1": 845,
+          "femto_Bearing2_2": 737,
+          "femto_Bearing2_3": 215,
+          "femto_Bearing2_4": 691,
+          "femto_Bearing2_5": 2251,
+          "femto_Bearing2_6": 638,
+          "femto_Bearing2_7": 167,
+          "femto_Bearing3_1": 445,
+          "femto_Bearing3_2": 1570,
+          "femto_Bearing3_3": 372,
+          "ims_test1_b3": 2096,
+          "ims_test1_b4": 2096,
+          "ims_test2_b1": 915,
+          "ims_test3_b3": 6247,
+          "xjtu_Bearing1_1": 63,
+          "xjtu_Bearing1_2": 100,
+          "xjtu_Bearing1_3": 90,
+          "xjtu_Bearing1_4": 62,
+          "xjtu_Bearing2_1": 412,
+          "xjtu_Bearing2_2": 101,
+          "xjtu_Bearing2_3": 300,
+          "xjtu_Bearing2_5": 211,
+          "xjtu_Bearing3_1": 2434,
+          "xjtu_Bearing3_2": 2431,
+          "xjtu_Bearing3_3": 292,
+          "xjtu_Bearing3_4": 1400,
+          "xjtu_Bearing3_5": 54,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "hierarchical_h_or_cross": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 34,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 28.639998678166616,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 17,
+            "median_lead_pct_life": 32.22462203023758
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 4,
+            "median_lead_pct_life": 15.066525395723868
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "median_lead_pct_life": 46.2962962962963
+          }
+        },
+        "missed_bearings": [],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2143,
+          "femto_Bearing1_2": 29,
+          "femto_Bearing1_3": 1569,
+          "femto_Bearing1_4": 1029,
+          "femto_Bearing1_5": 2385,
+          "femto_Bearing1_6": 1589,
+          "femto_Bearing1_7": 2153,
+          "femto_Bearing2_1": 91,
+          "femto_Bearing2_2": 152,
+          "femto_Bearing2_3": 206,
+          "femto_Bearing2_4": 684,
+          "femto_Bearing2_5": 29,
+          "femto_Bearing2_6": 628,
+          "femto_Bearing2_7": 102,
+          "femto_Bearing3_1": 433,
+          "femto_Bearing3_2": 1555,
+          "femto_Bearing3_3": 29,
+          "ims_test1_b3": 2061,
+          "ims_test1_b4": 1492,
+          "ims_test2_b1": 661,
+          "ims_test3_b3": 6249,
+          "xjtu_Bearing1_1": 29,
+          "xjtu_Bearing1_2": 29,
+          "xjtu_Bearing1_3": 29,
+          "xjtu_Bearing1_4": 61,
+          "xjtu_Bearing2_1": 395,
+          "xjtu_Bearing2_2": 29,
+          "xjtu_Bearing2_3": 98,
+          "xjtu_Bearing2_5": 90,
+          "xjtu_Bearing3_1": 2349,
+          "xjtu_Bearing3_2": 1823,
+          "xjtu_Bearing3_3": 284,
+          "xjtu_Bearing3_4": 1364,
+          "xjtu_Bearing3_5": 29,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "event_or": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 34,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 28.639998678166616,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 17,
+            "median_lead_pct_life": 32.22462203023758
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 4,
+            "median_lead_pct_life": 15.066525395723868
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "median_lead_pct_life": 46.2962962962963
+          }
+        },
+        "missed_bearings": [],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2143,
+          "femto_Bearing1_2": 29,
+          "femto_Bearing1_3": 1569,
+          "femto_Bearing1_4": 1029,
+          "femto_Bearing1_5": 2385,
+          "femto_Bearing1_6": 1589,
+          "femto_Bearing1_7": 2153,
+          "femto_Bearing2_1": 91,
+          "femto_Bearing2_2": 152,
+          "femto_Bearing2_3": 206,
+          "femto_Bearing2_4": 684,
+          "femto_Bearing2_5": 29,
+          "femto_Bearing2_6": 628,
+          "femto_Bearing2_7": 102,
+          "femto_Bearing3_1": 433,
+          "femto_Bearing3_2": 1555,
+          "femto_Bearing3_3": 29,
+          "ims_test1_b3": 2061,
+          "ims_test1_b4": 1492,
+          "ims_test2_b1": 661,
+          "ims_test3_b3": 6249,
+          "xjtu_Bearing1_1": 29,
+          "xjtu_Bearing1_2": 29,
+          "xjtu_Bearing1_3": 29,
+          "xjtu_Bearing1_4": 61,
+          "xjtu_Bearing2_1": 395,
+          "xjtu_Bearing2_2": 29,
+          "xjtu_Bearing2_3": 98,
+          "xjtu_Bearing2_5": 90,
+          "xjtu_Bearing3_1": 2349,
+          "xjtu_Bearing3_2": 1823,
+          "xjtu_Bearing3_3": 284,
+          "xjtu_Bearing3_4": 1364,
+          "xjtu_Bearing3_5": 29,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      },
+      "fixed_weight_composite": {
+        "threshold": 0.7889228162114965,
+        "n_failed": 34,
+        "n_detected": 33,
+        "n_censored": 8,
+        "n_false_alarms": 0,
+        "median_lead_pct_life": 21.798029556650246,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 17,
+            "median_lead_pct_life": 15.931461903025884
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "median_lead_pct_life": 17.207792207792206
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "median_lead_pct_life": 46.2962962962963
+          }
+        },
+        "missed_bearings": [
+          "ims_test3_b3"
+        ],
+        "alarm_by_bearing": {
+          "femto_Bearing1_1": 2306,
+          "femto_Bearing1_2": 37,
+          "femto_Bearing1_3": 1572,
+          "femto_Bearing1_4": 1032,
+          "femto_Bearing1_5": 2388,
+          "femto_Bearing1_6": 2366,
+          "femto_Bearing1_7": 2155,
+          "femto_Bearing2_1": 97,
+          "femto_Bearing2_2": 165,
+          "femto_Bearing2_3": 206,
+          "femto_Bearing2_4": 685,
+          "femto_Bearing2_5": 29,
+          "femto_Bearing2_6": 630,
+          "femto_Bearing2_7": 165,
+          "femto_Bearing3_1": 435,
+          "femto_Bearing3_2": 1554,
+          "femto_Bearing3_3": 29,
+          "ims_test1_b3": 2059,
+          "ims_test1_b4": 1522,
+          "ims_test2_b1": 765,
+          "ims_test3_b3": 6264,
+          "xjtu_Bearing1_1": 29,
+          "xjtu_Bearing1_2": 29,
+          "xjtu_Bearing1_3": 29,
+          "xjtu_Bearing1_4": 61,
+          "xjtu_Bearing2_1": 397,
+          "xjtu_Bearing2_2": 29,
+          "xjtu_Bearing2_3": 110,
+          "xjtu_Bearing2_5": 93,
+          "xjtu_Bearing3_1": 2357,
+          "xjtu_Bearing3_2": 1905,
+          "xjtu_Bearing3_3": 285,
+          "xjtu_Bearing3_4": 1368,
+          "xjtu_Bearing3_5": 29,
+          "ims_test1_b1": 2096,
+          "ims_test1_b2": 2096,
+          "ims_test2_b2": 924,
+          "ims_test2_b3": 924,
+          "ims_test2_b4": 924,
+          "ims_test3_b1": 6264,
+          "ims_test3_b2": 6264,
+          "ims_test3_b4": 6264
+        }
+      }
+    },
+    "early_life_pseudo_health": {
+      "historical_rate": {
+        "n_bearings": 27,
+        "n_alarms": 6,
+        "alarm_rate_pct": 22.22222222222222,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 3
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      },
+      "cross_axis_recent": {
+        "n_bearings": 27,
+        "n_alarms": 4,
+        "alarm_rate_pct": 14.814814814814813,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 1
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      },
+      "persistence_only": {
+        "n_bearings": 27,
+        "n_alarms": 0,
+        "alarm_rate_pct": 0.0,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 0
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 0
+          }
+        }
+      },
+      "irreversibility_only": {
+        "n_bearings": 27,
+        "n_alarms": 0,
+        "alarm_rate_pct": 0.0,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 0
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 0
+          }
+        }
+      },
+      "acceleration_only": {
+        "n_bearings": 27,
+        "n_alarms": 0,
+        "alarm_rate_pct": 0.0,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 0
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 0
+          }
+        }
+      },
+      "hierarchical_h_or_cross": {
+        "n_bearings": 27,
+        "n_alarms": 6,
+        "alarm_rate_pct": 22.22222222222222,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 3
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      },
+      "event_or": {
+        "n_bearings": 27,
+        "n_alarms": 6,
+        "alarm_rate_pct": 22.22222222222222,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 3
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      },
+      "fixed_weight_composite": {
+        "n_bearings": 27,
+        "n_alarms": 6,
+        "alarm_rate_pct": 22.22222222222222,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 3
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      }
+    }
+  },
+  "priority_1_mechanism_separation": {
+    "max_historical_rate": {
+      "failed_median": 0.3899511863645194,
+      "censored_median": 0.018750430286882617,
+      "auc_failed_higher": 0.9742647058823529,
+      "mann_whitney_p": 3.812584043649512e-07
+    },
+    "max_second_axis_recent_rate": {
+      "failed_median": 3.0645595339909257,
+      "censored_median": 0.0,
+      "auc_failed_higher": 0.963235294117647,
+      "mann_whitney_p": 1.1522476220807414e-06
+    },
+    "max_persistence": {
+      "failed_median": 1.0,
+      "censored_median": 1.0,
+      "auc_failed_higher": 0.4852941176470588,
+      "mann_whitney_p": 0.556185064015616
+    },
+    "max_second_axis_persistence": {
+      "failed_median": 1.0,
+      "censored_median": 0.0,
+      "auc_failed_higher": 0.838235294117647,
+      "mann_whitney_p": 0.001067701452810567
+    },
+    "final_irreversibility": {
+      "failed_median": 1.0,
+      "censored_median": 0.011273277148709349,
+      "auc_failed_higher": 0.8253676470588235,
+      "mann_whitney_p": 0.0017744105035504263
+    },
+    "coactivation_fraction": {
+      "failed_median": 0.10958192875666477,
+      "censored_median": 0.0,
+      "auc_failed_higher": 0.8566176470588235,
+      "mann_whitney_p": 0.0005361425130359661
+    },
+    "max_ratio": {
+      "failed_median": 8.304360668447062,
+      "censored_median": 2.097914169568287,
+      "auc_failed_higher": 0.9558823529411764,
+      "mann_whitney_p": 2.1858815183590537e-06
+    },
+    "first_active_fraction": {
+      "failed_median": 0.21249359959037378,
+      "censored_median": 0.8944805194805194,
+      "auc_failed_higher": 0.7591911764705882,
+      "mann_whitney_p": 0.011945529018699752
+    },
+    "propagation_delay_snapshots": {
+      "failed_median": 27.0,
+      "censored_median": 924.0,
+      "auc_failed_higher": 0.75,
+      "mann_whitney_p": 0.014296275143515195
+    }
+  },
+  "priority_1_mechanism_separation_by_dataset": {
+    "femto": {
+      "max_historical_rate": {
+        "failed_median": 0.33875354448209893,
+        "censored_median": 0.018750430286882617,
+        "auc_failed_higher": 0.9485294117647058,
+        "mann_whitney_p": 4.160599126274183e-05
+      },
+      "max_second_axis_recent_rate": {
+        "failed_median": 2.8504682329368194,
+        "censored_median": 0.0,
+        "auc_failed_higher": 1.0,
+        "mann_whitney_p": 9.245775836164852e-07
+      },
+      "max_persistence": {
+        "failed_median": 1.0,
+        "censored_median": 1.0,
+        "auc_failed_higher": 0.47058823529411764,
+        "mann_whitney_p": 0.6012333864965443
+      },
+      "max_second_axis_persistence": {
+        "failed_median": 1.0,
+        "censored_median": 0.0,
+        "auc_failed_higher": 0.8602941176470589,
+        "mann_whitney_p": 0.0015366479439705987
+      },
+      "final_irreversibility": {
+        "failed_median": 1.0,
+        "censored_median": 0.011273277148709349,
+        "auc_failed_higher": 0.8492647058823529,
+        "mann_whitney_p": 0.0024131474932390265
+      },
+      "coactivation_fraction": {
+        "failed_median": 0.047058823529411764,
+        "censored_median": 0.0,
+        "auc_failed_higher": 0.8602941176470589,
+        "mann_whitney_p": 0.0015366479439705987
+      },
+      "max_ratio": {
+        "failed_median": 7.3383728567980215,
+        "censored_median": 2.097914169568287,
+        "auc_failed_higher": 0.9705882352941176,
+        "mann_whitney_p": 1.1094931003397823e-05
+      },
+      "first_active_fraction": {
+        "failed_median": 0.2531317494600432,
+        "censored_median": 0.8944805194805194,
+        "auc_failed_higher": 0.7794117647058824,
+        "mann_whitney_p": 0.013301897695490372
+      },
+      "propagation_delay_snapshots": {
+        "failed_median": 45.0,
+        "censored_median": 924.0,
+        "auc_failed_higher": 0.7279411764705883,
+        "mann_whitney_p": 0.03761274067910224
+      }
+    },
+    "xjtu": {
+      "max_historical_rate": {
+        "failed_median": 0.5755744825665737,
+        "censored_median": 0.018750430286882617,
+        "auc_failed_higher": 1.0,
+        "mann_whitney_p": 4.914246400314512e-06
+      },
+      "max_second_axis_recent_rate": {
+        "failed_median": 6.241459417056559,
+        "censored_median": 0.0,
+        "auc_failed_higher": 1.0,
+        "mann_whitney_p": 4.914246400314512e-06
+      },
+      "max_persistence": {
+        "failed_median": 1.0,
+        "censored_median": 1.0,
+        "auc_failed_higher": 0.5,
+        "mann_whitney_p": 0.5141137156617033
+      },
+      "max_second_axis_persistence": {
+        "failed_median": 1.0,
+        "censored_median": 0.0,
+        "auc_failed_higher": 0.875,
+        "mann_whitney_p": 0.0017052435009091355
+      },
+      "final_irreversibility": {
+        "failed_median": 1.0,
+        "censored_median": 0.011273277148709349,
+        "auc_failed_higher": 0.9182692307692308,
+        "mann_whitney_p": 0.0004717676544301932
+      },
+      "coactivation_fraction": {
+        "failed_median": 0.6296296296296297,
+        "censored_median": 0.0,
+        "auc_failed_higher": 0.9038461538461539,
+        "mann_whitney_p": 0.0006683375104427736
+      },
+      "max_ratio": {
+        "failed_median": 11.634637975744216,
+        "censored_median": 2.097914169568287,
+        "auc_failed_higher": 0.9711538461538461,
+        "mann_whitney_p": 3.439972480220158e-05
+      },
+      "first_active_fraction": {
+        "failed_median": 0.20634920634920634,
+        "censored_median": 0.8944805194805194,
+        "auc_failed_higher": 0.75,
+        "mann_whitney_p": 0.03190820187724213
+      },
+      "propagation_delay_snapshots": {
+        "failed_median": 2.0,
+        "censored_median": 924.0,
+        "auc_failed_higher": 0.8173076923076923,
+        "mann_whitney_p": 0.00796107916850951
+      }
+    }
+  },
+  "priority_2_trajectory_conformal_capacity": {
+    "protocol": {
+      "unit": "full independent healthy bearing trajectory",
+      "statistic": "full-trajectory maximum",
+      "status": "capacity_audit_and_loco_exploratory"
+    },
+    "finite_sample_capacity": {
+      "available_healthy_bearings": 8,
+      "single_layer_minimum_alpha_0p125": 7,
+      "bonferroni_two_layers_alpha_0p20": {
+        "per_layer_alpha": 0.1,
+        "minimum_per_layer": 9,
+        "defined": false
+      },
+      "bonferroni_two_layers_alpha_0p10": {
+        "per_layer_alpha": 0.05,
+        "minimum_per_layer": 19,
+        "defined": false
+      }
+    },
+    "leave_one_censored_out": {
+      "historical_rate": {
+        "n": 8,
+        "false_alarms": 1,
+        "false_alarm_rate_pct": 12.5,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.040406983620362845,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.002919746469137426,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.022558865423719612,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.01494199515004562,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "threshold": 0.040406983620362845,
+            "held_out_maximum": 0.041987903282190674,
+            "false_alarm": true
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.003791309515995759,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.007521830065837866,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "threshold": 0.041987903282190674,
+            "held_out_maximum": 0.026792060440504226,
+            "false_alarm": false
+          }
+        ]
+      },
+      "cross_axis": {
+        "n": 8,
+        "false_alarms": 1,
+        "false_alarm_rate_pct": 12.5,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.11214351627433476,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "threshold": 0.11214351627433476,
+            "held_out_maximum": 0.2435921559479369,
+            "false_alarm": true
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "threshold": 0.2435921559479369,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          }
+        ]
+      },
+      "persistence": {
+        "n": 8,
+        "false_alarms": 0,
+        "false_alarm_rate_pct": 0.0,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "threshold": 1.0,
+            "held_out_maximum": 0.0,
+            "false_alarm": false
+          }
+        ]
+      },
+      "irreversibility": {
+        "n": 8,
+        "false_alarms": 0,
+        "false_alarm_rate_pct": 0.0,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "threshold": 1.0,
+            "held_out_maximum": 1.0,
+            "false_alarm": false
+          }
+        ]
+      },
+      "fixed_weight_composite": {
+        "n": 8,
+        "false_alarms": 1,
+        "false_alarm_rate_pct": 12.5,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "threshold": 0.6286911290022001,
+            "held_out_maximum": 0.7811116992193035,
+            "false_alarm": true
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.6286911290022001,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.36941450901481276,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.31575645299935856,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.5194006573651566,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.24298878027782994,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.27758940499638896,
+            "false_alarm": false
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "threshold": 0.7811116992193035,
+            "held_out_maximum": 0.47232635424136105,
+            "false_alarm": false
+          }
+        ]
+      }
+    }
+  },
+  "priority_3_robust_condition_normalization": {
+    "protocol": {
+      "idea": "normalize per-axis RMS deviations by early-life robust noise scale",
+      "baseline": "median RMS over snapshots 10:60",
+      "scale": "1.4826 * MAD over snapshots 10:60",
+      "segment": "first 150 raw snapshots (= first 90 monitored snapshots)",
+      "status": "exploratory"
+    },
+    "thresholds": {
+      "original_ratio_excess": 0.042407782315012583,
+      "robust_z_excess": 38.116389581658574,
+      "normalized_threshold_z_excess": 6.635040244627625
+    },
+    "original": {
+      "threshold": 0.042407782315012583,
+      "n_failed": 34,
+      "n_detected": 31,
+      "n_censored": 8,
+      "n_false_alarms": 0,
+      "median_lead_pct_life": 28.81679389312977,
+      "per_dataset": {
+        "femto": {
+          "n": 17,
+          "n_detected": 14,
+          "median_lead_pct_life": 35.98272138228942
+        },
+        "ims": {
+          "n": 4,
+          "n_detected": 4,
+          "median_lead_pct_life": 14.517861273586464
+        },
+        "xjtu": {
+          "n": 13,
+          "n_detected": 13,
+          "median_lead_pct_life": 46.2962962962963
+        }
+      },
+      "missed_bearings": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "alarm_by_bearing": {
+        "femto_Bearing1_1": 2143,
+        "femto_Bearing1_2": 29,
+        "femto_Bearing1_3": 1575,
+        "femto_Bearing1_4": 1047,
+        "femto_Bearing1_5": 2403,
+        "femto_Bearing1_6": 2388,
+        "femto_Bearing1_7": 2193,
+        "femto_Bearing2_1": 91,
+        "femto_Bearing2_2": 152,
+        "femto_Bearing2_3": 206,
+        "femto_Bearing2_4": 691,
+        "femto_Bearing2_5": 29,
+        "femto_Bearing2_6": 636,
+        "femto_Bearing2_7": 102,
+        "femto_Bearing3_1": 438,
+        "femto_Bearing3_2": 1564,
+        "femto_Bearing3_3": 29,
+        "ims_test1_b3": 2084,
+        "ims_test1_b4": 1492,
+        "ims_test2_b1": 661,
+        "ims_test3_b3": 6249,
+        "xjtu_Bearing1_1": 29,
+        "xjtu_Bearing1_2": 29,
+        "xjtu_Bearing1_3": 29,
+        "xjtu_Bearing1_4": 61,
+        "xjtu_Bearing2_1": 403,
+        "xjtu_Bearing2_2": 29,
+        "xjtu_Bearing2_3": 98,
+        "xjtu_Bearing2_5": 90,
+        "xjtu_Bearing3_1": 2408,
+        "xjtu_Bearing3_2": 1823,
+        "xjtu_Bearing3_3": 286,
+        "xjtu_Bearing3_4": 1397,
+        "xjtu_Bearing3_5": 29,
+        "ims_test1_b1": 2096,
+        "ims_test1_b2": 2096,
+        "ims_test2_b2": 924,
+        "ims_test2_b3": 924,
+        "ims_test2_b4": 924,
+        "ims_test3_b1": 6264,
+        "ims_test3_b2": 6264,
+        "ims_test3_b4": 6264
+      }
+    },
+    "robust_z": {
+      "threshold": 38.116389581658574,
+      "n_failed": 34,
+      "n_detected": 9,
+      "n_censored": 8,
+      "n_false_alarms": 0,
+      "median_lead_pct_life": 53.96825396825397,
+      "per_dataset": {
+        "femto": {
+          "n": 17,
+          "n_detected": 3,
+          "median_lead_pct_life": 44.640434192673
+        },
+        "ims": {
+          "n": 4,
+          "n_detected": 1,
+          "median_lead_pct_life": 60.63931297709924
+        },
+        "xjtu": {
+          "n": 13,
+          "n_detected": 5,
+          "median_lead_pct_life": 53.96825396825397
+        }
+      },
+      "missed_bearings": [
+        "femto_Bearing1_1",
+        "femto_Bearing1_2",
+        "femto_Bearing1_3",
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing1_7",
+        "femto_Bearing2_3",
+        "femto_Bearing2_4",
+        "femto_Bearing2_5",
+        "femto_Bearing2_6",
+        "femto_Bearing2_7",
+        "femto_Bearing3_1",
+        "femto_Bearing3_2",
+        "femto_Bearing3_3",
+        "ims_test1_b4",
+        "ims_test2_b1",
+        "ims_test3_b3",
+        "xjtu_Bearing1_2",
+        "xjtu_Bearing1_4",
+        "xjtu_Bearing2_1",
+        "xjtu_Bearing3_1",
+        "xjtu_Bearing3_2",
+        "xjtu_Bearing3_3",
+        "xjtu_Bearing3_4",
+        "xjtu_Bearing3_5"
+      ],
+      "alarm_by_bearing": {
+        "femto_Bearing1_1": 2743,
+        "femto_Bearing1_2": 811,
+        "femto_Bearing1_3": 2315,
+        "femto_Bearing1_4": 1270,
+        "femto_Bearing1_5": 2403,
+        "femto_Bearing1_6": 2388,
+        "femto_Bearing1_7": 2199,
+        "femto_Bearing2_1": 250,
+        "femto_Bearing2_2": 408,
+        "femto_Bearing2_3": 1895,
+        "femto_Bearing2_4": 691,
+        "femto_Bearing2_5": 2251,
+        "femto_Bearing2_6": 641,
+        "femto_Bearing2_7": 170,
+        "femto_Bearing3_1": 455,
+        "femto_Bearing3_2": 1577,
+        "femto_Bearing3_3": 374,
+        "ims_test1_b3": 825,
+        "ims_test1_b4": 2096,
+        "ims_test2_b1": 924,
+        "ims_test3_b3": 6264,
+        "xjtu_Bearing1_1": 29,
+        "xjtu_Bearing1_2": 101,
+        "xjtu_Bearing1_3": 42,
+        "xjtu_Bearing1_4": 62,
+        "xjtu_Bearing2_1": 431,
+        "xjtu_Bearing2_2": 29,
+        "xjtu_Bearing2_3": 357,
+        "xjtu_Bearing2_5": 236,
+        "xjtu_Bearing3_1": 2478,
+        "xjtu_Bearing3_2": 2436,
+        "xjtu_Bearing3_3": 311,
+        "xjtu_Bearing3_4": 1455,
+        "xjtu_Bearing3_5": 54,
+        "ims_test1_b1": 2096,
+        "ims_test1_b2": 2096,
+        "ims_test2_b2": 924,
+        "ims_test2_b3": 924,
+        "ims_test2_b4": 924,
+        "ims_test3_b1": 6264,
+        "ims_test3_b2": 6264,
+        "ims_test3_b4": 6264
+      }
+    },
+    "normalized_threshold_z": {
+      "threshold": 6.635040244627625,
+      "n_failed": 34,
+      "n_detected": 21,
+      "n_censored": 8,
+      "n_false_alarms": 0,
+      "median_lead_pct_life": 19.444444444444443,
+      "per_dataset": {
+        "femto": {
+          "n": 17,
+          "n_detected": 9,
+          "median_lead_pct_life": 19.444444444444443
+        },
+        "ims": {
+          "n": 4,
+          "n_detected": 3,
+          "median_lead_pct_life": 16.883116883116884
+        },
+        "xjtu": {
+          "n": 13,
+          "n_detected": 9,
+          "median_lead_pct_life": 52.32974910394265
+        }
+      },
+      "missed_bearings": [
+        "femto_Bearing1_1",
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing1_7",
+        "femto_Bearing2_4",
+        "femto_Bearing2_6",
+        "femto_Bearing3_1",
+        "femto_Bearing3_2",
+        "ims_test3_b3",
+        "xjtu_Bearing1_4",
+        "xjtu_Bearing3_1",
+        "xjtu_Bearing3_2",
+        "xjtu_Bearing3_5"
+      ],
+      "alarm_by_bearing": {
+        "femto_Bearing1_1": 2743,
+        "femto_Bearing1_2": 810,
+        "femto_Bearing1_3": 1903,
+        "femto_Bearing1_4": 1102,
+        "femto_Bearing1_5": 2403,
+        "femto_Bearing1_6": 2388,
+        "femto_Bearing1_7": 2199,
+        "femto_Bearing2_1": 112,
+        "femto_Bearing2_2": 200,
+        "femto_Bearing2_3": 218,
+        "femto_Bearing2_4": 691,
+        "femto_Bearing2_5": 228,
+        "femto_Bearing2_6": 641,
+        "femto_Bearing2_7": 168,
+        "femto_Bearing3_1": 455,
+        "femto_Bearing3_2": 1577,
+        "femto_Bearing3_3": 311,
+        "ims_test1_b3": 2029,
+        "ims_test1_b4": 1709,
+        "ims_test2_b1": 768,
+        "ims_test3_b3": 6264,
+        "xjtu_Bearing1_1": 29,
+        "xjtu_Bearing1_2": 29,
+        "xjtu_Bearing1_3": 29,
+        "xjtu_Bearing1_4": 62,
+        "xjtu_Bearing2_1": 418,
+        "xjtu_Bearing2_2": 29,
+        "xjtu_Bearing2_3": 284,
+        "xjtu_Bearing2_5": 133,
+        "xjtu_Bearing3_1": 2478,
+        "xjtu_Bearing3_2": 2436,
+        "xjtu_Bearing3_3": 294,
+        "xjtu_Bearing3_4": 1413,
+        "xjtu_Bearing3_5": 54,
+        "ims_test1_b1": 2096,
+        "ims_test1_b2": 2096,
+        "ims_test2_b2": 924,
+        "ims_test2_b3": 924,
+        "ims_test2_b4": 924,
+        "ims_test3_b1": 6264,
+        "ims_test3_b2": 6264,
+        "ims_test3_b4": 6264
+      }
+    },
+    "early_life_pseudo_health": {
+      "original": {
+        "n_bearings": 27,
+        "n_false_alarms": 6,
+        "false_alarm_rate_pct": 22.22222222222222,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 3
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      },
+      "robust_z": {
+        "n_bearings": 27,
+        "n_false_alarms": 2,
+        "false_alarm_rate_pct": 7.4074074074074066,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 0
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 2
+          }
+        }
+      },
+      "normalized_threshold_z": {
+        "n_bearings": 27,
+        "n_false_alarms": 3,
+        "false_alarm_rate_pct": 11.11111111111111,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "hits": 0
+          },
+          "xjtu": {
+            "n": 10,
+            "hits": 3
+          }
+        }
+      }
+    }
+  },
+  "priority_4_early_life_value_prediction": {
+    "protocol": {
+      "task": "leave-one-bearing-out prediction of total life at fixed observed age",
+      "model": "median baseline versus standardized ridge regression",
+      "unit": "snapshot count within dataset",
+      "status": "exploratory_mechanism_value",
+      "features": [
+        "historical_rate",
+        "persistence",
+        "second_axis_persistence",
+        "irreversibility",
+        "cross_axis",
+        "acceleration",
+        "active_fraction",
+        "max_ratio",
+        "robust_rate"
+      ]
+    },
+    "observations": [
+      {
+        "dataset": "femto",
+        "observed_age_snapshots": 90,
+        "n": 17,
+        "baseline_mae": 947.0,
+        "mechanism_ridge_mae": 979.2088306117386,
+        "mae_reduction_pct": -3.40114367600196,
+        "spearman_actual_predicted": -0.6519607843137255,
+        "feature_spearman_with_life": {
+          "historical_rate": -0.1380014469813378,
+          "persistence": -0.019932714414146357,
+          "second_axis_persistence": -0.10206207261596575,
+          "irreversibility": 0.22303921568627455,
+          "cross_axis": -0.10206207261596575,
+          "acceleration": 0.10084721125559298,
+          "active_fraction": -0.12083810629688789,
+          "max_ratio": -0.2524509803921569,
+          "robust_rate": -0.29411764705882354
+        }
+      },
+      {
+        "dataset": "femto",
+        "observed_age_snapshots": 150,
+        "n": 16,
+        "baseline_mae": 844.6875,
+        "mechanism_ridge_mae": 942.1492680570336,
+        "mae_reduction_pct": -11.538204135497876,
+        "spearman_actual_predicted": -0.31764705882352945,
+        "feature_spearman_with_life": {
+          "historical_rate": -0.1649345777058776,
+          "persistence": -0.11262666742018952,
+          "second_axis_persistence": -0.1610626476579478,
+          "irreversibility": 0.5117647058823529,
+          "cross_axis": -0.1610626476579478,
+          "acceleration": -0.036128526545097,
+          "active_fraction": -0.1366600786705843,
+          "max_ratio": -0.28823529411764703,
+          "robust_rate": -0.33529411764705885
+        }
+      },
+      {
+        "dataset": "femto",
+        "observed_age_snapshots": 300,
+        "n": 16,
+        "baseline_mae": 844.6875,
+        "mechanism_ridge_mae": 741.6156402693791,
+        "mae_reduction_pct": 12.202365931853008,
+        "spearman_actual_predicted": -0.2058823529411765,
+        "feature_spearman_with_life": {
+          "historical_rate": -0.21492220347022017,
+          "persistence": -0.26716197316409324,
+          "second_axis_persistence": -0.37477494503614794,
+          "irreversibility": -0.19411764705882353,
+          "cross_axis": -0.3960511637852142,
+          "acceleration": -0.3070317192431717,
+          "active_fraction": -0.17668486974569755,
+          "max_ratio": -0.3970588235294118,
+          "robust_rate": -0.3764705882352941
+        }
+      },
+      {
+        "dataset": "femto",
+        "observed_age_snapshots": 600,
+        "n": 14,
+        "baseline_mae": 838.8571428571429,
+        "mechanism_ridge_mae": 1067.5540782853877,
+        "mae_reduction_pct": -27.262918051732182,
+        "spearman_actual_predicted": -0.15604395604395604,
+        "feature_spearman_with_life": {
+          "historical_rate": -0.4489166006454908,
+          "persistence": -0.2938442186022439,
+          "second_axis_persistence": -0.4556660152115269,
+          "irreversibility": 0.2351648351648352,
+          "cross_axis": -0.4556660152115269,
+          "acceleration": 0.11111797045680466,
+          "active_fraction": -0.41382408249203095,
+          "max_ratio": -0.45054945054945056,
+          "robust_rate": -0.3494505494505495
+        }
+      }
+    ]
+  },
+  "priority_5_failure_phenotypes": {
+    "protocol": {
+      "unit": "failed bearing trajectory",
+      "features": [
+        "max_historical_rate",
+        "max_recent_rate",
+        "max_second_axis_recent_rate",
+        "max_persistence",
+        "max_second_axis_persistence",
+        "final_irreversibility",
+        "coactivation_fraction",
+        "first_active_fraction",
+        "propagation_delay_snapshots",
+        "max_ratio"
+      ],
+      "model": "k-means, k=3, standardized full-trajectory summaries",
+      "status": "descriptive_exploratory"
+    },
+    "centers_in_standardized_space": {
+      "0": {
+        "max_historical_rate": -0.022574419931666968,
+        "max_recent_rate": -0.25163112639517454,
+        "max_second_axis_recent_rate": -0.17304940803600577,
+        "max_persistence": -0.03001338895787955,
+        "max_second_axis_persistence": 0.23526884363755543,
+        "final_irreversibility": 0.3181040458554165,
+        "coactivation_fraction": 0.106579853818067,
+        "first_active_fraction": -0.07793632245535398,
+        "propagation_delay_snapshots": -0.18171431764253676,
+        "max_ratio": -0.2516311263951746
+      },
+      "1": {
+        "max_historical_rate": 0.6156050512226872,
+        "max_recent_rate": 2.5440690424093306,
+        "max_second_axis_recent_rate": 2.2875308424040277,
+        "max_persistence": 0.1740776559556973,
+        "max_second_axis_persistence": 0.3073331741211309,
+        "final_irreversibility": -0.6200785275921481,
+        "coactivation_fraction": -0.4106876614174296,
+        "first_active_fraction": -0.03620305923670632,
+        "propagation_delay_snapshots": -0.12274951691267519,
+        "max_ratio": 2.5440690424093306
+      },
+      "2": {
+        "max_historical_rate": -0.5960784878248611,
+        "max_recent_rate": -0.16745223088396524,
+        "max_second_axis_recent_rate": -0.9220798470839615,
+        "max_persistence": 0.1740776559556973,
+        "max_second_axis_persistence": -3.8723979939262523,
+        "final_irreversibility": -3.682390873515323,
+        "coactivation_fraction": -0.9293763882358249,
+        "first_active_fraction": 1.1843812644576908,
+        "propagation_delay_snapshots": 2.818981881185796,
+        "max_ratio": -0.16745223088396535
+      }
+    },
+    "clusters": [
+      {
+        "cluster": 0,
+        "n": 29,
+        "datasets": {
+          "femto": 14,
+          "xjtu": 13,
+          "ims": 2
+        },
+        "historical_missed": 3,
+        "median_first_active_fraction": 0.2037037037037037,
+        "median_coactivation_fraction": 0.11344019728729964,
+        "median_max_ratio": 7.808674424541702,
+        "bearing_ids": [
+          "femto_Bearing1_1",
+          "femto_Bearing1_2",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_1",
+          "femto_Bearing2_2",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5",
+          "femto_Bearing2_6",
+          "femto_Bearing2_7",
+          "femto_Bearing3_1",
+          "femto_Bearing3_2",
+          "femto_Bearing3_3",
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_1",
+          "xjtu_Bearing1_2",
+          "xjtu_Bearing1_3",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing2_1",
+          "xjtu_Bearing2_2",
+          "xjtu_Bearing2_3",
+          "xjtu_Bearing2_5",
+          "xjtu_Bearing3_1",
+          "xjtu_Bearing3_2",
+          "xjtu_Bearing3_3",
+          "xjtu_Bearing3_4",
+          "xjtu_Bearing3_5"
+        ]
+      },
+      {
+        "cluster": 1,
+        "n": 3,
+        "datasets": {
+          "femto": 3
+        },
+        "historical_missed": 0,
+        "median_first_active_fraction": 0.2531317494600432,
+        "median_coactivation_fraction": 0.24926900584795322,
+        "median_max_ratio": 31.206719717433796,
+        "bearing_ids": [
+          "femto_Bearing1_3",
+          "femto_Bearing1_4",
+          "femto_Bearing2_3"
+        ]
+      },
+      {
+        "cluster": 2,
+        "n": 2,
+        "datasets": {
+          "ims": 2
+        },
+        "historical_missed": 0,
+        "median_first_active_fraction": 0.7685195551574862,
+        "median_coactivation_fraction": 0.0,
+        "median_max_ratio": 10.073795427541068,
+        "bearing_ids": [
+          "ims_test2_b1",
+          "ims_test3_b3"
+        ]
+      }
+    ],
+    "profiles": [
+      {
+        "bearing_id": "femto_Bearing1_1",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.33875354448209893,
+        "max_recent_rate": 11.061504184292966,
+        "max_second_axis_recent_rate": 7.394814904778843,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.1057236602260299,
+        "first_active_fraction": 0.26285089318264676,
+        "propagation_delay_snapshots": 856,
+        "max_ratio": 12.261504184292965
+      },
+      {
+        "bearing_id": "femto_Bearing1_2",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.26142435906608896,
+        "max_recent_rate": 6.630211684179831,
+        "max_second_axis_recent_rate": 3.685488972474805,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.11344019728729964,
+        "first_active_fraction": 0.0,
+        "propagation_delay_snapshots": 67,
+        "max_ratio": 7.830211684179831
+      },
+      {
+        "bearing_id": "femto_Bearing1_3",
+        "dataset": "femto",
+        "cluster": 1,
+        "historical_missed": false,
+        "max_historical_rate": 1.5848684800203279,
+        "max_recent_rate": 67.09284113544844,
+        "max_second_axis_recent_rate": 23.325907830974575,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.8942191915010403,
+        "coactivation_fraction": 0.27041036717062633,
+        "first_active_fraction": 0.2531317494600432,
+        "propagation_delay_snapshots": 630,
+        "max_ratio": 68.29284113544844
+      },
+      {
+        "bearing_id": "femto_Bearing1_4",
+        "dataset": "femto",
+        "cluster": 1,
+        "historical_missed": false,
+        "max_historical_rate": 3.3543580700086157,
+        "max_recent_rate": 25.196652524877766,
+        "max_second_axis_recent_rate": 22.45560719447394,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.8406355575411528,
+        "coactivation_fraction": 0.24926900584795322,
+        "first_active_fraction": 0.7492690058479532,
+        "propagation_delay_snapshots": 2,
+        "max_ratio": 26.396652524877766
+      },
+      {
+        "bearing_id": "femto_Bearing1_5",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": true,
+        "max_historical_rate": 0.02591681052861053,
+        "max_recent_rate": 2.9542226593412364,
+        "max_second_axis_recent_rate": 2.5227874385108753,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.010403662089055347,
+        "first_active_fraction": 0.03537245110278818,
+        "propagation_delay_snapshots": 2289,
+        "max_ratio": 4.154222659341237
+      },
+      {
+        "bearing_id": "femto_Bearing1_6",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": true,
+        "max_historical_rate": 0.027652528366668053,
+        "max_recent_rate": 2.6509767529661294,
+        "max_second_axis_recent_rate": 1.4833903294815034,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.01968174204355109,
+        "first_active_fraction": 0.6407035175879398,
+        "propagation_delay_snapshots": 44,
+        "max_ratio": 3.8509767529661296
+      },
+      {
+        "bearing_id": "femto_Bearing1_7",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.05205587325632989,
+        "max_recent_rate": 4.328755187599603,
+        "max_second_axis_recent_rate": 2.8504682329368194,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.9772542511404059,
+        "coactivation_fraction": 0.022737608003638016,
+        "first_active_fraction": 0.9718053660754888,
+        "propagation_delay_snapshots": 12,
+        "max_ratio": 5.528755187599603
+      },
+      {
+        "bearing_id": "femto_Bearing2_1",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 1.3953517394773705,
+        "max_recent_rate": 7.47658217634996,
+        "max_second_axis_recent_rate": 2.848009694848227,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.878747244607024,
+        "coactivation_fraction": 0.4782608695652174,
+        "first_active_fraction": 0.09048178613396005,
+        "propagation_delay_snapshots": 44,
+        "max_ratio": 8.67658217634996
+      },
+      {
+        "bearing_id": "femto_Bearing2_2",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 1.4531675768973806,
+        "max_recent_rate": 6.608674424541702,
+        "max_second_axis_recent_rate": 3.4278163449591887,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.7611940298507462,
+        "first_active_fraction": 0.1723202170963365,
+        "propagation_delay_snapshots": 42,
+        "max_ratio": 7.808674424541702
+      },
+      {
+        "bearing_id": "femto_Bearing2_3",
+        "dataset": "femto",
+        "cluster": 1,
+        "historical_missed": false,
+        "max_historical_rate": 0.6728302552167613,
+        "max_recent_rate": 30.006719717433796,
+        "max_second_axis_recent_rate": 5.585620184185757,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.5093664815085366,
+        "coactivation_fraction": 0.0316622691292876,
+        "first_active_fraction": 0.002638522427440633,
+        "propagation_delay_snapshots": 191,
+        "max_ratio": 31.206719717433796
+      },
+      {
+        "bearing_id": "femto_Bearing2_4",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": true,
+        "max_historical_rate": 0.035807597835809744,
+        "max_recent_rate": 4.379986803947017,
+        "max_second_axis_recent_rate": 1.7583415586420403,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 0.8,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.013024602026049204,
+        "first_active_fraction": 0.3024602026049204,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 5.579986803947017
+      },
+      {
+        "bearing_id": "femto_Bearing2_5",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.5091945867932665,
+        "max_recent_rate": 4.549362257580849,
+        "max_second_axis_recent_rate": 0.2908948175985019,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.01776988005330964,
+        "first_active_fraction": 0.0026654820079964462,
+        "propagation_delay_snapshots": 15,
+        "max_ratio": 5.749362257580849
+      },
+      {
+        "bearing_id": "femto_Bearing2_6",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.07915302187812032,
+        "max_recent_rate": 5.301500817059688,
+        "max_second_axis_recent_rate": 2.6865705053823183,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.0218408736349454,
+        "first_active_fraction": 0.5959438377535101,
+        "propagation_delay_snapshots": 245,
+        "max_ratio": 6.501500817059688
+      },
+      {
+        "bearing_id": "femto_Bearing2_7",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.44114882824693996,
+        "max_recent_rate": 16.398731738825443,
+        "max_second_axis_recent_rate": 2.217011508574978,
+        "max_persistence": 0.9,
+        "max_second_axis_persistence": 0.7,
+        "final_irreversibility": 0.8595735402589623,
+        "coactivation_fraction": 0.047058823529411764,
+        "first_active_fraction": 0.3352941176470588,
+        "propagation_delay_snapshots": 45,
+        "max_ratio": 17.598731738825443
+      },
+      {
+        "bearing_id": "femto_Bearing3_1",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.1790505440782956,
+        "max_recent_rate": 4.428931954424154,
+        "max_second_axis_recent_rate": 1.1100902114555824,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.8612148216737066,
+        "coactivation_fraction": 0.05054945054945055,
+        "first_active_fraction": 0.945054945054945,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 5.6289319544241545
+      },
+      {
+        "bearing_id": "femto_Bearing3_2",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.08159104662475009,
+        "max_recent_rate": 6.138372856798021,
+        "max_second_axis_recent_rate": 3.122176595705814,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.9495234511033088,
+        "coactivation_fraction": 0.020291693088142042,
+        "first_active_fraction": 0.03868103994927077,
+        "propagation_delay_snapshots": 1476,
+        "max_ratio": 7.3383728567980215
+      },
+      {
+        "bearing_id": "femto_Bearing3_3",
+        "dataset": "femto",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.6563193274017126,
+        "max_recent_rate": 5.7411899517881695,
+        "max_second_axis_recent_rate": 3.0069424722760374,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.29411764705882354,
+        "first_active_fraction": 0.034759358288770054,
+        "propagation_delay_snapshots": 248,
+        "max_ratio": 6.94118995178817
+      },
+      {
+        "bearing_id": "ims_test1_b3",
+        "dataset": "ims",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.05071794938313179,
+        "max_recent_rate": 3.329360006620111,
+        "max_second_axis_recent_rate": 1.4964682448758027,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.9098282442748091,
+        "first_active_fraction": 0.04580152671755725,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 4.529360006620111
+      },
+      {
+        "bearing_id": "ims_test1_b4",
+        "dataset": "ims",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.14244045476906367,
+        "max_recent_rate": 0.9157918693032656,
+        "max_second_axis_recent_rate": 0.5440281711404552,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.9772049130455762,
+        "coactivation_fraction": 0.8916984732824428,
+        "first_active_fraction": 0.04532442748091603,
+        "propagation_delay_snapshots": 1,
+        "max_ratio": 2.1157918693032656
+      },
+      {
+        "bearing_id": "ims_test2_b1",
+        "dataset": "ims",
+        "cluster": 2,
+        "historical_missed": false,
+        "max_historical_rate": 0.2974988115278421,
+        "max_recent_rate": 8.063590884693454,
+        "max_second_axis_recent_rate": 0.0,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 0.0,
+        "final_irreversibility": 0.002114108905137746,
+        "coactivation_fraction": 0.0,
+        "first_active_fraction": 0.5930735930735931,
+        "propagation_delay_snapshots": 924,
+        "max_ratio": 9.263590884693453
+      },
+      {
+        "bearing_id": "ims_test3_b3",
+        "dataset": "ims",
+        "cluster": 2,
+        "historical_missed": false,
+        "max_historical_rate": 0.054568612578742175,
+        "max_recent_rate": 9.683999970388681,
+        "max_second_axis_recent_rate": 0.0,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 0.0,
+        "final_irreversibility": 0.0052264663457954885,
+        "coactivation_fraction": 0.0,
+        "first_active_fraction": 0.9439655172413793,
+        "propagation_delay_snapshots": 6264,
+        "max_ratio": 10.88399997038868
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_1",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 2.1982393221557275,
+        "max_recent_rate": 8.303893205801423,
+        "max_second_axis_recent_rate": 3.4177617381701153,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.746031746031746,
+        "first_active_fraction": 0.20634920634920634,
+        "propagation_delay_snapshots": 2,
+        "max_ratio": 9.503893205801422
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_2",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 3.7213431396885897,
+        "max_recent_rate": 12.517132581104967,
+        "max_second_axis_recent_rate": 6.142220668147781,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 1.0,
+        "first_active_fraction": 0.0,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 13.717132581104966
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_3",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 2.2591538708818613,
+        "max_recent_rate": 12.331393281346195,
+        "max_second_axis_recent_rate": 6.241459417056559,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.8775510204081632,
+        "first_active_fraction": 0.10204081632653061,
+        "propagation_delay_snapshots": 2,
+        "max_ratio": 13.531393281346194
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_4",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.0966395774645163,
+        "max_recent_rate": 4.097236864814136,
+        "max_second_axis_recent_rate": 0.3958905067253826,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.6129032258064516,
+        "first_active_fraction": 0.3225806451612903,
+        "propagation_delay_snapshots": 3,
+        "max_ratio": 5.297236864814137
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_1",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.45217960200754936,
+        "max_recent_rate": 16.780183720243063,
+        "max_second_axis_recent_rate": 8.927111584647362,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.08816705336426914,
+        "first_active_fraction": 0.9095127610208816,
+        "propagation_delay_snapshots": 1,
+        "max_ratio": 17.980183720243062
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_2",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 6.315674808229025,
+        "max_recent_rate": 14.247704948317976,
+        "max_second_axis_recent_rate": 7.620757758972911,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 1.0,
+        "first_active_fraction": 0.0,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 15.447704948317975
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_3",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 3.229250986425463,
+        "max_recent_rate": 11.975526493935032,
+        "max_second_axis_recent_rate": 8.344038308710049,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.9974847737197313,
+        "coactivation_fraction": 0.7885835095137421,
+        "first_active_fraction": 0.03382663847780127,
+        "propagation_delay_snapshots": 51,
+        "max_ratio": 13.175526493935031
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_5",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 2.5686018022482693,
+        "max_recent_rate": 10.021022826531427,
+        "max_second_axis_recent_rate": 7.360069259587737,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.6953405017921147,
+        "first_active_fraction": 0.21863799283154123,
+        "propagation_delay_snapshots": 24,
+        "max_ratio": 11.221022826531426
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_1",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.1786559112824721,
+        "max_recent_rate": 21.428524957111918,
+        "max_second_axis_recent_rate": 11.07372021473696,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.06497175141242938,
+        "first_active_fraction": 0.9229217110573043,
+        "propagation_delay_snapshots": 30,
+        "max_ratio": 22.628524957111917
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_2",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.2439884838110153,
+        "max_recent_rate": 5.181344074334597,
+        "max_second_axis_recent_rate": 2.3464264649186477,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.20073891625615764,
+        "first_active_fraction": 0.010262725779967159,
+        "propagation_delay_snapshots": 528,
+        "max_ratio": 6.3813440743345975
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_3",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.46866068579155523,
+        "max_recent_rate": 6.732139160544164,
+        "max_second_axis_recent_rate": 5.723031318503667,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.09646302250803858,
+        "first_active_fraction": 0.9035369774919614,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 7.932139160544164
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_4",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.32813055262097707,
+        "max_recent_rate": 10.434637975744216,
+        "max_second_axis_recent_rate": 7.551234603425928,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 0.8068319697416926,
+        "coactivation_fraction": 0.06666666666666667,
+        "first_active_fraction": 0.9326460481099657,
+        "propagation_delay_snapshots": 1,
+        "max_ratio": 11.634637975744216
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_5",
+        "dataset": "xjtu",
+        "cluster": 0,
+        "historical_missed": false,
+        "max_historical_rate": 0.5755744825665737,
+        "max_recent_rate": 1.6830932422854177,
+        "max_second_axis_recent_rate": 0.29116791916874885,
+        "max_persistence": 1.0,
+        "max_second_axis_persistence": 1.0,
+        "final_irreversibility": 1.0,
+        "coactivation_fraction": 0.6296296296296297,
+        "first_active_fraction": 0.2037037037037037,
+        "propagation_delay_snapshots": 0,
+        "max_ratio": 2.8830932422854176
+      }
+    ]
+  }
+}

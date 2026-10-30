@@ -1,0 +1,55 @@
+{
+  "failed_bearings": {
+    "n_bearings": 33,
+    "macro_auroc": 91.04201001515834,
+    "macro_fpr95": 23.01010101010101
+  },
+  "censored_control": {
+    "n_bearings": 8,
+    "macro_auroc": 89.31571841483651,
+    "macro_fpr95": 32.64583333333333
+  },
+  "per_dataset": {
+    "femto": {
+      "n_bearings": 17,
+      "macro_auroc": 86.1304376099327,
+      "macro_fpr95": 33.19607843137255
+    },
+    "ims": {
+      "n_bearings": 4,
+      "macro_auroc": 96.8948176594644,
+      "macro_fpr95": 9.75
+    },
+    "xjtu": {
+      "n_bearings": 12,
+      "macro_auroc": 96.04913504112596,
+      "macro_fpr95": 13.0
+    }
+  },
+  "per_method": {
+    "centroid_dist": {
+      "auroc": 92.9986023823155,
+      "fpr95": 23.9375
+    },
+    "isolation_forest": {
+      "auroc": 95.29716302600406,
+      "fpr95": 13.125
+    },
+    "knn5_dist": {
+      "auroc": 96.53915366402467,
+      "fpr95": 10.46875
+    },
+    "mahalanobis": {
+      "auroc": 95.07423979842707,
+      "fpr95": 17.875
+    },
+    "ocsvm": {
+      "auroc": 92.46527977644067,
+      "fpr95": 27.28125
+    },
+    "rms_ratio": {
+      "auroc": 73.32398388194356,
+      "fpr95": 46.125
+    }
+  }
+}

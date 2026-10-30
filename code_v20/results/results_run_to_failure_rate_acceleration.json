@@ -1,0 +1,352 @@
+{
+  "protocol": {
+    "calibration_set": "IMS censored bearings",
+    "baseline": "median RMS snapshots 11-60",
+    "excess_ratio_threshold": 1.2,
+    "minimum_monitor_snapshots": 30,
+    "calibration_margin": 1.01,
+    "bearing_alarm": "minimum alarm time over axes (any-axis activation)",
+    "dual_rule": "R_t/T_R > 1 or A_t/T_A > 1 on any axis"
+  },
+  "primary_window": {
+    "recent_window_snapshots": 3,
+    "thresholds": {
+      "historical_rate": 0.042407782315012556,
+      "recent_rate": 3.742470888727239
+    },
+    "variants": {
+      "historical_rate": {
+        "threshold": 0.042407782315012556,
+        "n_failed": 34,
+        "n_censored": 8,
+        "n_detected": 31,
+        "detection_rate": 91.17647058823529,
+        "n_false_alarms": 0,
+        "false_alarm_rate": 0.0,
+        "median_lead_pct_life": 28.81679389312977,
+        "per_dataset": {
+          "ims": {
+            "n": 4,
+            "n_detected": 4,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 14.517861273586464
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 46.2962962962963
+          },
+          "femto": {
+            "n": 14,
+            "n_detected": 14,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 35.98272138228942
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "threshold": 3.742470888727239,
+        "n_failed": 34,
+        "n_censored": 8,
+        "n_detected": 27,
+        "detection_rate": 79.41176470588235,
+        "n_false_alarms": 0,
+        "false_alarm_rate": 0.0,
+        "median_lead_pct_life": 2.9411764705882355,
+        "per_dataset": {
+          "ims": {
+            "n": 2,
+            "n_detected": 2,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 0.8010109303212751
+          },
+          "xjtu": {
+            "n": 11,
+            "n_detected": 11,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 7.717041800643087
+          },
+          "femto": {
+            "n": 14,
+            "n_detected": 14,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 1.5739883553607024
+          }
+        },
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_5"
+        ]
+      },
+      "dual_activation": {
+        "threshold": 1.0,
+        "n_failed": 34,
+        "n_censored": 8,
+        "n_detected": 32,
+        "detection_rate": 94.11764705882354,
+        "n_false_alarms": 0,
+        "false_alarm_rate": 0.0,
+        "median_lead_pct_life": 28.639998678166616,
+        "per_dataset": {
+          "ims": {
+            "n": 4,
+            "n_detected": 4,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 14.517861273586464
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 13,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 46.2962962962963
+          },
+          "femto": {
+            "n": 15,
+            "n_detected": 15,
+            "detection_rate": 100.0,
+            "median_lead_pct_life": 31.965442764578835
+          }
+        },
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6"
+        ]
+      }
+    }
+  },
+  "window_sensitivity": [
+    {
+      "recent_window_snapshots": 2,
+      "historical_rate": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "n_detected": 28,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 2.5401069518716577,
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6"
+        ]
+      },
+      "dual_activation": {
+        "n_detected": 32,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.639998678166616,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6"
+        ]
+      }
+    },
+    {
+      "recent_window_snapshots": 3,
+      "historical_rate": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "n_detected": 27,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 2.9411764705882355,
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_5"
+        ]
+      },
+      "dual_activation": {
+        "n_detected": 32,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.639998678166616,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6"
+        ]
+      }
+    },
+    {
+      "recent_window_snapshots": 5,
+      "historical_rate": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "n_detected": 26,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 2.7149321266968327,
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5"
+        ]
+      },
+      "dual_activation": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      }
+    },
+    {
+      "recent_window_snapshots": 10,
+      "historical_rate": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "n_detected": 25,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 2.857142857142857,
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5"
+        ]
+      },
+      "dual_activation": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      }
+    },
+    {
+      "recent_window_snapshots": 20,
+      "historical_rate": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      },
+      "recent_rate": {
+        "n_detected": 24,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 3.711818594972134,
+        "missed_bearings": [
+          "ims_test1_b3",
+          "ims_test1_b4",
+          "xjtu_Bearing1_4",
+          "xjtu_Bearing3_5",
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing1_7",
+          "femto_Bearing2_4",
+          "femto_Bearing2_5",
+          "femto_Bearing2_6"
+        ]
+      },
+      "dual_activation": {
+        "n_detected": 31,
+        "n_failed": 34,
+        "n_false_alarms": 0,
+        "n_censored": 8,
+        "median_lead_pct_life": 28.81679389312977,
+        "missed_bearings": [
+          "femto_Bearing1_5",
+          "femto_Bearing1_6",
+          "femto_Bearing2_4"
+        ]
+      }
+    }
+  ],
+  "interpretation": {
+    "dual_activation_expected_gain": "One additional FEMTO detection at zero observed IMS false alarms",
+    "claim_boundary": "A recent-rate activation is a mechanism probe, not a replacement for historical persistence; it does not cover the two remaining abrupt FEMTO failures."
+  }
+}

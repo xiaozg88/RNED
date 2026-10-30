@@ -1,0 +1,45 @@
+{
+  "platform_note": "local Jetson-class aarch64 CPU; stationary synthetic windows",
+  "repeats": 100,
+  "windows": {
+    "ims": {
+      "samples": 20480,
+      "raw_rms": {
+        "mean_ms": 0.05096096021588892,
+        "median_ms": 0.04802201874554157,
+        "p95_ms": 0.055822078138589845
+      },
+      "envelope_rms": {
+        "mean_ms": 1.2900203000754118,
+        "median_ms": 1.2745189887937158,
+        "p95_ms": 1.3320860743988305
+      }
+    },
+    "xjtu": {
+      "samples": 32768,
+      "raw_rms": {
+        "mean_ms": 0.05673375795595348,
+        "median_ms": 0.05594201502390206,
+        "p95_ms": 0.05933019856456667
+      },
+      "envelope_rms": {
+        "mean_ms": 2.141050510108471,
+        "median_ms": 2.1223960211500525,
+        "p95_ms": 2.262279368005693
+      }
+    },
+    "femto": {
+      "samples": 2560,
+      "raw_rms": {
+        "mean_ms": 0.025796996778808534,
+        "median_ms": 0.024818989913910627,
+        "p95_ms": 0.026382182841189206
+      },
+      "envelope_rms": {
+        "mean_ms": 0.27246591867879033,
+        "median_ms": 0.26537550729699433,
+        "p95_ms": 0.3097793261986226
+      }
+    }
+  }
+}

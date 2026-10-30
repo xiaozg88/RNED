@@ -1,0 +1,57 @@
+{
+  "protocol": {
+    "status": "frozen before public external testing",
+    "protocol_sha256": "17093080415341caed1d50d798a807214ad48bb4794bad1ea7c778e8ac9cf839",
+    "feature": "per-axis RMS",
+    "baseline": "median(rms[10:60])",
+    "excess_ratio_threshold": 1.2,
+    "window": 10,
+    "cross_axis_statistic": "second-largest axis recent excess mean",
+    "decision": "historical OR cross-axis threshold crossing",
+    "minimum_monitor_snapshots": 30,
+    "frozen_historical_threshold": 0.042407782315012556,
+    "frozen_cross_axis_threshold": 0.24602807750741573,
+    "post_hoc_tuning_allowed": false
+  },
+  "inputs": [
+    {
+      "path": "RNED/data/features/ferrara_e6_features.csv",
+      "sha256": "7f097f59308963f1150fe42e959496249f1d103eca3a4d407fd020956fc35090"
+    }
+  ],
+  "n_failed": 1,
+  "n_protocol_eligible": 1,
+  "historical_detected": 1,
+  "hierarchical_n_evaluable": 0,
+  "hierarchical_detected": 0,
+  "median_hierarchical_lead_pct_life": null,
+  "per_bearing": [
+    {
+      "bearing_id": "E6",
+      "dataset": "ferrara_e6",
+      "group": "E6",
+      "n_axes": 1,
+      "n_monitor": 449,
+      "protocol_eligible": true,
+      "historical_max": 0.6440166556721646,
+      "historical_alarm_index": 298,
+      "historical_detected": true,
+      "historical_lead_pct_life": 33.630289532293986,
+      "cross_axis_evaluable": false,
+      "cross_axis_max": null,
+      "cross_axis_alarm_index": null,
+      "cross_axis_detected": false,
+      "cross_axis_lead_pct_life": null,
+      "hierarchical_alarm_index": 298,
+      "hierarchy_evaluable": false,
+      "hierarchical_detected": false,
+      "hierarchical_lead_pct_life": null
+    }
+  ],
+  "false_alarm_endpoint": {
+    "evaluable": false,
+    "reason": "public run-to-failure inputs contain no independent healthy censored fleet"
+  },
+  "interpretation": "locked external failure-only replication; cross-axis hierarchy is evaluable only for bearings with at least two axes; not sufficient for main-method upgrade",
+  "generated_at_utc": "2026-10-22T07:32:33.642307+00:00"
+}

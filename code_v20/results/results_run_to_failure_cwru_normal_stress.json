@@ -1,0 +1,157 @@
+{
+  "protocol": {
+    "status": "frozen before outcome computation",
+    "protocol_sha256": "f12ccd108dd71a470f6d2d518eae57692c59fccd1df276c775fcce338b582e58",
+    "selected_files": [
+      "1730_Normal.npz",
+      "1750_Normal.npz",
+      "1772_Normal.npz"
+    ],
+    "snapshot_samples": 2048,
+    "baseline": "median(rms[10:60])",
+    "excess_ratio_threshold": 1.2,
+    "minimum_monitor_snapshots": 30,
+    "recent_window": 10,
+    "frozen_historical_threshold": 0.042407782315012556,
+    "frozen_cross_axis_threshold": 0.24602807750741573,
+    "post_hoc_tuning_allowed": false
+  },
+  "axis_level": {
+    "n_axes": 6,
+    "historical_false_alarms": 0,
+    "false_alarm_rate_pct": 0.0,
+    "wilson_95_pct": [
+      0.0,
+      39.03
+    ]
+  },
+  "machine_level": {
+    "n_machines": 3,
+    "historical_false_alarms": 0,
+    "historical_false_alarm_rate_pct": 0.0,
+    "cross_axis_false_alarms": 0,
+    "cross_axis_false_alarm_rate_pct": 0.0,
+    "hierarchical_false_alarms": 0,
+    "hierarchical_false_alarm_rate_pct": 0.0,
+    "historical_wilson_95_pct": [
+      0.0,
+      56.15
+    ],
+    "hierarchical_wilson_95_pct": [
+      0.0,
+      56.15
+    ]
+  },
+  "per_machine": [
+    {
+      "file": "1730_Normal.npz",
+      "sha256": "e71083ee7e4971575b3deb99325b2eee058d1010a69652e3f0347673c45092b6",
+      "n_axes": 2,
+      "n_monitor": 177,
+      "historical_max": 0.0,
+      "historical_alarm_index": 177,
+      "historical_false_alarm": false,
+      "cross_axis_max": 0.0,
+      "cross_axis_alarm_index": 177,
+      "cross_axis_false_alarm": false,
+      "hierarchical_alarm_index": 177,
+      "hierarchical_false_alarm": false,
+      "axes": [
+        {
+          "axis": "DE",
+          "n_samples": 485643,
+          "n_snapshots": 237,
+          "n_monitor": 177,
+          "baseline_rms": 0.06579144158041633,
+          "historical_max": 0.0,
+          "historical_alarm_index": 177,
+          "historical_false_alarm": false
+        },
+        {
+          "axis": "FE",
+          "n_samples": 485643,
+          "n_snapshots": 237,
+          "n_monitor": 177,
+          "baseline_rms": 0.08181635415058655,
+          "historical_max": 0.0,
+          "historical_alarm_index": 177,
+          "historical_false_alarm": false
+        }
+      ]
+    },
+    {
+      "file": "1750_Normal.npz",
+      "sha256": "77830970288497a8f3dbf0c8a3d90d7142846bd7283735e3a795f85b49995a28",
+      "n_axes": 2,
+      "n_monitor": 176,
+      "historical_max": 0.0,
+      "historical_alarm_index": 176,
+      "historical_false_alarm": false,
+      "cross_axis_max": 0.0,
+      "cross_axis_alarm_index": 176,
+      "cross_axis_false_alarm": false,
+      "hierarchical_alarm_index": 176,
+      "hierarchical_false_alarm": false,
+      "axes": [
+        {
+          "axis": "DE",
+          "n_samples": 485063,
+          "n_snapshots": 236,
+          "n_monitor": 176,
+          "baseline_rms": 0.06443127540368913,
+          "historical_max": 0.0,
+          "historical_alarm_index": 176,
+          "historical_false_alarm": false
+        },
+        {
+          "axis": "FE",
+          "n_samples": 485063,
+          "n_snapshots": 236,
+          "n_monitor": 176,
+          "baseline_rms": 0.07253569817761372,
+          "historical_max": 0.0,
+          "historical_alarm_index": 176,
+          "historical_false_alarm": false
+        }
+      ]
+    },
+    {
+      "file": "1772_Normal.npz",
+      "sha256": "ebb7cce9e15c260dacf2999c28551d0be43ce196f85dcd2227fd4cf3221df175",
+      "n_axes": 2,
+      "n_monitor": 176,
+      "historical_max": 0.0,
+      "historical_alarm_index": 176,
+      "historical_false_alarm": false,
+      "cross_axis_max": 0.0,
+      "cross_axis_alarm_index": 176,
+      "cross_axis_false_alarm": false,
+      "hierarchical_alarm_index": 176,
+      "hierarchical_false_alarm": false,
+      "axes": [
+        {
+          "axis": "DE",
+          "n_samples": 483903,
+          "n_snapshots": 236,
+          "n_monitor": 176,
+          "baseline_rms": 0.06599707318644057,
+          "historical_max": 0.0,
+          "historical_alarm_index": 176,
+          "historical_false_alarm": false
+        },
+        {
+          "axis": "FE",
+          "n_samples": 483903,
+          "n_snapshots": 236,
+          "n_monitor": 176,
+          "baseline_rms": 0.07510319681158278,
+          "historical_max": 0.0,
+          "historical_alarm_index": 176,
+          "historical_false_alarm": false
+        }
+      ]
+    }
+  ],
+  "interpretation": "steady-state normal-condition stress test only; not a healthy censored-fleet validation and not evidence of finite conformal false-alarm control",
+  "generated_at_utc": "2026-10-24T05:24:09.463242+00:00"
+}

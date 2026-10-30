@@ -1,0 +1,714 @@
+{
+  "thresholds": {
+    "raw_rms": 0.042407782315012556,
+    "env_kurtosis": 0.4014534749550757,
+    "fault_harmonic_ratio": 0.03247361990300139
+  },
+  "primary": {
+    "detected": "31/34",
+    "median_lead_pct_life": 28.81679389312977,
+    "per_dataset_detection": {
+      "ims": "4/4",
+      "xjtu": "13/13",
+      "femto": "14/17"
+    },
+    "axis_false_alarm_rate_pct": 18.51851851851852,
+    "n_false_alarm_axes": 10,
+    "n_pseudo_health_axes": 54,
+    "bearing_false_alarm_rate_pct": 22.22222222222222,
+    "n_false_alarm_bearings": 6,
+    "n_pseudo_health_bearings": 27
+  },
+  "rules": {
+    "grace=0,confirm=1": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.83783026001136,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 31.48148148148148,
+      "n_false_alarm_axes": 17,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=0,confirm=3": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.795954213110186,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=0,confirm=5": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.75407816620901,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=0,confirm=10": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.649388048956084,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=30,confirm=1": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.83783026001136,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 31.48148148148148,
+      "n_false_alarm_axes": 17,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=30,confirm=3": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.795954213110186,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=30,confirm=5": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.75407816620901,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=30,confirm=10": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.649388048956084,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=60,confirm=1": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.83783026001136,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 31.48148148148148,
+      "n_false_alarm_axes": 17,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=60,confirm=3": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.795954213110186,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=60,confirm=5": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.75407816620901,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=60,confirm=10": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.649388048956084,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 29.62962962962963,
+      "n_false_alarm_axes": 16,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 37.03703703703704,
+      "n_false_alarm_bearings": 10,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=90,confirm=1": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.83783026001136,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "n_false_alarm_axes": 10,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "n_false_alarm_bearings": 6,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=90,confirm=3": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.795954213110186,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "n_false_alarm_axes": 10,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "n_false_alarm_bearings": 6,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=90,confirm=5": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.75407816620901,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "n_false_alarm_axes": 10,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "n_false_alarm_bearings": 6,
+      "n_pseudo_health_bearings": 27
+    },
+    "grace=90,confirm=10": {
+      "detected": "34/34",
+      "rescued": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing2_4"
+      ],
+      "median_lead_pct_life": 32.649388048956084,
+      "per_dataset_detection": {
+        "ims": "4/4",
+        "xjtu": "13/13",
+        "femto": "17/17"
+      },
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "n_false_alarm_axes": 10,
+      "n_pseudo_health_axes": 54,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "n_false_alarm_bearings": 6,
+      "n_pseudo_health_bearings": 27
+    }
+  },
+  "rescue_details": {
+    "grace=0,confirm=1": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 131,
+        "snapshot": 191,
+        "lead_pct_life": 94.548481065335
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1583,
+        "snapshot": 1643,
+        "lead_pct_life": 33.710217755443885
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 306,
+        "snapshot": 366,
+        "lead_pct_life": 55.7163531114327
+      }
+    ],
+    "grace=0,confirm=3": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 133,
+        "snapshot": 193,
+        "lead_pct_life": 94.46525176862255
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1585,
+        "snapshot": 1645,
+        "lead_pct_life": 33.62646566164154
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 308,
+        "snapshot": 368,
+        "lead_pct_life": 55.42691751085383
+      }
+    ],
+    "grace=0,confirm=5": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 135,
+        "snapshot": 195,
+        "lead_pct_life": 94.38202247191012
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1587,
+        "snapshot": 1647,
+        "lead_pct_life": 33.54271356783919
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 310,
+        "snapshot": 370,
+        "lead_pct_life": 55.137481910274964
+      }
+    ],
+    "grace=0,confirm=10": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 140,
+        "snapshot": 200,
+        "lead_pct_life": 94.17394923012901
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1592,
+        "snapshot": 1652,
+        "lead_pct_life": 33.333333333333336
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 315,
+        "snapshot": 375,
+        "lead_pct_life": 54.41389290882778
+      }
+    ],
+    "grace=30,confirm=1": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 131,
+        "snapshot": 191,
+        "lead_pct_life": 94.548481065335
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1583,
+        "snapshot": 1643,
+        "lead_pct_life": 33.710217755443885
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 306,
+        "snapshot": 366,
+        "lead_pct_life": 55.7163531114327
+      }
+    ],
+    "grace=30,confirm=3": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 133,
+        "snapshot": 193,
+        "lead_pct_life": 94.46525176862255
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1585,
+        "snapshot": 1645,
+        "lead_pct_life": 33.62646566164154
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 308,
+        "snapshot": 368,
+        "lead_pct_life": 55.42691751085383
+      }
+    ],
+    "grace=30,confirm=5": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 135,
+        "snapshot": 195,
+        "lead_pct_life": 94.38202247191012
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1587,
+        "snapshot": 1647,
+        "lead_pct_life": 33.54271356783919
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 310,
+        "snapshot": 370,
+        "lead_pct_life": 55.137481910274964
+      }
+    ],
+    "grace=30,confirm=10": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 140,
+        "snapshot": 200,
+        "lead_pct_life": 94.17394923012901
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1592,
+        "snapshot": 1652,
+        "lead_pct_life": 33.333333333333336
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 315,
+        "snapshot": 375,
+        "lead_pct_life": 54.41389290882778
+      }
+    ],
+    "grace=60,confirm=1": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 131,
+        "snapshot": 191,
+        "lead_pct_life": 94.548481065335
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1583,
+        "snapshot": 1643,
+        "lead_pct_life": 33.710217755443885
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 306,
+        "snapshot": 366,
+        "lead_pct_life": 55.7163531114327
+      }
+    ],
+    "grace=60,confirm=3": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 133,
+        "snapshot": 193,
+        "lead_pct_life": 94.46525176862255
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1585,
+        "snapshot": 1645,
+        "lead_pct_life": 33.62646566164154
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 308,
+        "snapshot": 368,
+        "lead_pct_life": 55.42691751085383
+      }
+    ],
+    "grace=60,confirm=5": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 135,
+        "snapshot": 195,
+        "lead_pct_life": 94.38202247191012
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1587,
+        "snapshot": 1647,
+        "lead_pct_life": 33.54271356783919
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 310,
+        "snapshot": 370,
+        "lead_pct_life": 55.137481910274964
+      }
+    ],
+    "grace=60,confirm=10": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 140,
+        "snapshot": 200,
+        "lead_pct_life": 94.17394923012901
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1592,
+        "snapshot": 1652,
+        "lead_pct_life": 33.333333333333336
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 315,
+        "snapshot": 375,
+        "lead_pct_life": 54.41389290882778
+      }
+    ],
+    "grace=90,confirm=1": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 131,
+        "snapshot": 191,
+        "lead_pct_life": 94.548481065335
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1583,
+        "snapshot": 1643,
+        "lead_pct_life": 33.710217755443885
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 306,
+        "snapshot": 366,
+        "lead_pct_life": 55.7163531114327
+      }
+    ],
+    "grace=90,confirm=3": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 133,
+        "snapshot": 193,
+        "lead_pct_life": 94.46525176862255
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1585,
+        "snapshot": 1645,
+        "lead_pct_life": 33.62646566164154
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 308,
+        "snapshot": 368,
+        "lead_pct_life": 55.42691751085383
+      }
+    ],
+    "grace=90,confirm=5": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 135,
+        "snapshot": 195,
+        "lead_pct_life": 94.38202247191012
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1587,
+        "snapshot": 1647,
+        "lead_pct_life": 33.54271356783919
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 310,
+        "snapshot": 370,
+        "lead_pct_life": 55.137481910274964
+      }
+    ],
+    "grace=90,confirm=10": [
+      {
+        "bearing": "femto_Bearing1_5",
+        "axis": "V",
+        "monitor_index": 140,
+        "snapshot": 200,
+        "lead_pct_life": 94.17394923012901
+      },
+      {
+        "bearing": "femto_Bearing1_6",
+        "axis": "H",
+        "monitor_index": 1592,
+        "snapshot": 1652,
+        "lead_pct_life": 33.333333333333336
+      },
+      {
+        "bearing": "femto_Bearing2_4",
+        "axis": "H",
+        "monitor_index": 315,
+        "snapshot": 375,
+        "lead_pct_life": 54.41389290882778
+      }
+    ]
+  }
+}

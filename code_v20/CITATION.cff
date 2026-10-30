@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Budget-Aware Event-Level Rate-Normalized Early Warning for Bearings in Industrial IoT: Validation in a Virtual IoT Environment"
+type: software
+authors:
+  - given-names: Zhiguo
+    family-names: Xiao
+  - given-names: Yujing
+    family-names: Guo
+  - given-names: Yanqi
+    family-names: Shao
+  - given-names: Guangteng
+    family-names: Chen
+  - given-names: Dingbo
+    family-names: Hou
+  - given-names: Yuanyuan
+    family-names: Liu
+  - given-names: Xinyao
+    family-names: Cao
+  - given-names: Junli
+    family-names: Liu
+version: 20.0.0
+date-released: 2026-10-30
+identifiers:
+  - type: url
+    value: "https://github.com/xiaozg88/RNED"
+keywords:
+  - run-to-failure
+  - bearing prognostics
+  - early failure warning
+  - out-of-distribution detection
+  - rate normalization
+  - edge computing
+license: MIT
+

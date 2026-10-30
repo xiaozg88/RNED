@@ -1,0 +1,456 @@
+{
+  "status": "exploratory_reaudit_only",
+  "purpose": [
+    "test whether full-trajectory mechanism summaries remain visible at a fixed early horizon",
+    "quantify axis-count confounding",
+    "verify held-out calibration behavior without reusing all healthy trajectories"
+  ],
+  "fixed_horizon": {
+    "monitored_snapshots": 90,
+    "raw_snapshots_including_baseline": 150,
+    "n_eligible_bearings": 39,
+    "n_failed": 31,
+    "n_healthy": 8,
+    "separation_by_group": {
+      "all": {
+        "historical": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.7258064516129032,
+          "exact_mann_whitney_p": 0.026158598140022287
+        },
+        "cross_axis": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.5967741935483871,
+          "exact_mann_whitney_p": 0.21057462233932822
+        },
+        "second_persistence": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.5967741935483871,
+          "exact_mann_whitney_p": 0.21057462233932822
+        },
+        "irreversibility": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.3709677419354839,
+          "exact_mann_whitney_p": 0.8679944856415445
+        },
+        "coactivation_fraction": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.6129032258064516,
+          "exact_mann_whitney_p": 0.17287517984112413
+        },
+        "first_active_fraction": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.7258064516129032,
+          "exact_mann_whitney_p": 0.026158598140022287
+        },
+        "propagation_delay": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.6129032258064516,
+          "exact_mann_whitney_p": 0.17287517984112413
+        },
+        "max_ratio": {
+          "n_failed": 31,
+          "n_healthy": 8,
+          "auc_directional": 0.8790322580645161,
+          "exact_mann_whitney_p": 0.00024748167163027844
+        }
+      },
+      "ims_same_platform": {
+        "historical": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "cross_axis": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "second_persistence": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "irreversibility": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.40625,
+          "exact_mann_whitney_p": 0.7151515151515152
+        },
+        "coactivation_fraction": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "first_active_fraction": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "propagation_delay": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.5,
+          "exact_mann_whitney_p": 0.5333333333333333
+        },
+        "max_ratio": {
+          "n_failed": 4,
+          "n_healthy": 8,
+          "auc_directional": 0.6875,
+          "exact_mann_whitney_p": 0.18383838383838386
+        }
+      },
+      "femto_vs_ims": {
+        "historical": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.7352941176470589,
+          "exact_mann_whitney_p": 0.03284746781314287
+        },
+        "cross_axis": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.5294117647058824,
+          "exact_mann_whitney_p": 0.4209444560016643
+        },
+        "second_persistence": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.5294117647058824,
+          "exact_mann_whitney_p": 0.4209444560016643
+        },
+        "irreversibility": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.25,
+          "exact_mann_whitney_p": 0.9786736934563022
+        },
+        "coactivation_fraction": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.5588235294117647,
+          "exact_mann_whitney_p": 0.33436146360631486
+        },
+        "first_active_fraction": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.7352941176470589,
+          "exact_mann_whitney_p": 0.03284746781314287
+        },
+        "propagation_delay": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.5588235294117647,
+          "exact_mann_whitney_p": 0.33436146360631486
+        },
+        "max_ratio": {
+          "n_failed": 17,
+          "n_healthy": 8,
+          "auc_directional": 0.9411764705882353,
+          "exact_mann_whitney_p": 6.194669810230451e-05
+        }
+      },
+      "xjtu_vs_ims": {
+        "historical": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.8,
+          "exact_mann_whitney_p": 0.01713972302207596
+        },
+        "cross_axis": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.75,
+          "exact_mann_whitney_p": 0.04156954156954157
+        },
+        "second_persistence": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.75,
+          "exact_mann_whitney_p": 0.04156954156954157
+        },
+        "irreversibility": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.5625,
+          "exact_mann_whitney_p": 0.3482334658805247
+        },
+        "coactivation_fraction": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.75,
+          "exact_mann_whitney_p": 0.04156954156954157
+        },
+        "first_active_fraction": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.8,
+          "exact_mann_whitney_p": 0.01713972302207596
+        },
+        "propagation_delay": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.75,
+          "exact_mann_whitney_p": 0.04156954156954157
+        },
+        "max_ratio": {
+          "n_failed": 10,
+          "n_healthy": 8,
+          "auc_directional": 0.8500000000000001,
+          "exact_mann_whitney_p": 0.005827505827505828
+        }
+      },
+      "two_axis_only": {
+        "historical": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.7413793103448276,
+          "exact_mann_whitney_p": 0.1548387096774194
+        },
+        "cross_axis": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.603448275862069,
+          "exact_mann_whitney_p": 0.335483870967742
+        },
+        "second_persistence": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.603448275862069,
+          "exact_mann_whitney_p": 0.335483870967742
+        },
+        "irreversibility": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.22413793103448276,
+          "exact_mann_whitney_p": 0.8946236559139784
+        },
+        "coactivation_fraction": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.6206896551724138,
+          "exact_mann_whitney_p": 0.3096774193548388
+        },
+        "first_active_fraction": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.7413793103448276,
+          "exact_mann_whitney_p": 0.1548387096774194
+        },
+        "propagation_delay": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.6206896551724138,
+          "exact_mann_whitney_p": 0.3096774193548388
+        },
+        "max_ratio": {
+          "n_failed": 29,
+          "n_healthy": 2,
+          "auc_directional": 0.8793103448275862,
+          "exact_mann_whitney_p": 0.043010752688172046
+        }
+      }
+    }
+  },
+  "axis_availability": {
+    "fixed_horizon_table": [
+      {
+        "failed": false,
+        "axis_count": 1,
+        "n": 6
+      },
+      {
+        "failed": false,
+        "axis_count": 2,
+        "n": 2
+      },
+      {
+        "failed": true,
+        "axis_count": 1,
+        "n": 2
+      },
+      {
+        "failed": true,
+        "axis_count": 2,
+        "n": 29
+      }
+    ],
+    "healthy_multi_axis_bearings": 2,
+    "healthy_single_axis_bearings": 6,
+    "interpretation": "Second-axis statistics are zero by construction for six of eight healthy bearings; unstratified cross-axis AUC is confounded by axis availability."
+  },
+  "full_trajectory_two_axis_only": {
+    "n_failed": 32,
+    "n_healthy": 2,
+    "max_second_axis_recent_rate": {
+      "n_failed": 32,
+      "n_healthy": 2,
+      "auc_directional": 1.0,
+      "exact_mann_whitney_p": 0.0017825311942959
+    },
+    "caution": "only two healthy multi-axis trajectories"
+  },
+  "full_profile_influence": {
+    "max_historical_rate": {
+      "full_auc": 0.9742647058823529,
+      "loo_min_auc": 0.9734848484848485,
+      "loo_median_auc": 0.9734848484848485,
+      "loo_max_auc": 0.9848484848484849
+    },
+    "max_second_axis_recent_rate": {
+      "full_auc": 0.963235294117647,
+      "loo_min_auc": 0.9621212121212122,
+      "loo_median_auc": 0.9621212121212122,
+      "loo_max_auc": 0.9810606060606061
+    }
+  },
+  "hierarchy_calibration": {
+    "leave_one_censored_out": [
+      {
+        "calibration_margin": 1.0,
+        "false_alarms": 2,
+        "n_held_out": 8,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "axis_count": 2,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "axis_count": 2,
+            "false_alarm": true,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.11214351627433476
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "axis_count": 1,
+            "false_alarm": true,
+            "historical_threshold": 0.040406983620362845,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.041987903282190674,
+            "cross_axis_threshold": 0.2435921559479369
+          }
+        ]
+      },
+      {
+        "calibration_margin": 1.01,
+        "false_alarms": 2,
+        "n_held_out": 8,
+        "details": [
+          {
+            "bearing_id": "ims_test1_b1",
+            "axis_count": 2,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test1_b2",
+            "axis_count": 2,
+            "false_alarm": true,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.11326495143707811
+          },
+          {
+            "bearing_id": "ims_test2_b2",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test2_b3",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test2_b4",
+            "axis_count": 1,
+            "false_alarm": true,
+            "historical_threshold": 0.04081105345656647,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test3_b1",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test3_b2",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          },
+          {
+            "bearing_id": "ims_test3_b4",
+            "axis_count": 1,
+            "false_alarm": false,
+            "historical_threshold": 0.042407782315012583,
+            "cross_axis_threshold": 0.24602807750741626
+          }
+        ]
+      }
+    ],
+    "all_healthy_thresholds_with_1p01_margin": {
+      "historical_rate": 0.042407782315012583,
+      "persistence": 1.01,
+      "irreversibility": 1.01,
+      "cross_axis": 0.24602807750741626,
+      "acceleration": 3.5276674371768806
+    }
+  }
+}

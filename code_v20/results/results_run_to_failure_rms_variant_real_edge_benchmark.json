@@ -1,0 +1,187 @@
+{
+  "platform_note": "local Jetson-class aarch64 CPU; representative real raw event windows",
+  "protocol": {
+    "repeats_per_window": 100,
+    "envelope_stride": 5,
+    "window_selection": "first and last complete local raw event for each source; no outcome-based tuning",
+    "provenance": {
+      "channels": {
+        "femto": "horizontal acceleration (fifth CSV column)",
+        "ims": "column 1 (first channel)",
+        "xjtu": "Horizontal_vibration_signals"
+      },
+      "created_utc": "2026-10-25",
+      "selection_rule": "first and last complete locally available event in each source; fixed before timing",
+      "sources": {
+        "femto": [
+          {
+            "path": "downloads/raw_extracted/femto/10. FEMTO Bearing/Learning_set/Bearing1_1/acc_00001.csv",
+            "sha256": "c90d6bba4aea17ce228387e844b09d660e3a3dd16827c966a365d65e16c84c3f"
+          },
+          {
+            "path": "downloads/raw_extracted/femto/10. FEMTO Bearing/Learning_set/Bearing1_1/acc_02803.csv",
+            "sha256": "4fcee211a634545d260cd45d80624235ba893df8f8acade9f65b834712e189f7"
+          }
+        ],
+        "ims": {
+          "archive": "downloads/raw_extracted/ims/1st_test.rar",
+          "archive_sha256": "c25241571583948462a3916d97dc11c984a839f38a0da0907fff18c958c0a484",
+          "events": [
+            "2003.10.22.12.06.24",
+            "2003.11.25.23.39.56"
+          ]
+        },
+        "xjtu": [
+          {
+            "path": "downloads/raw_xjtu_sample/35Hz12kN/Bearing1_3/1.csv",
+            "sha256": "ca358e98c3091cc9577091cbcb7cc78edaf0d1345c4332d950052df28bbd5943"
+          },
+          {
+            "path": "downloads/raw_xjtu_sample/35Hz12kN/Bearing1_3/145.csv",
+            "sha256": "582e5a9dfea18bea882389b23147d2500b3adf809fe21a5c70b373931acc42b9"
+          }
+        ]
+      }
+    }
+  },
+  "windows": {
+    "ims": {
+      "events": [
+        {
+          "position": "first",
+          "samples": 20480,
+          "raw_rms": {
+            "mean_ms": 0.04975929856300354,
+            "median_ms": 0.04723703023046255,
+            "p95_ms": 0.051377789350226515
+          },
+          "envelope_rms": {
+            "mean_ms": 1.3115675997687504,
+            "median_ms": 1.289289997657761,
+            "p95_ms": 1.4421306317672133
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.2623135199537501,
+            "median_ms": 0.2578579995315522,
+            "p95_ms": 0.28842612635344267
+          }
+        },
+        {
+          "position": "last",
+          "samples": 20480,
+          "raw_rms": {
+            "mean_ms": 0.04435107053723186,
+            "median_ms": 0.042996020056307316,
+            "p95_ms": 0.047638610703870654
+          },
+          "envelope_rms": {
+            "mean_ms": 1.2918511778116226,
+            "median_ms": 1.2780730030499399,
+            "p95_ms": 1.3916952622821555
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.2583702355623245,
+            "median_ms": 0.255614600609988,
+            "p95_ms": 0.2783390524564311
+          }
+        }
+      ],
+      "aggregate_median_ms": {
+        "raw_rms": 0.045116525143384933,
+        "envelope_rms": 1.2836815003538504
+      }
+    },
+    "xjtu": {
+      "events": [
+        {
+          "position": "first",
+          "samples": 32768,
+          "raw_rms": {
+            "mean_ms": 0.056948421988636255,
+            "median_ms": 0.055846001487225294,
+            "p95_ms": 0.059721153229475014
+          },
+          "envelope_rms": {
+            "mean_ms": 2.1249070193152875,
+            "median_ms": 2.104745013639331,
+            "p95_ms": 2.2286490071564913
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.4249814038630575,
+            "median_ms": 0.4209490027278662,
+            "p95_ms": 0.44572980143129826
+          }
+        },
+        {
+          "position": "last",
+          "samples": 32768,
+          "raw_rms": {
+            "mean_ms": 0.05560594203416258,
+            "median_ms": 0.05498103564605117,
+            "p95_ms": 0.05695857107639313
+          },
+          "envelope_rms": {
+            "mean_ms": 2.1160021499963477,
+            "median_ms": 2.0991910132579505,
+            "p95_ms": 2.2763659188058227
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.42320042999926955,
+            "median_ms": 0.4198382026515901,
+            "p95_ms": 0.45527318376116455
+          }
+        }
+      ],
+      "aggregate_median_ms": {
+        "raw_rms": 0.05541351856663823,
+        "envelope_rms": 2.1019680134486407
+      }
+    },
+    "femto": {
+      "events": [
+        {
+          "position": "first",
+          "samples": 2560,
+          "raw_rms": {
+            "mean_ms": 0.02495502063538879,
+            "median_ms": 0.024578504962846637,
+            "p95_ms": 0.025650006136856973
+          },
+          "envelope_rms": {
+            "mean_ms": 0.2683436288498342,
+            "median_ms": 0.2637050347402692,
+            "p95_ms": 0.3020898235263303
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.05366872576996684,
+            "median_ms": 0.05274100694805384,
+            "p95_ms": 0.06041796470526606
+          }
+        },
+        {
+          "position": "last",
+          "samples": 2560,
+          "raw_rms": {
+            "mean_ms": 0.02567444636952132,
+            "median_ms": 0.024993991246446967,
+            "p95_ms": 0.027182121993973848
+          },
+          "envelope_rms": {
+            "mean_ms": 0.2679822634672746,
+            "median_ms": 0.2622809843160212,
+            "p95_ms": 0.28666225844062865
+          },
+          "envelope_rms_stride5_amortized": {
+            "mean_ms": 0.05359645269345492,
+            "median_ms": 0.05245619686320424,
+            "p95_ms": 0.05733245168812573
+          }
+        }
+      ],
+      "aggregate_median_ms": {
+        "raw_rms": 0.024786248104646802,
+        "envelope_rms": 0.2629930095281452
+      }
+    }
+  }
+}

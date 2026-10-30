@@ -1,0 +1,13 @@
+{
+  "device_note": "local Jetson CPU, one XJTU 32768-sample axis window, 30 repeats",
+  "raw_rms": {
+    "mean_ms": 0.08911467739380896,
+    "median_ms": 0.08517300011590123,
+    "p95_ms": 0.11356335016898804
+  },
+  "full_modern_spectral": {
+    "mean_ms": 13.798632798716426,
+    "median_ms": 13.775036000879481,
+    "p95_ms": 14.125456861802377
+  }
+}

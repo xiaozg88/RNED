@@ -1,0 +1,160 @@
+{
+  "n_failed": 4,
+  "n_censored": 8,
+  "per_feature_and_model": {
+    "rms_ratio_final": {
+      "auroc": 84.38,
+      "fpr95": 62.5
+    },
+    "rms_ratio_final_min": {
+      "auroc": 84.38,
+      "fpr95": 62.5
+    },
+    "rms_ratio_max": {
+      "auroc": 84.38,
+      "fpr95": 50.0
+    },
+    "rms_ratio_max_min": {
+      "auroc": 84.38,
+      "fpr95": 50.0
+    },
+    "rms_slope_per_snapshot": {
+      "auroc": 75.0,
+      "fpr95": 37.5
+    },
+    "rms_slope_per_snapshot_min": {
+      "auroc": 75.0,
+      "fpr95": 37.5
+    },
+    "kurtosis_delta": {
+      "auroc": 84.38,
+      "fpr95": 62.5
+    },
+    "kurtosis_delta_min": {
+      "auroc": 81.25,
+      "fpr95": 50.0
+    },
+    "variance_ratio": {
+      "auroc": 84.38,
+      "fpr95": 62.5
+    },
+    "variance_ratio_min": {
+      "auroc": 84.38,
+      "fpr95": 62.5
+    },
+    "peak2peak_ratio": {
+      "auroc": 81.25,
+      "fpr95": 75.0
+    },
+    "peak2peak_ratio_min": {
+      "auroc": 81.25,
+      "fpr95": 75.0
+    },
+    "longest_episode_1p2x": {
+      "auroc": 87.5,
+      "fpr95": 12.5
+    },
+    "longest_episode_1p2x_min": {
+      "auroc": 87.5,
+      "fpr95": 12.5
+    },
+    "episode_count_1p2x": {
+      "auroc": 81.25,
+      "fpr95": 50.0
+    },
+    "episode_count_1p2x_min": {
+      "auroc": 78.12,
+      "fpr95": 50.0
+    },
+    "fraction_above_1p2x": {
+      "auroc": 81.25,
+      "fpr95": 50.0
+    },
+    "fraction_above_1p2x_min": {
+      "auroc": 84.38,
+      "fpr95": 50.0
+    },
+    "auc_above_1p2x": {
+      "auroc": 100.0,
+      "fpr95": 0.0
+    },
+    "auc_above_1p2x_min": {
+      "auroc": 100.0,
+      "fpr95": 0.0
+    },
+    "first_exceedance_time": {
+      "auroc": 31.25,
+      "fpr95": 100.0
+    },
+    "first_exceedance_time_min": {
+      "auroc": 29.69,
+      "fpr95": 100.0
+    },
+    "peak_time": {
+      "auroc": 70.31,
+      "fpr95": 100.0
+    },
+    "peak_time_min": {
+      "auroc": 54.69,
+      "fpr95": 87.5
+    },
+    "logistic_regression": {
+      "auroc": 81.25,
+      "fpr95": 62.5
+    },
+    "random_forest": {
+      "auroc": 87.5,
+      "fpr95": 50.0
+    }
+  },
+  "per_bearing": {
+    "test1_b1": {
+      "failed": false,
+      "rms_ratio_final": 1.252
+    },
+    "test1_b2": {
+      "failed": false,
+      "rms_ratio_final": 1.171
+    },
+    "test1_b3": {
+      "failed": true,
+      "rms_ratio_final": 1.321
+    },
+    "test1_b4": {
+      "failed": true,
+      "rms_ratio_final": 1.604
+    },
+    "test2_b1": {
+      "failed": true,
+      "rms_ratio_final": 2.142
+    },
+    "test2_b2": {
+      "failed": false,
+      "rms_ratio_final": 1.232
+    },
+    "test2_b3": {
+      "failed": false,
+      "rms_ratio_final": 1.157
+    },
+    "test2_b4": {
+      "failed": false,
+      "rms_ratio_final": 1.276
+    },
+    "test3_b1": {
+      "failed": false,
+      "rms_ratio_final": 0.947
+    },
+    "test3_b2": {
+      "failed": false,
+      "rms_ratio_final": 0.831
+    },
+    "test3_b3": {
+      "failed": true,
+      "rms_ratio_final": 1.031
+    },
+    "test3_b4": {
+      "failed": false,
+      "rms_ratio_final": 1.009
+    }
+  }
+}

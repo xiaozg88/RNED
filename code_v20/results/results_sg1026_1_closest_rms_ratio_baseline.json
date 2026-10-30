@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-26T13:44:21.764506+00:00",
+  "protocol": {
+    "baseline_slice": [
+      10,
+      60
+    ],
+    "monitor_start_snapshot": 61,
+    "earliest_update": 30,
+    "bearing_rule": "any axis exceeds threshold",
+    "threshold_rule": "1.01 times maximum eligible censored-axis raw RMS ratio",
+    "lead_definition": "(endpoint snapshot - alarm snapshot) / endpoint snapshot"
+  },
+  "n_failed_bearings": 34,
+  "n_censored_bearings": 8,
+  "threshold": 5.684637211145632,
+  "max_censored_score": 5.628353674401616,
+  "total_detected": 25,
+  "per_dataset": {
+    "ims": {
+      "n": 4,
+      "n_detected": 2,
+      "median_lead_pct_life": 0.650445071813147,
+      "missed_bearing_ids": [
+        "ims_test1_b3",
+        "ims_test1_b4"
+      ]
+    },
+    "xjtu": {
+      "n": 13,
+      "n_detected": 11,
+      "median_lead_pct_life": 5.660377358490566,
+      "missed_bearing_ids": [
+        "xjtu_Bearing1_4",
+        "xjtu_Bearing3_5"
+      ]
+    },
+    "femto": {
+      "n": 17,
+      "n_detected": 12,
+      "median_lead_pct_life": 1.0428789629607185,
+      "missed_bearing_ids": [
+        "femto_Bearing1_5",
+        "femto_Bearing1_6",
+        "femto_Bearing1_7",
+        "femto_Bearing2_4",
+        "femto_Bearing3_1"
+      ]
+    }
+  },
+  "per_bearing": [
+    {
+      "dataset": "ims",
+      "bearing_id": "ims_test1_b3",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "5": null,
+        "6": null
+      }
+    },
+    {
+      "dataset": "ims",
+      "bearing_id": "ims_test1_b4",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "7": null,
+        "8": null
+      }
+    },
+    {
+      "dataset": "ims",
+      "bearing_id": "ims_test2_b1",
+      "detected": true,
+      "alarm_snapshot": 974,
+      "endpoint_lead_pct_life": 1.016260162601626,
+      "axis_alarm_updates": {
+        "1": 914
+      }
+    },
+    {
+      "dataset": "ims",
+      "bearing_id": "ims_test3_b3",
+      "detected": true,
+      "alarm_snapshot": 6306,
+      "endpoint_lead_pct_life": 0.2846299810246679,
+      "axis_alarm_updates": {
+        "3": 6246
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing1_1",
+      "detected": true,
+      "alarm_snapshot": 122,
+      "endpoint_lead_pct_life": 0.8130081300813008,
+      "axis_alarm_updates": {
+        "H": 62,
+        "V": 62
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing1_2",
+      "detected": true,
+      "alarm_snapshot": 125,
+      "endpoint_lead_pct_life": 22.36024844720497,
+      "axis_alarm_updates": {
+        "H": 65,
+        "V": 71
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing1_3",
+      "detected": true,
+      "alarm_snapshot": 146,
+      "endpoint_lead_pct_life": 7.594936708860759,
+      "axis_alarm_updates": {
+        "H": 89,
+        "V": 86
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing1_4",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing2_1",
+      "detected": true,
+      "alarm_snapshot": 472,
+      "endpoint_lead_pct_life": 3.869653767820774,
+      "axis_alarm_updates": {
+        "H": 412,
+        "V": 412
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing2_2",
+      "detected": true,
+      "alarm_snapshot": 89,
+      "endpoint_lead_pct_life": 44.72049689440994,
+      "axis_alarm_updates": {
+        "H": 29,
+        "V": 29
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing2_3",
+      "detected": true,
+      "alarm_snapshot": 357,
+      "endpoint_lead_pct_life": 33.02063789868668,
+      "axis_alarm_updates": {
+        "H": 297,
+        "V": 321
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing2_5",
+      "detected": true,
+      "alarm_snapshot": 266,
+      "endpoint_lead_pct_life": 21.533923303834808,
+      "axis_alarm_updates": {
+        "H": 206,
+        "V": 239
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing3_1",
+      "detected": true,
+      "alarm_snapshot": 2511,
+      "endpoint_lead_pct_life": 1.0638297872340425,
+      "axis_alarm_updates": {
+        "H": 2458,
+        "V": 2451
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing3_2",
+      "detected": true,
+      "alarm_snapshot": 2494,
+      "endpoint_lead_pct_life": 0.08012820512820513,
+      "axis_alarm_updates": {
+        "H": 2434,
+        "V": null
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing3_3",
+      "detected": true,
+      "alarm_snapshot": 350,
+      "endpoint_lead_pct_life": 5.660377358490566,
+      "axis_alarm_updates": {
+        "H": 290,
+        "V": 291
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing3_4",
+      "detected": true,
+      "alarm_snapshot": 1456,
+      "endpoint_lead_pct_life": 3.8943894389438944,
+      "axis_alarm_updates": {
+        "H": 1396,
+        "V": 1396
+      }
+    },
+    {
+      "dataset": "xjtu",
+      "bearing_id": "xjtu_Bearing3_5",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_3",
+      "detected": true,
+      "alarm_snapshot": 1643,
+      "endpoint_lead_pct_life": 30.821052631578947,
+      "axis_alarm_updates": {
+        "H": 1766,
+        "V": 1583
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_4",
+      "detected": true,
+      "alarm_snapshot": 1119,
+      "endpoint_lead_pct_life": 21.638655462184875,
+      "axis_alarm_updates": {
+        "H": 1059,
+        "V": 1073
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_5",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_6",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_7",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_3",
+      "detected": true,
+      "alarm_snapshot": 282,
+      "endpoint_lead_pct_life": 85.57544757033249,
+      "axis_alarm_updates": {
+        "H": 1886,
+        "V": 222
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_4",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_5",
+      "detected": true,
+      "alarm_snapshot": 2310,
+      "endpoint_lead_pct_life": 0.043271311120726956,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": 2250
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_6",
+      "detected": true,
+      "alarm_snapshot": 697,
+      "endpoint_lead_pct_life": 0.5706134094151213,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": 637
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_7",
+      "detected": true,
+      "alarm_snapshot": 225,
+      "endpoint_lead_pct_life": 2.1739130434782608,
+      "axis_alarm_updates": {
+        "H": 165,
+        "V": 165
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing3_3",
+      "detected": true,
+      "alarm_snapshot": 431,
+      "endpoint_lead_pct_life": 0.6912442396313364,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": 371
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_1",
+      "detected": true,
+      "alarm_snapshot": 2765,
+      "endpoint_lead_pct_life": 1.3556903317873708,
+      "axis_alarm_updates": {
+        "H": 2705,
+        "V": 2726
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing1_2",
+      "detected": true,
+      "alarm_snapshot": 868,
+      "endpoint_lead_pct_life": 0.34443168771526983,
+      "axis_alarm_updates": {
+        "H": 809,
+        "V": 808
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_1",
+      "detected": true,
+      "alarm_snapshot": 900,
+      "endpoint_lead_pct_life": 1.2074643249176729,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": 840
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing2_2",
+      "detected": true,
+      "alarm_snapshot": 790,
+      "endpoint_lead_pct_life": 0.8782936010037641,
+      "axis_alarm_updates": {
+        "H": 733,
+        "V": 730
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing3_1",
+      "detected": false,
+      "alarm_snapshot": null,
+      "endpoint_lead_pct_life": null,
+      "axis_alarm_updates": {
+        "H": null,
+        "V": null
+      }
+    },
+    {
+      "dataset": "femto",
+      "bearing_id": "femto_Bearing3_2",
+      "detected": true,
+      "alarm_snapshot": 1628,
+      "endpoint_lead_pct_life": 0.5497861942577886,
+      "axis_alarm_updates": {
+        "H": 1575,
+        "V": 1568
+      }
+    }
+  ]
+}

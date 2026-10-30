@@ -1,0 +1,343 @@
+{
+  "schema_version": "iotj_v19_submission_audit_v1",
+  "audit_type": "deterministic evidence aggregation; no data were modified",
+  "inputs": [
+    {
+      "path": "results/results_run_to_failure_early_warning.json",
+      "sha256": "aba3be4b5d8820340b2c7adeff980919cffc8f0b28f63558ccc76e1449862fbf"
+    },
+    {
+      "path": "results/results_run_to_failure_classical_baselines.json",
+      "sha256": "c6a007cbb707c0ebabbdecfeb33483f6b997e5960068445f525940cca106559b"
+    },
+    {
+      "path": "results/results_run_to_failure_detector_significance.json",
+      "sha256": "8509a5bf39c504eeaa601d9cca9b4685b1247aa3d27ea8e2b44f8116d48e7419"
+    },
+    {
+      "path": "results/results_sg1026_review_audit.json",
+      "sha256": "55f9dae41660eb81878330c8e89d2b10a7eac72ddadd5994634c069f2b7da132"
+    },
+    {
+      "path": "results/results_sg1026_adverse_result_reaudit.json",
+      "sha256": "f07f3efca075d003e61203439b596525b414578ad64ee9dce25161eb60f541e6"
+    },
+    {
+      "path": "results/results_sg1026_1_closest_rms_ratio_baseline.json",
+      "sha256": "68fb56b925c57da8e7cb464e1813fd9cc286485b8e15342bc7eed7dac66a79a6"
+    },
+    {
+      "path": "results/results_sg1026_1_public_d1_rms_protocol_replication.json",
+      "sha256": "eccd194d932a3efbb8f98dcc148bfb5acf5b111e672ced54b12b453eda696894"
+    },
+    {
+      "path": "results/results_run_to_failure_transformer_baselines.json",
+      "sha256": "4212204ead70aaadc3a183732a8d0e2e884c8bb2b30c48f080309b290ff2818e"
+    },
+    {
+      "path": "results/results_run_to_failure_edge_benchmark.json",
+      "sha256": "3acbefffc0d818c41bff2be6bec3af0f42b3ddcf19e520da1b16ae503f24a21c"
+    },
+    {
+      "path": "results/results_run_to_failure_deployment_value_experiments.json",
+      "sha256": "c1a64afdefc4751a9e5758a2129704899e6e38ed3f8adf2d8246030fe5cca410"
+    },
+    {
+      "path": "results/results_run_to_failure_fleet_fa_budget.json",
+      "sha256": "c0b7bfac0f2d1196d5791c4e6158cbbb4bd35aa8d871be49108a62d575a8cd85"
+    },
+    {
+      "path": "results/results_run_to_failure_public_external_validation_summary.json",
+      "sha256": "4ae79f2df5bee8acb33bd37b44687fe47a1c5670fa56ecf389694124c7776cc8"
+    }
+  ],
+  "primary": {
+    "datasets": {
+      "femto": {
+        "n": 17,
+        "detected": 14,
+        "median_lead_pct_life": 35.98272138228942
+      },
+      "ims": {
+        "n": 4,
+        "detected": 4,
+        "median_lead_pct_life": 14.517861273586464
+      },
+      "xjtu": {
+        "n": 13,
+        "detected": 13,
+        "median_lead_pct_life": 46.2962962962963
+      }
+    },
+    "detected": 31,
+    "failed": 34,
+    "detection_ci95_exact": [
+      0.7632247257130624,
+      0.9814204965591596
+    ],
+    "censored": 8,
+    "in_sample_false_alarms": 0,
+    "frozen_threshold": 0.04240778231501255,
+    "max_censored_score": 0.04198790328219064,
+    "threshold_margin_pct": 1.0000000000000009,
+    "first_zero_fa_grid_candidate": {
+      "threshold": 0.048,
+      "detection_rate": 91.17647058823529,
+      "false_alarm_rate": 0.0,
+      "median_lead_pct": 28.03030303030303
+    }
+  },
+  "threshold_and_held_out": {
+    "first_zero_fa_grid_interpretation": "The public sweep is coarse; the frozen threshold lies between the maximum censored score and the next displayed zero-false-alarm grid point. This is stability evidence, not a margin guarantee.",
+    "leave_one_ims_experiment_out": {
+      "method": "leave-one-IMS-experiment-out threshold calibration",
+      "total_held_out_false_alarms": 1,
+      "total_held_out_censored": 8,
+      "details": [
+        {
+          "held_out_ims_experiment": "ims_test1",
+          "n_calibration_censored_bearings": 6,
+          "held_out_threshold": 0.04240778231501255,
+          "held_out_false_alarms": 0,
+          "n_held_out_censored": 2,
+          "held_out_failed_detected": 2,
+          "n_held_out_failed": 2
+        },
+        {
+          "held_out_ims_experiment": "ims_test2",
+          "n_calibration_censored_bearings": 5,
+          "held_out_threshold": 0.040811053456566576,
+          "held_out_false_alarms": 1,
+          "n_held_out_censored": 3,
+          "held_out_failed_detected": 1,
+          "n_held_out_failed": 1
+        },
+        {
+          "held_out_ims_experiment": "ims_test3",
+          "n_calibration_censored_bearings": 5,
+          "held_out_threshold": 0.04240778231501255,
+          "held_out_false_alarms": 0,
+          "n_held_out_censored": 3,
+          "held_out_failed_detected": 1,
+          "n_held_out_failed": 1
+        }
+      ]
+    },
+    "loeo_false_alarms": 1,
+    "loeo_censored": 8,
+    "loeo_false_alarm_ci95_exact": [
+      0.0031597235312519063,
+      0.5265096708752065
+    ]
+  },
+  "baseline_counts": {
+    "RNED": 31,
+    "Shewhart": 25,
+    "CUSUM": 21,
+    "EWMA": 25,
+    "SPRT": 1,
+    "single_sample_RMS_ratio": 25,
+    "D1_endpoint_persistence": 33,
+    "deep_reconstruction_median": 20
+  },
+  "statistical_tests": [
+    {
+      "vs": "shewhart",
+      "discordant_excess_1_other_0": 6,
+      "discordant_excess_0_other_1": 0,
+      "mcnemar_p": 0.03125,
+      "holm_corrected_p": 0.0625
+    },
+    {
+      "vs": "cusum",
+      "discordant_excess_1_other_0": 10,
+      "discordant_excess_0_other_1": 0,
+      "mcnemar_p": 0.001953125,
+      "holm_corrected_p": 0.005859375
+    },
+    {
+      "vs": "ewma",
+      "discordant_excess_1_other_0": 6,
+      "discordant_excess_0_other_1": 0,
+      "mcnemar_p": 0.03125,
+      "holm_corrected_p": 0.0625
+    },
+    {
+      "vs": "sprt",
+      "discordant_excess_1_other_0": 30,
+      "discordant_excess_0_other_1": 0,
+      "mcnemar_p": 1.862645149230957e-09,
+      "holm_corrected_p": 7.450580596923828e-09
+    }
+  ],
+  "D1_semantics": {
+    "paper_cohort_detected": 33,
+    "paper_cohort_failed": 34,
+    "healthy_reference_bearings_with_episode": 2,
+    "healthy_reference_bearings": 8,
+    "interpretation": "D1 is competitive on endpoint detection but changes the task to persistence confirmed at the endpoint; its reference-zone episodes are not the same online latching-event objective."
+  },
+  "edge": {
+    "platform": "Jetson Orin NX (6-core aarch64)",
+    "detector_update_ms": 0.03235,
+    "throughput_windows_per_s": 18265.9,
+    "energy_per_window_mJ": 0.0383,
+    "quantization_8bit": {
+      "rms_quantization_bits": 8,
+      "n_detected": 31,
+      "n_failed": 34,
+      "n_false_alarms": 0,
+      "n_censored": 8,
+      "median_lead_pct_life": 28.463203463203463
+    }
+  },
+  "communication": {
+    "event_packet_bytes": 64,
+    "ims_event_packet_ratio": 1280.0,
+    "xjtu_event_packet_ratio": 4096.0,
+    "femto_event_packet_ratio": 320.0,
+    "scope": "idealized byte accounting; excludes retransmission, cryptography, authentication, and broker overhead"
+  },
+  "fleet": [
+    {
+      "fleet_size_machines": 1,
+      "axes": 2,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.3358,
+      "expected_false_alarms_per_segment": 0.37
+    },
+    {
+      "fleet_size_machines": 5,
+      "axes": 10,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.8707,
+      "expected_false_alarms_per_segment": 1.85
+    },
+    {
+      "fleet_size_machines": 10,
+      "axes": 20,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 0.9833,
+      "expected_false_alarms_per_segment": 3.7
+    },
+    {
+      "fleet_size_machines": 50,
+      "axes": 100,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 18.5
+    },
+    {
+      "fleet_size_machines": 100,
+      "axes": 200,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 37.0
+    },
+    {
+      "fleet_size_machines": 500,
+      "axes": 1000,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 185.0
+    },
+    {
+      "fleet_size_machines": 1000,
+      "axes": 2000,
+      "p_machine_false_alarm_one_segment": 0.3358,
+      "p_fleet_ge1_false_alarm_one_segment": 1.0,
+      "expected_false_alarms_per_segment": 370.0
+    }
+  ],
+  "external_secondary_replication": {
+    "protocol_status": "frozen public secondary external replication",
+    "public_failed": 14,
+    "protocol_eligible": 13,
+    "historical_detected": 13,
+    "main_method_upgrade": {
+      "supported": false,
+      "reason": "public evidence is a small secondary replication and does not satisfy multi-bearing, multi-rig, healthy-fleet false-alarm, or finite-conformal requirements"
+    }
+  },
+  "evidence_matrix": {
+    "supported": {
+      "online_detection_and_lead_time": "early_warning plus per-dataset trajectories",
+      "classical_baseline_comparison": "matched detector results and McNemar/Holm audit",
+      "single_sample_and_D1_semantic_comparison": "frozen baseline result files",
+      "deep_baseline_limitation": "six deterministic reconstruction runs",
+      "held_out_threshold_sensitivity": "leave-one-IMS-experiment-out audit",
+      "edge_cost": "Jetson Orin NX benchmark",
+      "event_budget": "fleet bootstrap/modeling, explicitly not field validation"
+    },
+    "not_supported_as_validation": [
+      "a finite-population or distribution-free false-alarm guarantee",
+      "large-fleet empirical zero-false-alarm performance",
+      "real multi-node broker/network deployment",
+      "condition-invariant degradation detection"
+    ]
+  },
+  "submission_readiness": {
+    "status": "provisional",
+    "review_independence": "same-family executor; not an external IoTJ review",
+    "rubric": [
+      {
+        "dimension": "IoTJ_scope_alignment",
+        "weight": 0.15,
+        "score": 0.82,
+        "basis": "Edge detector, event communication, deployment cost, and fleet-scale risk are central IoTJ concerns."
+      },
+      {
+        "dimension": "differentiated_contribution",
+        "weight": 0.15,
+        "score": 0.72,
+        "basis": "The latching event semantic, causal rate normalization, frozen threshold, and explicit event budget differ from accuracy-oriented diagnosis and RUL work."
+      },
+      {
+        "dimension": "methodological_clarity",
+        "weight": 0.15,
+        "score": 0.78,
+        "basis": "The detector has a deterministic update and explicit propositions, but it is intentionally simple rather than algorithmically novel."
+      },
+      {
+        "dimension": "empirical_breadth",
+        "weight": 0.15,
+        "score": 0.7,
+        "basis": "Three public run-to-failure rigs, 34 failures, classical/deep/D1 baselines, edge hardware, and external secondary replication are covered."
+      },
+      {
+        "dimension": "claim_evidence_alignment",
+        "weight": 0.15,
+        "score": 0.88,
+        "basis": "v19 removes finite-population false-alarm guarantees and states healthy-censored and network-test limitations."
+      },
+      {
+        "dimension": "reproducibility",
+        "weight": 0.1,
+        "score": 0.9,
+        "basis": "Public datasets, deterministic scripts, result hashes, and exact counts support reproduction."
+      },
+      {
+        "dimension": "engineering_value",
+        "weight": 0.1,
+        "score": 0.8,
+        "basis": "Measured Jetson update and energy costs plus communication ratios support constrained-node deployment."
+      },
+      {
+        "dimension": "residual_external_risk_control",
+        "weight": 0.05,
+        "score": 0.48,
+        "basis": "Healthy-censored evidence remains small and real multi-node network validation is absent."
+      }
+    ],
+    "portfolio_score": 0.7789999999999999,
+    "independence_discount": 0.8,
+    "venue_competition_discount": 0.94,
+    "provisional_acceptance_estimate": 0.585808,
+    "uncertainty_interval": [
+      0.45,
+      0.7
+    ],
+    "decision_rule": "Continue only if the estimate is <= 0.55; stop when both language versions are synchronized and the estimate is > 0.55.",
+    "interpretation": "This is a transparent pre-submission risk score, not a prediction of an editorial decision. The interval reflects unobserved reviewer priorities and the remaining independent-validation gap."
+  }
+}

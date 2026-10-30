@@ -1,0 +1,128 @@
+{
+  "protocol_locked_at": "Before FEMTO Learning Set extraction/evaluation and before new multi-rig testing",
+  "frozen_rule": {
+    "feature": "per-axis RMS",
+    "baseline": "median(rms[10:60])",
+    "excess_ratio_threshold": 1.2,
+    "historical_statistic": "any-axis cumulative excess mean",
+    "recent_window_snapshots": 10,
+    "cross_axis_statistic": "second-largest axis recent excess mean",
+    "decision": "historical OR cross-axis threshold crossing",
+    "minimum_monitor_snapshots": 30,
+    "post_lock_tuning_allowed": false
+  },
+  "current_exploratory_point_estimate": {
+    "historical_rate": {
+      "n_detected": 31,
+      "n_failed": 34,
+      "n_false_alarms": 0,
+      "n_censored": 8,
+      "median_lead_pct_life": 28.81679389312977
+    },
+    "cross_axis_recent_rate": {
+      "n_detected": 32,
+      "n_failed": 34,
+      "n_false_alarms": 0,
+      "n_censored": 8,
+      "median_lead_pct_life": 13.695025761948461
+    },
+    "hierarchical_persistence": {
+      "n_detected": 34,
+      "n_failed": 34,
+      "n_false_alarms": 0,
+      "n_censored": 8,
+      "median_lead_pct_life": 28.639998678166616
+    }
+  },
+  "independent_validation_status": {
+    "available_local_rigs": [
+      "IMS",
+      "XJTU-SY",
+      "FEMTO/PRONOSTIA"
+    ],
+    "all_available_rigs_were_used_in_rule_design": true,
+    "genuinely_independent_multi_rig_test_available": false,
+    "status": "blocked pending new data",
+    "interpretation": "A 34/34 result on already-design-involved data cannot by itself justify upgrade to the main method."
+  },
+  "joint_false_alarm_theory": {
+    "unit": "independent healthy bearing trajectory",
+    "calibration_statistic": "full-trajectory maximum of each layer",
+    "guarantee": "P(max_R_new > q_R OR max_J_new > q_J) <= alpha_R + alpha_J",
+    "alpha_allocation": "alpha_R = alpha_J = alpha/2",
+    "required_assumptions": [
+      "healthy calibration and deployment bearings are exchangeable",
+      "bearings, not snapshots, are independent experimental units",
+      "thresholds are split before testing"
+    ],
+    "finite_sample_requirements": [
+      {
+        "total_false_alarm_level_alpha": 0.2,
+        "bonferroni_alpha_per_layer": 0.1,
+        "minimum_healthy_calibration_bearings_per_layer": 9,
+        "order_statistic_index": 9
+      },
+      {
+        "total_false_alarm_level_alpha": 0.1,
+        "bonferroni_alpha_per_layer": 0.05,
+        "minimum_healthy_calibration_bearings_per_layer": 19,
+        "order_statistic_index": 19
+      },
+      {
+        "total_false_alarm_level_alpha": 0.05,
+        "bonferroni_alpha_per_layer": 0.025,
+        "minimum_healthy_calibration_bearings_per_layer": 39,
+        "order_statistic_index": 39
+      }
+    ]
+  },
+  "current_calibration_capacity": {
+    "multi_axis_healthy_calibration_bearings": 2,
+    "all_healthy_ims_calibration_bearings": 8,
+    "sufficient_for_alpha_0_20_per_layer": false,
+    "sufficient_for_alpha_0_10_per_layer": false,
+    "sufficient_for_alpha_0_05_per_layer": false,
+    "leave_one_censored_out_hierarchical_false_alarms": 2,
+    "leave_one_censored_out_hierarchical_false_alarm_rate_pct": 25.0
+  },
+  "statistical_increment": {
+    "baseline_detected": 31,
+    "hierarchical_detected": 34,
+    "discordant_additional": 3,
+    "discordant_reversed": 0,
+    "exact_two_sided_p": 0.25,
+    "interpretation": "not significant at 0.05 despite full detection"
+  },
+  "edge_cost": {
+    "measured": true,
+    "platform": "NVIDIA Orin NX Developer Kit",
+    "incremental_update_us": {
+      "axes_2": {
+        "incremental_update_us": 36.1272,
+        "memory_bytes_state": 352
+      },
+      "axes_4": {
+        "incremental_update_us": 38.0579,
+        "memory_bytes_state": 704
+      }
+    },
+    "rms_plus_hierarchy_k4_ms": {
+      "ims": 0.09256,
+      "xjtu": 0.10695,
+      "femto": 0.07174
+    },
+    "sustained_energy_per_window_mj": 0.0384,
+    "passes_deployment_cost_check": true
+  },
+  "upgrade_decision": {
+    "passed": false,
+    "decision": "do_not_upgrade_to_main_method",
+    "reasons": [
+      "no genuinely independent multi-rig run-to-failure test is available",
+      "healthy multi-axis calibration capacity is below all finite conformal requirements",
+      "the three-bearing increment over 31/34 is not significant (exact McNemar p=0.25)",
+      "joint false-alarm control has not been demonstrated on a sufficiently large held-out healthy fleet"
+    ]
+  },
+  "generated_at_utc": "2026-10-22T04:59:12.184071+00:00"
+}

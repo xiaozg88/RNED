@@ -1,0 +1,920 @@
+{
+  "fields": {
+    "bpfi_max": {
+      "fault_max_median": 1.784908839204407,
+      "health_max_median": 1.5050440123882973,
+      "health_max_q95": 2.314606041483203,
+      "per_stream": {
+        "fault/5/DS": 1.5521231832912803,
+        "fault/7/Lower": 1.5586121080278412,
+        "fault/7/Upper": 1.893891476553752,
+        "fault/8/DS": 1.784908839204407,
+        "fault/8/FS": 1.8968046195008568,
+        "health/1/DS": 1.9321104065570784,
+        "health/1/FS": 1.4673666668559462,
+        "health/14/DS": 1.3324463622412033,
+        "health/14/FS": 1.500376423656497,
+        "health/2/DS": 1.3488014578024852,
+        "health/2/FS": 1.6042293098384297,
+        "health/4/FS": 1.4482609740957102,
+        "health/5/DS": 1.1944228938820505,
+        "health/6/DS": 1.5024135957980174,
+        "health/6/FS": 1.6687403423152969,
+        "health/7/Lower": 1.3101950759036214,
+        "health/7/Upper": 1.5076744289785773,
+        "health/8/DS": 1.6340168021408261,
+        "health/8/FS": 1.5543140366239585,
+        "health/9/DS": 3.462092946261576,
+        "health/9/FS": 1.8830045762029732
+      },
+      "separation_auc": 0.75,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.9075574913800257
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.314606041483203
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.8883494938723895
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 3.462092946261576
+        }
+      }
+    },
+    "bpfi_median": {
+      "fault_max_median": 0.38290462672198233,
+      "health_max_median": 0.2879870545403733,
+      "health_max_q95": 0.678585532164528,
+      "per_stream": {
+        "fault/5/DS": 0.4323081967501525,
+        "fault/7/Lower": 0.37114686615361014,
+        "fault/7/Upper": 0.3256539730422489,
+        "fault/8/DS": 0.38290462672198233,
+        "fault/8/FS": 0.4435246736379266,
+        "health/1/DS": 0.3920950575600729,
+        "health/1/FS": 0.14259580537118297,
+        "health/14/DS": 0.28272732483527147,
+        "health/14/FS": 0.3511135524232617,
+        "health/2/DS": 0.1329040832020839,
+        "health/2/FS": 0.2868020814253113,
+        "health/4/FS": 0.20532222878580664,
+        "health/5/DS": 0.13942106952615835,
+        "health/6/DS": 0.32644609881461395,
+        "health/6/FS": 0.2891720276554353,
+        "health/7/Lower": 0.34732826167554254,
+        "health/7/Upper": 0.08193647133133708,
+        "health/8/DS": 0.3889817990527058,
+        "health/8/FS": 0.23180144498164185,
+        "health/9/DS": 1.044154977832739,
+        "health/9/FS": 0.5567290502751243
+      },
+      "separation_auc": 0.7625,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.4744120539175986
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.678585532164528
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.8613702549986335
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.044154977832739
+        }
+      }
+    },
+    "bpfi_top2": {
+      "fault_max_median": 1.37574276007897,
+      "health_max_median": 1.2288180582978092,
+      "health_max_q95": 1.881079305283959,
+      "per_stream": {
+        "fault/5/DS": 1.233842352795833,
+        "fault/7/Lower": 1.1170681270946188,
+        "fault/7/Upper": 1.37574276007897,
+        "fault/8/DS": 1.5252632457442983,
+        "fault/8/FS": 1.4644480636259418,
+        "health/1/DS": 1.559774843809069,
+        "health/1/FS": 1.1657761379704008,
+        "health/14/DS": 0.9944764271743886,
+        "health/14/FS": 1.1995515251946358,
+        "health/2/DS": 1.1420669893124988,
+        "health/2/FS": 1.2961463708856842,
+        "health/4/FS": 1.2496716314470593,
+        "health/5/DS": 1.0279498188137082,
+        "health/6/DS": 1.3139923072587458,
+        "health/6/FS": 1.3904516491693744,
+        "health/7/Lower": 1.0983632335436377,
+        "health/7/Upper": 1.2079644851485591,
+        "health/8/DS": 1.3059292269681904,
+        "health/8/FS": 1.1949128797331565,
+        "health/9/DS": 2.844992689708629,
+        "health/9/FS": 1.3926074220890723
+      },
+      "separation_auc": 0.6375,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 1,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.4761911329490707
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.881079305283959
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.363035997496294
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.844992689708629
+        }
+      }
+    },
+    "bpfo_max": {
+      "fault_max_median": 1.6601220046508058,
+      "health_max_median": 1.6431865234582392,
+      "health_max_q95": 4.856085693524238,
+      "per_stream": {
+        "fault/5/DS": 1.8557511421213118,
+        "fault/7/Lower": 1.6601220046508058,
+        "fault/7/Upper": 2.0600814632934394,
+        "fault/8/DS": 1.546101213717848,
+        "fault/8/FS": 1.6125178410027603,
+        "health/1/DS": 2.0623241122865488,
+        "health/1/FS": 1.645078510003314,
+        "health/14/DS": 1.302746488608676,
+        "health/14/FS": 1.5389115541035112,
+        "health/2/DS": 1.7695347694320394,
+        "health/2/FS": 1.4860790129371997,
+        "health/4/FS": 1.6412945369131644,
+        "health/5/DS": 1.6643928265177133,
+        "health/6/DS": 1.2651348888998981,
+        "health/6/FS": 1.3423829776272487,
+        "health/7/Lower": 1.4234114314409287,
+        "health/7/Upper": 1.8647412231261948,
+        "health/8/DS": 1.775644046246529,
+        "health/8/FS": 1.6159357388449234,
+        "health/9/DS": 4.403275236956979,
+        "health/9/FS": 6.214517063226015
+      },
+      "separation_auc": 0.575,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 3.2327996746217638
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.856085693524238
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.535301378375127
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 6.214517063226015
+        }
+      }
+    },
+    "bpfo_median": {
+      "fault_max_median": 0.30991571696879333,
+      "health_max_median": 0.23592023555115355,
+      "health_max_q95": 2.9860003651329756,
+      "per_stream": {
+        "fault/5/DS": 0.3133109948873809,
+        "fault/7/Lower": 0.30991571696879333,
+        "fault/7/Upper": 0.5189418794793776,
+        "fault/8/DS": 0.24587432718363228,
+        "fault/8/FS": 0.16149002422328304,
+        "health/1/DS": 0.21841372906052836,
+        "health/1/FS": 0.48668366750620995,
+        "health/14/DS": 0.08534160033578236,
+        "health/14/FS": 0.2034363257000506,
+        "health/2/DS": 0.20460805406936564,
+        "health/2/FS": 0.16669367551136569,
+        "health/4/FS": 0.28138757423827404,
+        "health/5/DS": 0.10466411706388003,
+        "health/6/DS": 0.40777171573894533,
+        "health/6/FS": 0.2551275033462791,
+        "health/7/Lower": 0.11883537170077885,
+        "health/7/Upper": 0.12972609857125533,
+        "health/8/DS": 0.25342674204177873,
+        "health/8/FS": 0.5187630913049467,
+        "health/9/DS": 2.6029132769691867,
+        "health/9/FS": 4.135261629624343
+      },
+      "separation_auc": 0.6,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.5608381841370667
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.9860003651329756
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 3.5606309973786594
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.135261629624343
+        }
+      }
+    },
+    "bpfo_top2": {
+      "fault_max_median": 1.2849541287718733,
+      "health_max_median": 1.2374699416613693,
+      "health_max_q95": 4.231486078020589,
+      "per_stream": {
+        "fault/5/DS": 1.3835889548140723,
+        "fault/7/Lower": 1.2818326921285839,
+        "fault/7/Upper": 1.6641854616248615,
+        "fault/8/DS": 1.2849541287718733,
+        "fault/8/FS": 1.1982862587932195,
+        "health/1/DS": 1.3536930020299733,
+        "health/1/FS": 1.376053407558274,
+        "health/14/DS": 1.0891090007597657,
+        "health/14/FS": 1.366703798859241,
+        "health/2/DS": 1.4021230638832642,
+        "health/2/FS": 1.1200447774269133,
+        "health/4/FS": 1.2574078815983927,
+        "health/5/DS": 1.3483353163191087,
+        "health/6/DS": 1.0208273347003558,
+        "health/6/FS": 1.11437130365216,
+        "health/7/Lower": 0.9864682572795231,
+        "health/7/Upper": 1.2175320017243456,
+        "health/8/DS": 1.1428921265729692,
+        "health/8/FS": 1.206808743024074,
+        "health/9/DS": 3.649379241469077,
+        "health/9/FS": 5.977806587675126
+      },
+      "separation_auc": 0.6375,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.5257511526761705
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.231486078020589
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.1046463328478575
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.977806587675126
+        }
+      }
+    },
+    "bsf_max": {
+      "fault_max_median": 1.8115329968806195,
+      "health_max_median": 1.6443402024820715,
+      "health_max_q95": 1.9703564900103858,
+      "per_stream": {
+        "fault/5/DS": 2.0068343452053563,
+        "fault/7/Lower": 1.5715204267321066,
+        "fault/7/Upper": 1.8115329968806195,
+        "fault/8/DS": 2.0078973896201924,
+        "fault/8/FS": 1.6008227477896213,
+        "health/1/DS": 1.7515198665147178,
+        "health/1/FS": 1.5909811323442336,
+        "health/14/DS": 1.5645495263021212,
+        "health/14/FS": 1.7920582153704465,
+        "health/2/DS": 1.5499446865215276,
+        "health/2/FS": 1.8933401244378811,
+        "health/4/FS": 1.7884778949701492,
+        "health/5/DS": 1.564999149606074,
+        "health/6/DS": 1.7862291424717407,
+        "health/6/FS": 1.5115504191928184,
+        "health/7/Lower": 1.5431804594709382,
+        "health/7/Upper": 1.3218872949888982,
+        "health/8/DS": 1.7449614327279501,
+        "health/8/FS": 1.4998010526685825,
+        "health/9/DS": 1.6976992726199094,
+        "health/9/FS": 2.2014055867278994
+      },
+      "separation_auc": 0.7375,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 2,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.8426991699041637
+        },
+        "q0.95": {
+          "fault_alarms": 2,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.9703564900103858
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.0858810383691426
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.2014055867278994
+        }
+      }
+    },
+    "bsf_median": {
+      "fault_max_median": 0.24347730384401162,
+      "health_max_median": 0.19758021181528912,
+      "health_max_q95": 0.5193655259240625,
+      "per_stream": {
+        "fault/5/DS": 0.21179824522230323,
+        "fault/7/Lower": 0.24347730384401162,
+        "fault/7/Upper": 0.40268283664731946,
+        "fault/8/DS": 0.22810045510986687,
+        "fault/8/FS": 0.3477222936520149,
+        "health/1/DS": 0.047674038085940396,
+        "health/1/FS": 0.2072219887048562,
+        "health/14/DS": 0.21859403536963273,
+        "health/14/FS": 0.37308483975674855,
+        "health/2/DS": 0.6097406774529448,
+        "health/2/FS": 0.21617777696325036,
+        "health/4/FS": 0.17650997364756713,
+        "health/5/DS": 0.12743551441136072,
+        "health/6/DS": 0.2713096524113218,
+        "health/6/FS": 0.14324807348384347,
+        "health/7/Lower": 0.014177128908861317,
+        "health/7/Upper": 0.13848476528060089,
+        "health/8/DS": 0.3469839362663337,
+        "health/8/FS": 0.18793843492572201,
+        "health/9/DS": 0.16520264592144485,
+        "health/9/FS": 0.48924047541443505
+      },
+      "separation_auc": 0.725,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.4311626575855918
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.5193655259240625
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.5645531016885037
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 0.6097406774529448
+        }
+      }
+    },
+    "bsf_top2": {
+      "fault_max_median": 1.361420817196528,
+      "health_max_median": 1.2437925035521946,
+      "health_max_q95": 1.4850973767092055,
+      "per_stream": {
+        "fault/5/DS": 1.3088201204874097,
+        "fault/7/Lower": 1.2041342370865826,
+        "fault/7/Upper": 1.543714335509574,
+        "fault/8/DS": 1.374993069648959,
+        "fault/8/FS": 1.361420817196528,
+        "health/1/DS": 1.2080860487126108,
+        "health/1/FS": 1.2187106067468374,
+        "health/14/DS": 1.2474471092261636,
+        "health/14/FS": 1.3457875269598563,
+        "health/2/DS": 1.3031038782622675,
+        "health/2/FS": 1.357152087751781,
+        "health/4/FS": 1.2401378978782258,
+        "health/5/DS": 1.4199428366879467,
+        "health/6/DS": 1.1978106811963545,
+        "health/6/FS": 1.1528540847913524,
+        "health/7/Lower": 1.0913668512547876,
+        "health/7/Upper": 0.9652522798510044,
+        "health/8/DS": 1.3613540159574704,
+        "health/8/FS": 1.1698579798774393,
+        "health/9/DS": 1.2569994906184094,
+        "health/9/FS": 1.680560996772982
+      },
+      "separation_auc": 0.7375,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 1,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.3906484263227086
+        },
+        "q0.95": {
+          "fault_alarms": 1,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.4850973767092055
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.5828291867410937
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.680560996772982
+        }
+      }
+    },
+    "family_max": {
+      "fault_max_median": 2.228683646377542,
+      "health_max_median": 2.0461230063379334,
+      "health_max_q95": 4.8896882549904594,
+      "per_stream": {
+        "fault/5/DS": 2.2971091328518365,
+        "fault/7/Lower": 2.066193082005039,
+        "fault/7/Upper": 2.2381307617624557,
+        "fault/8/DS": 2.216603467812873,
+        "fault/8/FS": 2.228683646377542,
+        "health/1/DS": 2.352018180810804,
+        "health/1/FS": 2.149692742937907,
+        "health/14/DS": 1.9119328671040603,
+        "health/14/FS": 2.0483209401499667,
+        "health/2/DS": 1.899444288862679,
+        "health/2/FS": 2.144899993926459,
+        "health/4/FS": 2.0439250725259006,
+        "health/5/DS": 2.228395796220723,
+        "health/6/DS": 2.0338963373511634,
+        "health/6/FS": 1.8962054391375052,
+        "health/7/Lower": 1.909765298042103,
+        "health/7/Upper": 1.8958596511599821,
+        "health/8/DS": 2.1692521471611945,
+        "health/8/FS": 1.9335638316803887,
+        "health/9/DS": 4.448078652245274,
+        "health/9/FS": 6.214517063226015
+      },
+      "separation_auc": 0.75,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 3.400048416528039
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.8896882549904594
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.552102659108238
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 6.214517063226015
+        }
+      }
+    },
+    "family_max_or_rms": {
+      "fault_max_median": 2.3906039396921477,
+      "health_max_median": 2.159472445049551,
+      "health_max_q95": 8.896530422184656,
+      "per_stream": {
+        "fault/5/DS": 3.485937245594946,
+        "fault/7/Lower": 2.0915578783606685,
+        "fault/7/Upper": 2.3906039396921477,
+        "fault/8/DS": 2.286690562081769,
+        "fault/8/FS": 4.716700192364649,
+        "health/1/DS": 2.352018180810804,
+        "health/1/FS": 2.149692742937907,
+        "health/14/DS": 2.1299590710250165,
+        "health/14/FS": 2.0760084000862022,
+        "health/2/DS": 1.899444288862679,
+        "health/2/FS": 2.144899993926459,
+        "health/4/FS": 2.21896591572691,
+        "health/5/DS": 2.358220274249633,
+        "health/6/DS": 2.4224939892130486,
+        "health/6/FS": 2.0402710589746573,
+        "health/7/Lower": 3.0299014852095913,
+        "health/7/Upper": 2.069513591533915,
+        "health/8/DS": 2.1692521471611945,
+        "health/8/FS": 1.9335638316803887,
+        "health/9/DS": 7.3960095737978095,
+        "health/9/FS": 13.39809296734519
+      },
+      "separation_auc": 0.6875,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.2129555295037004
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 8.896530422184656
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 11.147311694764923
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 13.39809296734519
+        }
+      }
+    },
+    "family_median": {
+      "fault_max_median": 0.6692654055159868,
+      "health_max_median": 0.5938976965744382,
+      "health_max_q95": 2.9860003651329756,
+      "per_stream": {
+        "fault/5/DS": 0.46625671186025014,
+        "fault/7/Lower": 0.7442217499608852,
+        "fault/7/Upper": 0.7337585897930217,
+        "fault/8/DS": 0.648203144317545,
+        "fault/8/FS": 0.6692654055159868,
+        "health/1/DS": 0.6155598400283627,
+        "health/1/FS": 0.48668366750620995,
+        "health/14/DS": 0.546414123432571,
+        "health/14/FS": 0.6156880780977203,
+        "health/2/DS": 0.6097406774529448,
+        "health/2/FS": 0.5343601282504162,
+        "health/4/FS": 0.6269840504875982,
+        "health/5/DS": 0.384889411840015,
+        "health/6/DS": 0.6019056936790281,
+        "health/6/FS": 0.690383143626855,
+        "health/7/Lower": 0.4157909004810567,
+        "health/7/Upper": 0.4309830879876987,
+        "health/8/DS": 0.5858896994698485,
+        "health/8/FS": 0.5450620962817558,
+        "health/9/DS": 2.6029132769691867,
+        "health/9/FS": 4.135261629624343
+      },
+      "separation_auc": 0.7125,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 1.6466482102980209
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.9860003651329756
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 3.5606309973786594
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.135261629624343
+        }
+      }
+    },
+    "family_top2": {
+      "fault_max_median": 1.6796390515799953,
+      "health_max_median": 1.5721264005799038,
+      "health_max_q95": 4.231486078020589,
+      "per_stream": {
+        "fault/5/DS": 1.6004746026968533,
+        "fault/7/Lower": 1.5938184337516321,
+        "fault/7/Upper": 1.9063497386707353,
+        "fault/8/DS": 1.6796390515799953,
+        "fault/8/FS": 1.6886767792441368,
+        "health/1/DS": 1.9718762081297543,
+        "health/1/FS": 2.01302301770901,
+        "health/14/DS": 1.4863751387926785,
+        "health/14/FS": 1.5581963211205585,
+        "health/2/DS": 1.4922676541180069,
+        "health/2/FS": 1.5372437123662568,
+        "health/4/FS": 1.586056480039249,
+        "health/5/DS": 1.8255176251008605,
+        "health/6/DS": 1.6372775230385033,
+        "health/6/FS": 1.4931320581767886,
+        "health/7/Lower": 1.3973510110021325,
+        "health/7/Upper": 1.5581156019239744,
+        "health/8/DS": 1.5920164767179426,
+        "health/8/FS": 1.5495206017341872,
+        "health/9/DS": 3.649379241469077,
+        "health/9/FS": 5.977806587675126
+      },
+      "separation_auc": 0.675,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 2.8312011295890436
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 4.231486078020589
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.1046463328478575
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.977806587675126
+        }
+      }
+    },
+    "family_top2_or_rms": {
+      "fault_max_median": 2.0533162127105498,
+      "health_max_median": 1.794605755238918,
+      "health_max_q95": 8.896530422184656,
+      "per_stream": {
+        "fault/5/DS": 3.485937245594946,
+        "fault/7/Lower": 1.7972420630201058,
+        "fault/7/Upper": 1.9063497386707353,
+        "fault/8/DS": 2.0533162127105498,
+        "fault/8/FS": 4.716700192364649,
+        "health/1/DS": 1.9718762081297543,
+        "health/1/FS": 2.01302301770901,
+        "health/14/DS": 1.7088352113447698,
+        "health/14/FS": 1.8315356975832007,
+        "health/2/DS": 1.615040596177825,
+        "health/2/FS": 1.7576758128946355,
+        "health/4/FS": 1.744624822362678,
+        "health/5/DS": 1.951661705415672,
+        "health/6/DS": 1.6605068419836049,
+        "health/6/FS": 1.7129858764379797,
+        "health/7/Lower": 3.0299014852095913,
+        "health/7/Upper": 1.833197932481271,
+        "health/8/DS": 1.633800669196559,
+        "health/8/FS": 1.5495206017341872,
+        "health/9/DS": 7.3960095737978095,
+        "health/9/FS": 13.39809296734519
+      },
+      "separation_auc": 0.7375,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.2129555295037004
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 8.896530422184656
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 11.147311694764923
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 13.39809296734519
+        }
+      }
+    },
+    "rms": {
+      "fault_max_median": 1.7972420630201058,
+      "health_max_median": 0.9123872590454916,
+      "health_max_q95": 8.896530422184656,
+      "per_stream": {
+        "fault/5/DS": 3.485937245594946,
+        "fault/7/Lower": 1.7972420630201058,
+        "fault/7/Upper": 1.5596650685160927,
+        "fault/8/DS": 1.5196248228793783,
+        "fault/8/FS": 4.716700192364649,
+        "health/1/DS": 0.37320565853660526,
+        "health/1/FS": 1.394387225954633,
+        "health/14/DS": 0.5528089654009145,
+        "health/14/FS": 1.6984346402273542,
+        "health/2/DS": 0.4101615069710929,
+        "health/2/FS": 0.9288846478694683,
+        "health/4/FS": 0.8958898702215149,
+        "health/5/DS": 0.13988595107944762,
+        "health/6/DS": 1.0005256147471022,
+        "health/6/FS": 0.81524910987423,
+        "health/7/Lower": 3.0299014852095913,
+        "health/7/Upper": 1.8313582814308247,
+        "health/8/DS": 0.45375243350169986,
+        "health/8/FS": 0.013332794474395449,
+        "health/9/DS": 7.3960095737978095,
+        "health/9/FS": 13.39809296734519
+      },
+      "separation_auc": 0.775,
+      "thresholds": {
+        "q0.9": {
+          "fault_alarms": 0,
+          "health_alarms": 2,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 5.2129555295037004
+        },
+        "q0.95": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 8.896530422184656
+        },
+        "q0.975": {
+          "fault_alarms": 0,
+          "health_alarms": 1,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 11.147311694764923
+        },
+        "q1": {
+          "fault_alarms": 0,
+          "health_alarms": 0,
+          "n_fault": 5,
+          "n_health": 16,
+          "threshold": 13.39809296734519
+        }
+      }
+    }
+  },
+  "generated_at_utc": "2026-10-25T00:34:47.768878+00:00",
+  "protocol": {
+    "baseline_snapshots": [
+      10,
+      60
+    ],
+    "block_size": 10,
+    "control_offsets": [
+      -0.18,
+      -0.12,
+      0.12,
+      0.18
+    ],
+    "fault_time": "case-level first positive label; all axes in that case are audited",
+    "harmonics": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "order_width": 0.035,
+    "physical_eligibility": "training order-resolution median <= ORDER_WIDTH",
+    "status": "exploratory order-domain envelope template residual; not frozen validation",
+    "target_faults": [
+      5,
+      7,
+      8
+    ]
+  }
+}

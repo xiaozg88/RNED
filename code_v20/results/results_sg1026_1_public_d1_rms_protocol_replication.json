@@ -1,0 +1,3131 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-26T15:45:38.587199+00:00",
+  "protocol": {
+    "baseline": "arithmetic mean of snapshots 11--60",
+    "rms_threshold": "1.2 times per-axis baseline mean",
+    "alarm_persistence": "3 consecutive exceedances",
+    "sustained_warning": "alarm block lasting to endpoint, gaps <= 1% of life",
+    "detected": "sustained warning >= 1% of life",
+    "bearing_rule": "any axis detected",
+    "healthy_reference_zone": "snapshot 61 through 85% of observed life",
+    "trailing_invalid_rule": "remove consecutive trailing snapshots in which every available axis is below 10% of its full-series median RMS"
+  },
+  "trailing_snapshots_removed": {
+    "total": 12,
+    "bearings": [
+      {
+        "bearing_id": "ims_test2_b1",
+        "n_trimmed_snapshots": 2
+      },
+      {
+        "bearing_id": "ims_test2_b2",
+        "n_trimmed_snapshots": 2
+      },
+      {
+        "bearing_id": "ims_test2_b3",
+        "n_trimmed_snapshots": 2
+      },
+      {
+        "bearing_id": "ims_test2_b4",
+        "n_trimmed_snapshots": 2
+      },
+      {
+        "bearing_id": "ims_test3_b1",
+        "n_trimmed_snapshots": 1
+      },
+      {
+        "bearing_id": "ims_test3_b2",
+        "n_trimmed_snapshots": 1
+      },
+      {
+        "bearing_id": "ims_test3_b3",
+        "n_trimmed_snapshots": 1
+      },
+      {
+        "bearing_id": "ims_test3_b4",
+        "n_trimmed_snapshots": 1
+      }
+    ]
+  },
+  "public_120_snapshot_cohort": {
+    "label": "public eligibility: at least 120 snapshots",
+    "n_evaluated": 41,
+    "n_failures": 33,
+    "n_detected": 32,
+    "median_endpoint_lead_pct_life": 29.425686637527907,
+    "per_dataset": {
+      "ims": {
+        "n": 4,
+        "n_detected": 4,
+        "median_endpoint_lead_pct_life": 44.68778329161407,
+        "missed_bearing_ids": []
+      },
+      "xjtu": {
+        "n": 12,
+        "n_detected": 12,
+        "median_endpoint_lead_pct_life": 43.069910312428135,
+        "missed_bearing_ids": []
+      },
+      "femto": {
+        "n": 17,
+        "n_detected": 16,
+        "median_endpoint_lead_pct_life": 4.376984659421263,
+        "missed_bearing_ids": [
+          "femto_Bearing2_3"
+        ]
+      }
+    },
+    "failure_healthy_reference_false_alarms": {
+      "n_bearings": 33,
+      "n_bearings_with_episode": 22,
+      "bearing_ids_with_episode": [
+        "femto_Bearing1_1",
+        "femto_Bearing1_2",
+        "femto_Bearing1_3",
+        "femto_Bearing1_4",
+        "femto_Bearing1_6",
+        "femto_Bearing2_1",
+        "femto_Bearing2_2",
+        "femto_Bearing2_3",
+        "femto_Bearing2_4",
+        "femto_Bearing2_5",
+        "femto_Bearing3_3",
+        "ims_test1_b3",
+        "ims_test1_b4",
+        "ims_test2_b1",
+        "xjtu_Bearing1_1",
+        "xjtu_Bearing1_2",
+        "xjtu_Bearing1_3",
+        "xjtu_Bearing1_4",
+        "xjtu_Bearing2_2",
+        "xjtu_Bearing2_3",
+        "xjtu_Bearing2_5",
+        "xjtu_Bearing3_2"
+      ],
+      "n_axis_episodes": 336,
+      "reference_axis_snapshots": 67332,
+      "episodes_per_1000_reference_snapshots": 4.990197825699519
+    },
+    "ims_censored_healthy_reference_false_alarms": {
+      "n_bearings": 8,
+      "n_bearings_with_episode": 2,
+      "bearing_ids_with_episode": [
+        "ims_test1_b1",
+        "ims_test3_b4"
+      ],
+      "n_axis_episodes": 39,
+      "reference_axis_snapshots": 25392,
+      "episodes_per_1000_reference_snapshots": 1.5359168241965973
+    },
+    "per_bearing": [
+      {
+        "bearing_id": "femto_Bearing1_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2803,
+        "n_monitor_updates": 2743,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5250726192994383,
+            "n_snapshots": 2803,
+            "reference_snapshots": 2322,
+            "false_alarm_episodes": 21,
+            "sustained_start_snapshot": 1734,
+            "sustained_fraction": 0.3815132048536759,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.47254334785449614,
+            "n_snapshots": 2803,
+            "reference_snapshots": 2322,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 2522,
+            "sustained_fraction": 0.10028551034975011,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1734,
+        "endpoint_lead_pct_life": 38.15132048536759,
+        "false_alarm_episodes": 23,
+        "reference_snapshots": 4644
+      },
+      {
+        "bearing_id": "femto_Bearing1_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 871,
+        "n_monitor_updates": 811,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3622311655698712,
+            "n_snapshots": 871,
+            "reference_snapshots": 680,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 827,
+            "sustained_fraction": 0.05057471264367816,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.520814607512447,
+            "n_snapshots": 871,
+            "reference_snapshots": 680,
+            "false_alarm_episodes": 12,
+            "sustained_start_snapshot": 828,
+            "sustained_fraction": 0.04942528735632184,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 827,
+        "endpoint_lead_pct_life": 5.057471264367816,
+        "false_alarm_episodes": 12,
+        "reference_snapshots": 1360
+      },
+      {
+        "bearing_id": "femto_Bearing1_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2375,
+        "n_monitor_updates": 2315,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3852960302985163,
+            "n_snapshots": 2375,
+            "reference_snapshots": 1958,
+            "false_alarm_episodes": 10,
+            "sustained_start_snapshot": 1337,
+            "sustained_fraction": 0.4372367312552654,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3681707090702915,
+            "n_snapshots": 2375,
+            "reference_snapshots": 1958,
+            "false_alarm_episodes": 19,
+            "sustained_start_snapshot": 2252,
+            "sustained_fraction": 0.05181128896377423,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1337,
+        "endpoint_lead_pct_life": 43.72367312552654,
+        "false_alarm_episodes": 29,
+        "reference_snapshots": 3916
+      },
+      {
+        "bearing_id": "femto_Bearing1_4",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1428,
+        "n_monitor_updates": 1368,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.42324833210844376,
+            "n_snapshots": 1428,
+            "reference_snapshots": 1153,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 1089,
+            "sustained_fraction": 0.23756131744919415,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6138602104361381,
+            "n_snapshots": 1428,
+            "reference_snapshots": 1153,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 1090,
+            "sustained_fraction": 0.23686054660126143,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1089,
+        "endpoint_lead_pct_life": 23.756131744919415,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 2306
+      },
+      {
+        "bearing_id": "femto_Bearing1_5",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2463,
+        "n_monitor_updates": 2403,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.35372611079524574,
+            "n_snapshots": 2463,
+            "reference_snapshots": 2033,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2444,
+            "sustained_fraction": 0.00771730300568647,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.46408697638592683,
+            "n_snapshots": 2463,
+            "reference_snapshots": 2033,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2414,
+            "sustained_fraction": 0.0199025182778229,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2414,
+        "endpoint_lead_pct_life": 1.99025182778229,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 4066
+      },
+      {
+        "bearing_id": "femto_Bearing1_6",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2448,
+        "n_monitor_updates": 2388,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4426364343932891,
+            "n_snapshots": 2448,
+            "reference_snapshots": 2020,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 2422,
+            "sustained_fraction": 0.010625255414793587,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5031346296272186,
+            "n_snapshots": 2448,
+            "reference_snapshots": 2020,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 2420,
+            "sustained_fraction": 0.011442582754393093,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2420,
+        "endpoint_lead_pct_life": 1.1442582754393094,
+        "false_alarm_episodes": 4,
+        "reference_snapshots": 4040
+      },
+      {
+        "bearing_id": "femto_Bearing1_7",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2259,
+        "n_monitor_updates": 2199,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4607753698568483,
+            "n_snapshots": 2259,
+            "reference_snapshots": 1860,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2212,
+            "sustained_fraction": 0.020814880425155002,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.4975489361234151,
+            "n_snapshots": 2259,
+            "reference_snapshots": 1860,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2210,
+            "sustained_fraction": 0.021700620017714785,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2210,
+        "endpoint_lead_pct_life": 2.1700620017714787,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 3720
+      },
+      {
+        "bearing_id": "femto_Bearing2_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 911,
+        "n_monitor_updates": 851,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5176184167645718,
+            "n_snapshots": 911,
+            "reference_snapshots": 714,
+            "false_alarm_episodes": 15,
+            "sustained_start_snapshot": 877,
+            "sustained_fraction": 0.03736263736263723,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.2979536948280778,
+            "n_snapshots": 911,
+            "reference_snapshots": 714,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 140,
+            "sustained_fraction": 0.8472527472527472,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 140,
+        "endpoint_lead_pct_life": 84.72527472527473,
+        "false_alarm_episodes": 16,
+        "reference_snapshots": 1428
+      },
+      {
+        "bearing_id": "femto_Bearing2_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 797,
+        "n_monitor_updates": 737,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.34461809817421746,
+            "n_snapshots": 797,
+            "reference_snapshots": 617,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 239,
+            "sustained_fraction": 0.7010050251256282,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.34504311905181345,
+            "n_snapshots": 797,
+            "reference_snapshots": 617,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 190,
+            "sustained_fraction": 0.7625628140703519,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 190,
+        "endpoint_lead_pct_life": 76.25628140703519,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 1234
+      },
+      {
+        "bearing_id": "femto_Bearing2_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1955,
+        "n_monitor_updates": 1895,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.46433461863238007,
+            "n_snapshots": 1955,
+            "reference_snapshots": 1601,
+            "false_alarm_episodes": 8,
+            "sustained_start_snapshot": 1949,
+            "sustained_fraction": 0.0030706243602865806,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.2906927715980149,
+            "n_snapshots": 1955,
+            "reference_snapshots": 1601,
+            "false_alarm_episodes": 14,
+            "sustained_start_snapshot": 1949,
+            "sustained_fraction": 0.0030706243602865806,
+            "detected": false
+          }
+        },
+        "detected": false,
+        "detected_axes": [],
+        "first_detected_axis": null,
+        "sustained_start_snapshot": null,
+        "endpoint_lead_pct_life": null,
+        "false_alarm_episodes": 22,
+        "reference_snapshots": 3202
+      },
+      {
+        "bearing_id": "femto_Bearing2_4",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 751,
+        "n_monitor_updates": 691,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3666684362748768,
+            "n_snapshots": 751,
+            "reference_snapshots": 578,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 746,
+            "sustained_fraction": 0.006666666666666643,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.28357597100127313,
+            "n_snapshots": 751,
+            "reference_snapshots": 578,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 741,
+            "sustained_fraction": 0.013333333333333286,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 741,
+        "endpoint_lead_pct_life": 1.3333333333333286,
+        "false_alarm_episodes": 1,
+        "reference_snapshots": 1156
+      },
+      {
+        "bearing_id": "femto_Bearing2_5",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2311,
+        "n_monitor_updates": 2251,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.6663261299124936,
+            "n_snapshots": 2311,
+            "reference_snapshots": 1904,
+            "false_alarm_episodes": 4,
+            "sustained_start_snapshot": null,
+            "sustained_fraction": null,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.28919444040407294,
+            "n_snapshots": 2311,
+            "reference_snapshots": 1904,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 69,
+            "sustained_fraction": 0.9705627705627705,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 69,
+        "endpoint_lead_pct_life": 97.05627705627705,
+        "false_alarm_episodes": 6,
+        "reference_snapshots": 3808
+      },
+      {
+        "bearing_id": "femto_Bearing2_6",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 701,
+        "n_monitor_updates": 641,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.30539099263255737,
+            "n_snapshots": 701,
+            "reference_snapshots": 535,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 690,
+            "sustained_fraction": 0.01571428571428566,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3533960253468668,
+            "n_snapshots": 701,
+            "reference_snapshots": 535,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 690,
+            "sustained_fraction": 0.01571428571428566,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 690,
+        "endpoint_lead_pct_life": 1.571428571428566,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 1070
+      },
+      {
+        "bearing_id": "femto_Bearing2_7",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 230,
+        "n_monitor_updates": 170,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.36076888628351705,
+            "n_snapshots": 230,
+            "reference_snapshots": 135,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 224,
+            "sustained_fraction": 0.026200873362445493,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3806795497604044,
+            "n_snapshots": 230,
+            "reference_snapshots": 135,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 226,
+            "sustained_fraction": 0.017467248908297053,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 224,
+        "endpoint_lead_pct_life": 2.6200873362445494,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 270
+      },
+      {
+        "bearing_id": "femto_Bearing3_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 515,
+        "n_monitor_updates": 455,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4400084273262722,
+            "n_snapshots": 515,
+            "reference_snapshots": 377,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 496,
+            "sustained_fraction": 0.0369649805447471,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3023908670190585,
+            "n_snapshots": 515,
+            "reference_snapshots": 377,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 496,
+            "sustained_fraction": 0.0369649805447471,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 496,
+        "endpoint_lead_pct_life": 3.69649805447471,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 754
+      },
+      {
+        "bearing_id": "femto_Bearing3_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1637,
+        "n_monitor_updates": 1577,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.41821088093847486,
+            "n_snapshots": 1637,
+            "reference_snapshots": 1331,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1609,
+            "sustained_fraction": 0.017114914425427813,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.31146506943464336,
+            "n_snapshots": 1637,
+            "reference_snapshots": 1331,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1587,
+            "sustained_fraction": 0.03056234718826395,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 1587,
+        "endpoint_lead_pct_life": 3.0562347188263947,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 2662
+      },
+      {
+        "bearing_id": "femto_Bearing3_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 434,
+        "n_monitor_updates": 374,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.2890824715391052,
+            "n_snapshots": 434,
+            "reference_snapshots": 309,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 330,
+            "sustained_fraction": 0.24018475750577356,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3201232869217001,
+            "n_snapshots": 434,
+            "reference_snapshots": 309,
+            "false_alarm_episodes": 4,
+            "sustained_start_snapshot": 308,
+            "sustained_fraction": 0.2909930715935334,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 308,
+        "endpoint_lead_pct_life": 29.099307159353337,
+        "false_alarm_episodes": 5,
+        "reference_snapshots": 618
+      },
+      {
+        "bearing_id": "ims_test1_b1",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.1260194762135409,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 17,
+            "sustained_start_snapshot": 486,
+            "sustained_fraction": 0.776804649561211,
+            "detected": true
+          },
+          "2": {
+            "baseline_rms": 0.11939205583756465,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 19,
+            "sustained_start_snapshot": 441,
+            "sustained_fraction": 0.7985270596867505,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1",
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 441,
+        "endpoint_lead_pct_life": 79.85270596867505,
+        "false_alarm_episodes": 36,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.13115664787547174,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2121,
+            "sustained_fraction": 0.01673027846520871,
+            "detected": true
+          },
+          "4": {
+            "baseline_rms": 0.12201004863538184,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2122,
+            "sustained_fraction": 0.016247558240196674,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3",
+          "4"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 2121,
+        "endpoint_lead_pct_life": 1.673027846520871,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b3",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "5": {
+            "baseline_rms": 0.13096717292608362,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 41,
+            "sustained_start_snapshot": 159,
+            "sustained_fraction": 0.934455443314165,
+            "detected": true
+          },
+          "6": {
+            "baseline_rms": 0.1333767427124109,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 37,
+            "sustained_start_snapshot": 159,
+            "sustained_fraction": 0.934455443314165,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "5",
+          "6"
+        ],
+        "first_detected_axis": "5",
+        "sustained_start_snapshot": 159,
+        "endpoint_lead_pct_life": 93.4455443314165,
+        "false_alarm_episodes": 78,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b4",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "7": {
+            "baseline_rms": 0.11204808125504288,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 24,
+            "sustained_start_snapshot": 1036,
+            "sustained_fraction": 0.5121910992826882,
+            "detected": true
+          },
+          "8": {
+            "baseline_rms": 0.11446630215384085,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 53,
+            "sustained_start_snapshot": 1029,
+            "sustained_fraction": 0.515570140857772,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "7",
+          "8"
+        ],
+        "first_detected_axis": "8",
+        "sustained_start_snapshot": 1029,
+        "endpoint_lead_pct_life": 51.5570140857772,
+        "false_alarm_episodes": 77,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test2_b1",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.07824848696213874,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 611,
+            "sustained_fraction": 0.37818552497450936,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1"
+        ],
+        "first_detected_axis": "1",
+        "sustained_start_snapshot": 611,
+        "endpoint_lead_pct_life": 37.81855249745094,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "2": {
+            "baseline_rms": 0.09544737484149682,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 906,
+            "sustained_fraction": 0.07747196738022012,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 906,
+        "endpoint_lead_pct_life": 7.747196738022012,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b3",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.10529975962065605,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 918,
+            "sustained_fraction": 0.06523955147808011,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 918,
+        "endpoint_lead_pct_life": 6.523955147808011,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b4",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "4": {
+            "baseline_rms": 0.05558636995962364,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 877,
+            "sustained_fraction": 0.10703363914372517,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "4"
+        ],
+        "first_detected_axis": "4",
+        "sustained_start_snapshot": 877,
+        "endpoint_lead_pct_life": 10.703363914372517,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test3_b1",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.08111100834239272,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6240,
+            "sustained_fraction": 0.01313434882773996,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1"
+        ],
+        "first_detected_axis": "1",
+        "sustained_start_snapshot": 6240,
+        "endpoint_lead_pct_life": 1.3134348827739961,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "2": {
+            "baseline_rms": 0.09376910113382461,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6178,
+            "sustained_fraction": 0.022945549156895114,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 6178,
+        "endpoint_lead_pct_life": 2.2945549156895115,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b3",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.06997116752900641,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6073,
+            "sustained_fraction": 0.03956129164981117,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 6073,
+        "endpoint_lead_pct_life": 3.956129164981117,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b4",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "4": {
+            "baseline_rms": 0.055335271203720546,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 6162,
+            "sustained_fraction": 0.025477471822483538,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "4"
+        ],
+        "first_detected_axis": "4",
+        "sustained_start_snapshot": 6162,
+        "endpoint_lead_pct_life": 2.547747182248354,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 123,
+        "n_monitor_updates": 63,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.7614135167653179,
+            "n_snapshots": 123,
+            "reference_snapshots": 44,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 76,
+            "sustained_fraction": 0.38524590163934425,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6351961572766609,
+            "n_snapshots": 123,
+            "reference_snapshots": 44,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 80,
+            "sustained_fraction": 0.35245901639344257,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 76,
+        "endpoint_lead_pct_life": 38.52459016393443,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 88
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 161,
+        "n_monitor_updates": 101,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.7616646588899136,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.9366744727778269,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 61,
+        "endpoint_lead_pct_life": 62.5,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 152
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 158,
+        "n_monitor_updates": 98,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5193153685584433,
+            "n_snapshots": 158,
+            "reference_snapshots": 74,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 75,
+            "sustained_fraction": 0.5286624203821656,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5351101942865502,
+            "n_snapshots": 158,
+            "reference_snapshots": 74,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 73,
+            "sustained_fraction": 0.5414012738853503,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 73,
+        "endpoint_lead_pct_life": 54.14012738853503,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 148
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_4",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 122,
+        "n_monitor_updates": 62,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.38911916916521966,
+            "n_snapshots": 122,
+            "reference_snapshots": 43,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 86,
+            "sustained_fraction": 0.29752066115702475,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5661911075031946,
+            "n_snapshots": 122,
+            "reference_snapshots": 43,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 98,
+            "sustained_fraction": 0.19834710743801648,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 86,
+        "endpoint_lead_pct_life": 29.752066115702476,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 86
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 491,
+        "n_monitor_updates": 431,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3999791993445885,
+            "n_snapshots": 491,
+            "reference_snapshots": 357,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 455,
+            "sustained_fraction": 0.073469387755102,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5154263686150259,
+            "n_snapshots": 491,
+            "reference_snapshots": 357,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 456,
+            "sustained_fraction": 0.0714285714285714,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 455,
+        "endpoint_lead_pct_life": 7.346938775510201,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 714
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 161,
+        "n_monitor_updates": 101,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5671884565938093,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5544490182199712,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 61,
+        "endpoint_lead_pct_life": 62.5,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 152
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 533,
+        "n_monitor_updates": 473,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.39617394592513866,
+            "n_snapshots": 533,
+            "reference_snapshots": 393,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 130,
+            "sustained_fraction": 0.7575187969924811,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6669883177489747,
+            "n_snapshots": 533,
+            "reference_snapshots": 393,
+            "false_alarm_episodes": 6,
+            "sustained_start_snapshot": 249,
+            "sustained_fraction": 0.5338345864661654,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 130,
+        "endpoint_lead_pct_life": 75.75187969924812,
+        "false_alarm_episodes": 7,
+        "reference_snapshots": 786
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_5",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 339,
+        "n_monitor_updates": 279,
+        "axes": {
+          "H": {
+            "baseline_rms": 1.0104846242750993,
+            "n_snapshots": 339,
+            "reference_snapshots": 228,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 124,
+            "sustained_fraction": 0.636094674556213,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 1.0541289492320147,
+            "n_snapshots": 339,
+            "reference_snapshots": 228,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 148,
+            "sustained_fraction": 0.5650887573964496,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 124,
+        "endpoint_lead_pct_life": 63.609467455621306,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 456
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 2538,
+        "n_monitor_updates": 2478,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.505259852379525,
+            "n_snapshots": 2538,
+            "reference_snapshots": 2097,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2380,
+            "sustained_fraction": 0.062278281434765465,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5116286365355878,
+            "n_snapshots": 2538,
+            "reference_snapshots": 2097,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2381,
+            "sustained_fraction": 0.06188411509657077,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 2380,
+        "endpoint_lead_pct_life": 6.227828143476547,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 4194
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 2496,
+        "n_monitor_updates": 2436,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.9107943443273733,
+            "n_snapshots": 2496,
+            "reference_snapshots": 2061,
+            "false_alarm_episodes": 24,
+            "sustained_start_snapshot": 1308,
+            "sustained_fraction": 0.47615230460921854,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 1.1753397903973344,
+            "n_snapshots": 2496,
+            "reference_snapshots": 2061,
+            "false_alarm_episodes": 11,
+            "sustained_start_snapshot": 1917,
+            "sustained_fraction": 0.23206412825651307,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1308,
+        "endpoint_lead_pct_life": 47.61523046092185,
+        "false_alarm_episodes": 35,
+        "reference_snapshots": 4122
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 371,
+        "n_monitor_updates": 311,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.623586440828235,
+            "n_snapshots": 371,
+            "reference_snapshots": 255,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 344,
+            "sustained_fraction": 0.072972972972973,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.7972796818565641,
+            "n_snapshots": 371,
+            "reference_snapshots": 255,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 344,
+            "sustained_fraction": 0.072972972972973,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 344,
+        "endpoint_lead_pct_life": 7.2972972972973,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 510
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_4",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 1515,
+        "n_monitor_updates": 1455,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5515977197138806,
+            "n_snapshots": 1515,
+            "reference_snapshots": 1227,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1421,
+            "sustained_fraction": 0.06208718626155877,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.630617819843733,
+            "n_snapshots": 1515,
+            "reference_snapshots": 1227,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1420,
+            "sustained_fraction": 0.06274768824306481,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 1420,
+        "endpoint_lead_pct_life": 6.274768824306482,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 2454
+      }
+    ]
+  },
+  "paper_34_failure_cohort": {
+    "label": "paper eligibility: at least 30 monitored updates",
+    "n_evaluated": 42,
+    "n_failures": 34,
+    "n_detected": 33,
+    "median_endpoint_lead_pct_life": 29.752066115702476,
+    "per_dataset": {
+      "ims": {
+        "n": 4,
+        "n_detected": 4,
+        "median_endpoint_lead_pct_life": 44.68778329161407,
+        "missed_bearing_ids": []
+      },
+      "xjtu": {
+        "n": 13,
+        "n_detected": 13,
+        "median_endpoint_lead_pct_life": 38.52459016393443,
+        "missed_bearing_ids": []
+      },
+      "femto": {
+        "n": 17,
+        "n_detected": 16,
+        "median_endpoint_lead_pct_life": 4.376984659421263,
+        "missed_bearing_ids": [
+          "femto_Bearing2_3"
+        ]
+      }
+    },
+    "failure_healthy_reference_false_alarms": {
+      "n_bearings": 34,
+      "n_bearings_with_episode": 23,
+      "bearing_ids_with_episode": [
+        "femto_Bearing1_1",
+        "femto_Bearing1_2",
+        "femto_Bearing1_3",
+        "femto_Bearing1_4",
+        "femto_Bearing1_6",
+        "femto_Bearing2_1",
+        "femto_Bearing2_2",
+        "femto_Bearing2_3",
+        "femto_Bearing2_4",
+        "femto_Bearing2_5",
+        "femto_Bearing3_3",
+        "ims_test1_b3",
+        "ims_test1_b4",
+        "ims_test2_b1",
+        "xjtu_Bearing1_1",
+        "xjtu_Bearing1_2",
+        "xjtu_Bearing1_3",
+        "xjtu_Bearing1_4",
+        "xjtu_Bearing2_2",
+        "xjtu_Bearing2_3",
+        "xjtu_Bearing2_5",
+        "xjtu_Bearing3_2",
+        "xjtu_Bearing3_5"
+      ],
+      "n_axis_episodes": 339,
+      "reference_axis_snapshots": 67406,
+      "episodes_per_1000_reference_snapshots": 5.029225884936059
+    },
+    "ims_censored_healthy_reference_false_alarms": {
+      "n_bearings": 8,
+      "n_bearings_with_episode": 2,
+      "bearing_ids_with_episode": [
+        "ims_test1_b1",
+        "ims_test3_b4"
+      ],
+      "n_axis_episodes": 39,
+      "reference_axis_snapshots": 25392,
+      "episodes_per_1000_reference_snapshots": 1.5359168241965973
+    },
+    "per_bearing": [
+      {
+        "bearing_id": "femto_Bearing1_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2803,
+        "n_monitor_updates": 2743,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5250726192994383,
+            "n_snapshots": 2803,
+            "reference_snapshots": 2322,
+            "false_alarm_episodes": 21,
+            "sustained_start_snapshot": 1734,
+            "sustained_fraction": 0.3815132048536759,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.47254334785449614,
+            "n_snapshots": 2803,
+            "reference_snapshots": 2322,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 2522,
+            "sustained_fraction": 0.10028551034975011,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1734,
+        "endpoint_lead_pct_life": 38.15132048536759,
+        "false_alarm_episodes": 23,
+        "reference_snapshots": 4644
+      },
+      {
+        "bearing_id": "femto_Bearing1_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 871,
+        "n_monitor_updates": 811,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3622311655698712,
+            "n_snapshots": 871,
+            "reference_snapshots": 680,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 827,
+            "sustained_fraction": 0.05057471264367816,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.520814607512447,
+            "n_snapshots": 871,
+            "reference_snapshots": 680,
+            "false_alarm_episodes": 12,
+            "sustained_start_snapshot": 828,
+            "sustained_fraction": 0.04942528735632184,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 827,
+        "endpoint_lead_pct_life": 5.057471264367816,
+        "false_alarm_episodes": 12,
+        "reference_snapshots": 1360
+      },
+      {
+        "bearing_id": "femto_Bearing1_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2375,
+        "n_monitor_updates": 2315,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3852960302985163,
+            "n_snapshots": 2375,
+            "reference_snapshots": 1958,
+            "false_alarm_episodes": 10,
+            "sustained_start_snapshot": 1337,
+            "sustained_fraction": 0.4372367312552654,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3681707090702915,
+            "n_snapshots": 2375,
+            "reference_snapshots": 1958,
+            "false_alarm_episodes": 19,
+            "sustained_start_snapshot": 2252,
+            "sustained_fraction": 0.05181128896377423,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1337,
+        "endpoint_lead_pct_life": 43.72367312552654,
+        "false_alarm_episodes": 29,
+        "reference_snapshots": 3916
+      },
+      {
+        "bearing_id": "femto_Bearing1_4",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1428,
+        "n_monitor_updates": 1368,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.42324833210844376,
+            "n_snapshots": 1428,
+            "reference_snapshots": 1153,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 1089,
+            "sustained_fraction": 0.23756131744919415,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6138602104361381,
+            "n_snapshots": 1428,
+            "reference_snapshots": 1153,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 1090,
+            "sustained_fraction": 0.23686054660126143,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1089,
+        "endpoint_lead_pct_life": 23.756131744919415,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 2306
+      },
+      {
+        "bearing_id": "femto_Bearing1_5",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2463,
+        "n_monitor_updates": 2403,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.35372611079524574,
+            "n_snapshots": 2463,
+            "reference_snapshots": 2033,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2444,
+            "sustained_fraction": 0.00771730300568647,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.46408697638592683,
+            "n_snapshots": 2463,
+            "reference_snapshots": 2033,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2414,
+            "sustained_fraction": 0.0199025182778229,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2414,
+        "endpoint_lead_pct_life": 1.99025182778229,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 4066
+      },
+      {
+        "bearing_id": "femto_Bearing1_6",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2448,
+        "n_monitor_updates": 2388,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4426364343932891,
+            "n_snapshots": 2448,
+            "reference_snapshots": 2020,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 2422,
+            "sustained_fraction": 0.010625255414793587,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5031346296272186,
+            "n_snapshots": 2448,
+            "reference_snapshots": 2020,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 2420,
+            "sustained_fraction": 0.011442582754393093,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2420,
+        "endpoint_lead_pct_life": 1.1442582754393094,
+        "false_alarm_episodes": 4,
+        "reference_snapshots": 4040
+      },
+      {
+        "bearing_id": "femto_Bearing1_7",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2259,
+        "n_monitor_updates": 2199,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4607753698568483,
+            "n_snapshots": 2259,
+            "reference_snapshots": 1860,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2212,
+            "sustained_fraction": 0.020814880425155002,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.4975489361234151,
+            "n_snapshots": 2259,
+            "reference_snapshots": 1860,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2210,
+            "sustained_fraction": 0.021700620017714785,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 2210,
+        "endpoint_lead_pct_life": 2.1700620017714787,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 3720
+      },
+      {
+        "bearing_id": "femto_Bearing2_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 911,
+        "n_monitor_updates": 851,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5176184167645718,
+            "n_snapshots": 911,
+            "reference_snapshots": 714,
+            "false_alarm_episodes": 15,
+            "sustained_start_snapshot": 877,
+            "sustained_fraction": 0.03736263736263723,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.2979536948280778,
+            "n_snapshots": 911,
+            "reference_snapshots": 714,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 140,
+            "sustained_fraction": 0.8472527472527472,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 140,
+        "endpoint_lead_pct_life": 84.72527472527473,
+        "false_alarm_episodes": 16,
+        "reference_snapshots": 1428
+      },
+      {
+        "bearing_id": "femto_Bearing2_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 797,
+        "n_monitor_updates": 737,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.34461809817421746,
+            "n_snapshots": 797,
+            "reference_snapshots": 617,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 239,
+            "sustained_fraction": 0.7010050251256282,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.34504311905181345,
+            "n_snapshots": 797,
+            "reference_snapshots": 617,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 190,
+            "sustained_fraction": 0.7625628140703519,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 190,
+        "endpoint_lead_pct_life": 76.25628140703519,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 1234
+      },
+      {
+        "bearing_id": "femto_Bearing2_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1955,
+        "n_monitor_updates": 1895,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.46433461863238007,
+            "n_snapshots": 1955,
+            "reference_snapshots": 1601,
+            "false_alarm_episodes": 8,
+            "sustained_start_snapshot": 1949,
+            "sustained_fraction": 0.0030706243602865806,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.2906927715980149,
+            "n_snapshots": 1955,
+            "reference_snapshots": 1601,
+            "false_alarm_episodes": 14,
+            "sustained_start_snapshot": 1949,
+            "sustained_fraction": 0.0030706243602865806,
+            "detected": false
+          }
+        },
+        "detected": false,
+        "detected_axes": [],
+        "first_detected_axis": null,
+        "sustained_start_snapshot": null,
+        "endpoint_lead_pct_life": null,
+        "false_alarm_episodes": 22,
+        "reference_snapshots": 3202
+      },
+      {
+        "bearing_id": "femto_Bearing2_4",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 751,
+        "n_monitor_updates": 691,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3666684362748768,
+            "n_snapshots": 751,
+            "reference_snapshots": 578,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 746,
+            "sustained_fraction": 0.006666666666666643,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.28357597100127313,
+            "n_snapshots": 751,
+            "reference_snapshots": 578,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 741,
+            "sustained_fraction": 0.013333333333333286,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 741,
+        "endpoint_lead_pct_life": 1.3333333333333286,
+        "false_alarm_episodes": 1,
+        "reference_snapshots": 1156
+      },
+      {
+        "bearing_id": "femto_Bearing2_5",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 2311,
+        "n_monitor_updates": 2251,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.6663261299124936,
+            "n_snapshots": 2311,
+            "reference_snapshots": 1904,
+            "false_alarm_episodes": 4,
+            "sustained_start_snapshot": null,
+            "sustained_fraction": null,
+            "detected": false
+          },
+          "V": {
+            "baseline_rms": 0.28919444040407294,
+            "n_snapshots": 2311,
+            "reference_snapshots": 1904,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 69,
+            "sustained_fraction": 0.9705627705627705,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 69,
+        "endpoint_lead_pct_life": 97.05627705627705,
+        "false_alarm_episodes": 6,
+        "reference_snapshots": 3808
+      },
+      {
+        "bearing_id": "femto_Bearing2_6",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 701,
+        "n_monitor_updates": 641,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.30539099263255737,
+            "n_snapshots": 701,
+            "reference_snapshots": 535,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 690,
+            "sustained_fraction": 0.01571428571428566,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3533960253468668,
+            "n_snapshots": 701,
+            "reference_snapshots": 535,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 690,
+            "sustained_fraction": 0.01571428571428566,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 690,
+        "endpoint_lead_pct_life": 1.571428571428566,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 1070
+      },
+      {
+        "bearing_id": "femto_Bearing2_7",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 230,
+        "n_monitor_updates": 170,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.36076888628351705,
+            "n_snapshots": 230,
+            "reference_snapshots": 135,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 224,
+            "sustained_fraction": 0.026200873362445493,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3806795497604044,
+            "n_snapshots": 230,
+            "reference_snapshots": 135,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 226,
+            "sustained_fraction": 0.017467248908297053,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 224,
+        "endpoint_lead_pct_life": 2.6200873362445494,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 270
+      },
+      {
+        "bearing_id": "femto_Bearing3_1",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 515,
+        "n_monitor_updates": 455,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.4400084273262722,
+            "n_snapshots": 515,
+            "reference_snapshots": 377,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 496,
+            "sustained_fraction": 0.0369649805447471,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3023908670190585,
+            "n_snapshots": 515,
+            "reference_snapshots": 377,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 496,
+            "sustained_fraction": 0.0369649805447471,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 496,
+        "endpoint_lead_pct_life": 3.69649805447471,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 754
+      },
+      {
+        "bearing_id": "femto_Bearing3_2",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 1637,
+        "n_monitor_updates": 1577,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.41821088093847486,
+            "n_snapshots": 1637,
+            "reference_snapshots": 1331,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1609,
+            "sustained_fraction": 0.017114914425427813,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.31146506943464336,
+            "n_snapshots": 1637,
+            "reference_snapshots": 1331,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1587,
+            "sustained_fraction": 0.03056234718826395,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 1587,
+        "endpoint_lead_pct_life": 3.0562347188263947,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 2662
+      },
+      {
+        "bearing_id": "femto_Bearing3_3",
+        "dataset": "femto",
+        "failed": true,
+        "n_snapshots": 434,
+        "n_monitor_updates": 374,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.2890824715391052,
+            "n_snapshots": 434,
+            "reference_snapshots": 309,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 330,
+            "sustained_fraction": 0.24018475750577356,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.3201232869217001,
+            "n_snapshots": 434,
+            "reference_snapshots": 309,
+            "false_alarm_episodes": 4,
+            "sustained_start_snapshot": 308,
+            "sustained_fraction": 0.2909930715935334,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 308,
+        "endpoint_lead_pct_life": 29.099307159353337,
+        "false_alarm_episodes": 5,
+        "reference_snapshots": 618
+      },
+      {
+        "bearing_id": "ims_test1_b1",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.1260194762135409,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 17,
+            "sustained_start_snapshot": 486,
+            "sustained_fraction": 0.776804649561211,
+            "detected": true
+          },
+          "2": {
+            "baseline_rms": 0.11939205583756465,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 19,
+            "sustained_start_snapshot": 441,
+            "sustained_fraction": 0.7985270596867505,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1",
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 441,
+        "endpoint_lead_pct_life": 79.85270596867505,
+        "false_alarm_episodes": 36,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.13115664787547174,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2121,
+            "sustained_fraction": 0.01673027846520871,
+            "detected": true
+          },
+          "4": {
+            "baseline_rms": 0.12201004863538184,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2122,
+            "sustained_fraction": 0.016247558240196674,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3",
+          "4"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 2121,
+        "endpoint_lead_pct_life": 1.673027846520871,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b3",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "5": {
+            "baseline_rms": 0.13096717292608362,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 41,
+            "sustained_start_snapshot": 159,
+            "sustained_fraction": 0.934455443314165,
+            "detected": true
+          },
+          "6": {
+            "baseline_rms": 0.1333767427124109,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 37,
+            "sustained_start_snapshot": 159,
+            "sustained_fraction": 0.934455443314165,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "5",
+          "6"
+        ],
+        "first_detected_axis": "5",
+        "sustained_start_snapshot": 159,
+        "endpoint_lead_pct_life": 93.4455443314165,
+        "false_alarm_episodes": 78,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test1_b4",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 2156,
+        "n_monitor_updates": 2096,
+        "axes": {
+          "7": {
+            "baseline_rms": 0.11204808125504288,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 24,
+            "sustained_start_snapshot": 1036,
+            "sustained_fraction": 0.5121910992826882,
+            "detected": true
+          },
+          "8": {
+            "baseline_rms": 0.11446630215384085,
+            "n_snapshots": 2156,
+            "reference_snapshots": 1782,
+            "false_alarm_episodes": 53,
+            "sustained_start_snapshot": 1029,
+            "sustained_fraction": 0.515570140857772,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "7",
+          "8"
+        ],
+        "first_detected_axis": "8",
+        "sustained_start_snapshot": 1029,
+        "endpoint_lead_pct_life": 51.5570140857772,
+        "false_alarm_episodes": 77,
+        "reference_snapshots": 3564
+      },
+      {
+        "bearing_id": "ims_test2_b1",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.07824848696213874,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 611,
+            "sustained_fraction": 0.37818552497450936,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1"
+        ],
+        "first_detected_axis": "1",
+        "sustained_start_snapshot": 611,
+        "endpoint_lead_pct_life": 37.81855249745094,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "2": {
+            "baseline_rms": 0.09544737484149682,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 906,
+            "sustained_fraction": 0.07747196738022012,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 906,
+        "endpoint_lead_pct_life": 7.747196738022012,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b3",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.10529975962065605,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 918,
+            "sustained_fraction": 0.06523955147808011,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 918,
+        "endpoint_lead_pct_life": 6.523955147808011,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test2_b4",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 982,
+        "n_monitor_updates": 922,
+        "axes": {
+          "4": {
+            "baseline_rms": 0.05558636995962364,
+            "n_snapshots": 982,
+            "reference_snapshots": 774,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 877,
+            "sustained_fraction": 0.10703363914372517,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "4"
+        ],
+        "first_detected_axis": "4",
+        "sustained_start_snapshot": 877,
+        "endpoint_lead_pct_life": 10.703363914372517,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 774
+      },
+      {
+        "bearing_id": "ims_test3_b1",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "1": {
+            "baseline_rms": 0.08111100834239272,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6240,
+            "sustained_fraction": 0.01313434882773996,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "1"
+        ],
+        "first_detected_axis": "1",
+        "sustained_start_snapshot": 6240,
+        "endpoint_lead_pct_life": 1.3134348827739961,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b2",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "2": {
+            "baseline_rms": 0.09376910113382461,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6178,
+            "sustained_fraction": 0.022945549156895114,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "2"
+        ],
+        "first_detected_axis": "2",
+        "sustained_start_snapshot": 6178,
+        "endpoint_lead_pct_life": 2.2945549156895115,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b3",
+        "dataset": "ims",
+        "failed": true,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "3": {
+            "baseline_rms": 0.06997116752900641,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 6073,
+            "sustained_fraction": 0.03956129164981117,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "3"
+        ],
+        "first_detected_axis": "3",
+        "sustained_start_snapshot": 6073,
+        "endpoint_lead_pct_life": 3.956129164981117,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "ims_test3_b4",
+        "dataset": "ims",
+        "failed": false,
+        "n_snapshots": 6323,
+        "n_monitor_updates": 6263,
+        "axes": {
+          "4": {
+            "baseline_rms": 0.055335271203720546,
+            "n_snapshots": 6323,
+            "reference_snapshots": 5314,
+            "false_alarm_episodes": 3,
+            "sustained_start_snapshot": 6162,
+            "sustained_fraction": 0.025477471822483538,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "4"
+        ],
+        "first_detected_axis": "4",
+        "sustained_start_snapshot": 6162,
+        "endpoint_lead_pct_life": 2.547747182248354,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 5314
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 123,
+        "n_monitor_updates": 63,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.7614135167653179,
+            "n_snapshots": 123,
+            "reference_snapshots": 44,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 76,
+            "sustained_fraction": 0.38524590163934425,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6351961572766609,
+            "n_snapshots": 123,
+            "reference_snapshots": 44,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 80,
+            "sustained_fraction": 0.35245901639344257,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 76,
+        "endpoint_lead_pct_life": 38.52459016393443,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 88
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 161,
+        "n_monitor_updates": 101,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.7616646588899136,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.9366744727778269,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 61,
+        "endpoint_lead_pct_life": 62.5,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 152
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 158,
+        "n_monitor_updates": 98,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5193153685584433,
+            "n_snapshots": 158,
+            "reference_snapshots": 74,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 75,
+            "sustained_fraction": 0.5286624203821656,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5351101942865502,
+            "n_snapshots": 158,
+            "reference_snapshots": 74,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 73,
+            "sustained_fraction": 0.5414012738853503,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 73,
+        "endpoint_lead_pct_life": 54.14012738853503,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 148
+      },
+      {
+        "bearing_id": "xjtu_Bearing1_4",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 122,
+        "n_monitor_updates": 62,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.38911916916521966,
+            "n_snapshots": 122,
+            "reference_snapshots": 43,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 86,
+            "sustained_fraction": 0.29752066115702475,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5661911075031946,
+            "n_snapshots": 122,
+            "reference_snapshots": 43,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 98,
+            "sustained_fraction": 0.19834710743801648,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 86,
+        "endpoint_lead_pct_life": 29.752066115702476,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 86
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 491,
+        "n_monitor_updates": 431,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.3999791993445885,
+            "n_snapshots": 491,
+            "reference_snapshots": 357,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 455,
+            "sustained_fraction": 0.073469387755102,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5154263686150259,
+            "n_snapshots": 491,
+            "reference_snapshots": 357,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 456,
+            "sustained_fraction": 0.0714285714285714,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 455,
+        "endpoint_lead_pct_life": 7.346938775510201,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 714
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 161,
+        "n_monitor_updates": 101,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5671884565938093,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5544490182199712,
+            "n_snapshots": 161,
+            "reference_snapshots": 76,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 61,
+            "sustained_fraction": 0.625,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 61,
+        "endpoint_lead_pct_life": 62.5,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 152
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 533,
+        "n_monitor_updates": 473,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.39617394592513866,
+            "n_snapshots": 533,
+            "reference_snapshots": 393,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 130,
+            "sustained_fraction": 0.7575187969924811,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.6669883177489747,
+            "n_snapshots": 533,
+            "reference_snapshots": 393,
+            "false_alarm_episodes": 6,
+            "sustained_start_snapshot": 249,
+            "sustained_fraction": 0.5338345864661654,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 130,
+        "endpoint_lead_pct_life": 75.75187969924812,
+        "false_alarm_episodes": 7,
+        "reference_snapshots": 786
+      },
+      {
+        "bearing_id": "xjtu_Bearing2_5",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 339,
+        "n_monitor_updates": 279,
+        "axes": {
+          "H": {
+            "baseline_rms": 1.0104846242750993,
+            "n_snapshots": 339,
+            "reference_snapshots": 228,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 124,
+            "sustained_fraction": 0.636094674556213,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 1.0541289492320147,
+            "n_snapshots": 339,
+            "reference_snapshots": 228,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 148,
+            "sustained_fraction": 0.5650887573964496,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 124,
+        "endpoint_lead_pct_life": 63.609467455621306,
+        "false_alarm_episodes": 2,
+        "reference_snapshots": 456
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_1",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 2538,
+        "n_monitor_updates": 2478,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.505259852379525,
+            "n_snapshots": 2538,
+            "reference_snapshots": 2097,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2380,
+            "sustained_fraction": 0.062278281434765465,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.5116286365355878,
+            "n_snapshots": 2538,
+            "reference_snapshots": 2097,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 2381,
+            "sustained_fraction": 0.06188411509657077,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 2380,
+        "endpoint_lead_pct_life": 6.227828143476547,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 4194
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_2",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 2496,
+        "n_monitor_updates": 2436,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.9107943443273733,
+            "n_snapshots": 2496,
+            "reference_snapshots": 2061,
+            "false_alarm_episodes": 24,
+            "sustained_start_snapshot": 1308,
+            "sustained_fraction": 0.47615230460921854,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 1.1753397903973344,
+            "n_snapshots": 2496,
+            "reference_snapshots": 2061,
+            "false_alarm_episodes": 11,
+            "sustained_start_snapshot": 1917,
+            "sustained_fraction": 0.23206412825651307,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 1308,
+        "endpoint_lead_pct_life": 47.61523046092185,
+        "false_alarm_episodes": 35,
+        "reference_snapshots": 4122
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_3",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 371,
+        "n_monitor_updates": 311,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.623586440828235,
+            "n_snapshots": 371,
+            "reference_snapshots": 255,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 344,
+            "sustained_fraction": 0.072972972972973,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.7972796818565641,
+            "n_snapshots": 371,
+            "reference_snapshots": 255,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 344,
+            "sustained_fraction": 0.072972972972973,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "H",
+        "sustained_start_snapshot": 344,
+        "endpoint_lead_pct_life": 7.2972972972973,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 510
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_4",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 1515,
+        "n_monitor_updates": 1455,
+        "axes": {
+          "H": {
+            "baseline_rms": 0.5515977197138806,
+            "n_snapshots": 1515,
+            "reference_snapshots": 1227,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1421,
+            "sustained_fraction": 0.06208718626155877,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 0.630617819843733,
+            "n_snapshots": 1515,
+            "reference_snapshots": 1227,
+            "false_alarm_episodes": 0,
+            "sustained_start_snapshot": 1420,
+            "sustained_fraction": 0.06274768824306481,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 1420,
+        "endpoint_lead_pct_life": 6.274768824306482,
+        "false_alarm_episodes": 0,
+        "reference_snapshots": 2454
+      },
+      {
+        "bearing_id": "xjtu_Bearing3_5",
+        "dataset": "xjtu",
+        "failed": true,
+        "n_snapshots": 114,
+        "n_monitor_updates": 54,
+        "axes": {
+          "H": {
+            "baseline_rms": 3.906593828499495,
+            "n_snapshots": 114,
+            "reference_snapshots": 37,
+            "false_alarm_episodes": 2,
+            "sustained_start_snapshot": 88,
+            "sustained_fraction": 0.23008849557522126,
+            "detected": true
+          },
+          "V": {
+            "baseline_rms": 4.85020970408548,
+            "n_snapshots": 114,
+            "reference_snapshots": 37,
+            "false_alarm_episodes": 1,
+            "sustained_start_snapshot": 74,
+            "sustained_fraction": 0.3539823008849558,
+            "detected": true
+          }
+        },
+        "detected": true,
+        "detected_axes": [
+          "H",
+          "V"
+        ],
+        "first_detected_axis": "V",
+        "sustained_start_snapshot": 74,
+        "endpoint_lead_pct_life": 35.39823008849558,
+        "false_alarm_episodes": 3,
+        "reference_snapshots": 74
+      }
+    ]
+  },
+  "excluded_public_120_snapshot": [
+    {
+      "bearing_id": "xjtu_Bearing1_5",
+      "n_snapshots": 52
+    },
+    {
+      "bearing_id": "xjtu_Bearing2_4",
+      "n_snapshots": 42
+    },
+    {
+      "bearing_id": "xjtu_Bearing3_5",
+      "n_snapshots": 114
+    }
+  ],
+  "excluded_paper_30_updates": [
+    {
+      "bearing_id": "xjtu_Bearing1_5",
+      "n_monitor_updates": -8
+    },
+    {
+      "bearing_id": "xjtu_Bearing2_4",
+      "n_monitor_updates": -18
+    }
+  ],
+  "public_reference_crosscheck": {
+    "source": "https://github.com/bhavjeetsinghh/bearing-early-warning-transfer results/pooled.json",
+    "expected_detected": 32,
+    "expected_n": 33,
+    "expected_median_lead_pct_life": 29.425686637527914,
+    "expected_early_reference_episodes": 336,
+    "expected_early_reference_snapshots": 67332,
+    "result": "exact per-bearing match for detection, lead fraction, false-alarm episodes, and reference snapshots"
+  },
+  "comparison_note": "The public cohort uses the original 120-snapshot eligibility rule and is not directly comparable to the manuscript 34-bearing cohort. The paper cohort applies the public D1 alarm semantics but retains the manuscript's 30-update eligibility rule."
+}

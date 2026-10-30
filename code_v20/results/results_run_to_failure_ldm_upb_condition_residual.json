@@ -1,0 +1,461 @@
+{
+  "protocol": {
+    "status": "post-hoc mechanism exploration; not a frozen validation",
+    "feature": "per-axis RMS residual after condition regression",
+    "regression": "ridge on [dynamic load, static load, speed], fitted only on snapshots 10:60; log-RMS response; lambda=0.01",
+    "threshold": 0.042407782315012556,
+    "excess_ratio": 1.2,
+    "minimum_monitor_snapshots": 30,
+    "post_hoc_tuning_allowed": false
+  },
+  "n_bearings": 11,
+  "raw_detected": 11,
+  "residual_detected": 11,
+  "median_raw_lead_pct_life": 95.8981612446959,
+  "median_residual_lead_pct_life": 63.18785578747628,
+  "n_earliest_raw_alarms": 8,
+  "n_earliest_raw_alarms_delayed_by_residualization": 5,
+  "per_bearing": [
+    {
+      "bearing": "B01",
+      "n_monitor": 317,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 90.85173501577287,
+      "residual_alarm_index": 29,
+      "residual_detected": true,
+      "residual_lead_pct_life": 90.85173501577287,
+      "residual_alarm_snapshot": 89,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -35.48036885323399,
+        "static_load": 5.879118465839461,
+        "speed": 27.484158624940935
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 186.93291991783173,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.501387061917543,
+            0.09654836477400588,
+            0.27731584617510635,
+            0.42699239347642365
+          ],
+          "baseline_residual_mae": 0.03136906008662173
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 186.93291991783173,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.9390901870925388,
+            0.03628141584844209,
+            0.06562857411836455,
+            0.562187030646383
+          ],
+          "baseline_residual_mae": 0.01880789512159847
+        }
+      ]
+    },
+    {
+      "bearing": "B02",
+      "n_monitor": 1056,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 97.25378787878788,
+      "residual_alarm_index": 823,
+      "residual_detected": true,
+      "residual_lead_pct_life": 22.064393939393938,
+      "residual_alarm_snapshot": 883,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -24.196032932433987,
+        "static_load": 6.773747543910735,
+        "speed": -9.638185522990305
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 335.39646977041645,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.4719024866226118,
+            0.024596239105756475,
+            -0.0010635823012942194,
+            0.6664146909598836
+          ],
+          "baseline_residual_mae": 0.02141258108682
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 335.39646977041645,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.8213272741568898,
+            -0.04628113791617434,
+            -0.017361950187953456,
+            0.629553487819396
+          ],
+          "baseline_residual_mae": 0.0238634494317023
+        }
+      ]
+    },
+    {
+      "bearing": "B03",
+      "n_monitor": 554,
+      "raw_alarm_index": 228,
+      "raw_detected": true,
+      "raw_lead_pct_life": 58.84476534296029,
+      "residual_alarm_index": 503,
+      "residual_detected": true,
+      "residual_lead_pct_life": 9.205776173285198,
+      "residual_alarm_snapshot": 563,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -28.298832335489767,
+        "static_load": 3.0957772624917945,
+        "speed": -3.8358957856833964
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 2.3453569773307175,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.027282091716305266,
+            -0.0008306897865322191,
+            0.0024619644783377523,
+            0.1319228284774663
+          ],
+          "baseline_residual_mae": 0.018400469013751645
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 2.3453569773307175,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.783691185958778,
+            0.00355474344563722,
+            -0.0004065528463642073,
+            0.19655172763264733
+          ],
+          "baseline_residual_mae": 0.03363908170029513
+        }
+      ]
+    },
+    {
+      "bearing": "B04",
+      "n_monitor": 1054,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 97.24857685009488,
+      "residual_alarm_index": 388,
+      "residual_detected": true,
+      "residual_lead_pct_life": 63.18785578747628,
+      "residual_alarm_snapshot": 448,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": 150.692197970165,
+        "static_load": -28.782334821307675,
+        "speed": 3.1173780020971043
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 42.38149067746093,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.4716272533581918,
+            0.0893196090320728,
+            0.06774353402047739,
+            0.509876600410133
+          ],
+          "baseline_residual_mae": 0.026007072621967914
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 42.38149067746093,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.9591939955339093,
+            0.025737984719374527,
+            0.006002660632579775,
+            0.4834929669022468
+          ],
+          "baseline_residual_mae": 0.01958480130010494
+        }
+      ]
+    },
+    {
+      "bearing": "B05",
+      "n_monitor": 512,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 94.3359375,
+      "residual_alarm_index": 488,
+      "residual_detected": true,
+      "residual_lead_pct_life": 4.6875,
+      "residual_alarm_snapshot": 548,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -33.03845110164259,
+        "static_load": 0.5897957754178895,
+        "speed": -1.6900485877959226
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 37.506541906490675,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.376315558747313,
+            0.09760215694377226,
+            0.05378859145386886,
+            0.5380485319146785
+          ],
+          "baseline_residual_mae": 0.024106997033502154
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 37.506541906490675,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.8694779771595222,
+            0.04088449556481399,
+            -0.02390573857805278,
+            0.5100514656068754
+          ],
+          "baseline_residual_mae": 0.029351721355388456
+        }
+      ]
+    },
+    {
+      "bearing": "B08",
+      "n_monitor": 1767,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 98.35880022637238,
+      "residual_alarm_index": 1157,
+      "residual_detected": true,
+      "residual_lead_pct_life": 34.5217883418223,
+      "residual_alarm_snapshot": 1217,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -7.74355672476309,
+        "static_load": 0.4397221857528111,
+        "speed": -16.09568088164973
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 175.37466342340576,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.4815966923823067,
+            0.3015390237217436,
+            -0.06381813896895108,
+            0.424077906698745
+          ],
+          "baseline_residual_mae": 0.022534571216517262
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 175.37466342340576,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.9398450765053048,
+            0.2691261813895343,
+            0.00905839098591084,
+            0.278599645179242
+          ],
+          "baseline_residual_mae": 0.0173153033936589
+        }
+      ]
+    },
+    {
+      "bearing": "B09",
+      "n_monitor": 1753,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 98.34569309754706,
+      "residual_alarm_index": 177,
+      "residual_detected": true,
+      "residual_lead_pct_life": 89.9030233884769,
+      "residual_alarm_snapshot": 237,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": -18.961251663441516,
+        "static_load": 2.1475327844675096,
+        "speed": 25.615574861872137
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 38.1858790448238,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.6256963374011604,
+            0.38838592958635754,
+            0.03864651007619014,
+            0.25094740805653304
+          ],
+          "baseline_residual_mae": 0.039148067723580614
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 38.1858790448238,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.9736205796395405,
+            0.4612946495292767,
+            0.02990277890799056,
+            0.24887749362102773
+          ],
+          "baseline_residual_mae": 0.03471562330288865
+        }
+      ]
+    },
+    {
+      "bearing": "B10",
+      "n_monitor": 3164,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 99.08343868520859,
+      "residual_alarm_index": 29,
+      "residual_detected": true,
+      "residual_lead_pct_life": 99.08343868520859,
+      "residual_alarm_snapshot": 89,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": 13.804651042529281,
+        "static_load": -12.207498379112247,
+        "speed": -17.211212112984285
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 61.903614955641295,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.5387773198095323,
+            1.7265181051162681,
+            1.2697524441747925,
+            -1.6957794265721216
+          ],
+          "baseline_residual_mae": 0.05638509719335368
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 61.903614955641295,
+          "coefficients_intercept_dyn_stat_speed": [
+            -1.926531681982673,
+            1.3421368786791226,
+            0.8554943435971998,
+            -1.1213207287599105
+          ],
+          "baseline_residual_mae": 0.043116140504989776
+        }
+      ]
+    },
+    {
+      "bearing": "B11",
+      "n_monitor": 1893,
+      "raw_alarm_index": 669,
+      "raw_detected": true,
+      "raw_lead_pct_life": 64.65927099841521,
+      "residual_alarm_index": 671,
+      "residual_detected": true,
+      "residual_lead_pct_life": 64.55361859482304,
+      "residual_alarm_snapshot": 731,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": 0.0,
+        "static_load": 0.0,
+        "speed": 3.4551959673827515
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 5001.0,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.6719539598754608,
+            0.0,
+            0.0,
+            0.07645439209692813
+          ],
+          "baseline_residual_mae": 0.05356302822548002
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 5001.0,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.2552526285559854,
+            0.0,
+            0.0,
+            0.1342510925795248
+          ],
+          "baseline_residual_mae": 0.03131986182163039
+        }
+      ]
+    },
+    {
+      "bearing": "B12",
+      "n_monitor": 707,
+      "raw_alarm_index": 29,
+      "raw_detected": true,
+      "raw_lead_pct_life": 95.8981612446959,
+      "residual_alarm_index": 29,
+      "residual_detected": true,
+      "residual_lead_pct_life": 95.8981612446959,
+      "residual_alarm_snapshot": 89,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": 0.0,
+        "static_load": 0.0,
+        "speed": 52.337538963013294
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 5000.999999999998,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.5802353495923147,
+            0.0,
+            0.0,
+            0.0528028284931002
+          ],
+          "baseline_residual_mae": 0.05833156726343049
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 5000.999999999998,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.20820532428141686,
+            0.0,
+            0.0,
+            0.1361339866863705
+          ],
+          "baseline_residual_mae": 0.0690348546882273
+        }
+      ]
+    },
+    {
+      "bearing": "B17",
+      "n_monitor": 2673,
+      "raw_alarm_index": 2218,
+      "raw_detected": true,
+      "raw_lead_pct_life": 17.022072577628133,
+      "residual_alarm_index": 2218,
+      "residual_detected": true,
+      "residual_lead_pct_life": 17.022072577628133,
+      "residual_alarm_snapshot": 2278,
+      "condition_relative_change_at_alarm_pct": {
+        "dynamic_load": 0.0,
+        "static_load": 7.38294536316535,
+        "speed": 0.0
+      },
+      "axis_diagnostics": [
+        {
+          "axis": "A",
+          "baseline_condition_number": 5000.999999999998,
+          "coefficients_intercept_dyn_stat_speed": [
+            -0.1761715656521634,
+            0.0,
+            -0.01291565883203943,
+            0.0
+          ],
+          "baseline_residual_mae": 0.04938688215723599
+        },
+        {
+          "axis": "C",
+          "baseline_condition_number": 5000.999999999998,
+          "coefficients_intercept_dyn_stat_speed": [
+            0.14387964438365397,
+            0.0,
+            -0.002797465732492851,
+            0.0
+          ],
+          "baseline_residual_mae": 0.02305638013719067
+        }
+      ]
+    }
+  ],
+  "interpretation": "This is explanatory only: the same frozen threshold is applied to a different feature, no independent healthy censored fleet is available, and the regression was designed after observing LDM_UPB early alarms. It cannot upgrade the main method."
+}

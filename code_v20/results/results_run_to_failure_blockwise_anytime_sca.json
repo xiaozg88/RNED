@@ -1,0 +1,1553 @@
+{
+  "protocol": {
+    "status": "frozen before outcome computation",
+    "preregistration_sha256": "add89f7a19d59fa7c4a29fd17484fab464855c12d62c1f933f846d05c03e991c",
+    "baseline": "median(feature[10:60])",
+    "excess_ratio": 1.2,
+    "minimum_monitor_snapshots": 30,
+    "historical_threshold": 0.042407782315012556,
+    "block_size": 10,
+    "excess_bound": 0.2,
+    "null_mean": 0.05,
+    "lambda_mixture": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "alpha_case": 0.05,
+    "alpha_axis_rule": "alpha_case / n_available_positions",
+    "post_hoc_tuning_allowed": false
+  },
+  "n_healthy_censored_cases": 10,
+  "n_eligible_failure_cases": 3,
+  "healthy_censored": {
+    "raw": {
+      "anytime_false_alarms": 2,
+      "anytime_false_alarm_rate_pct": 20.0,
+      "historical_false_alarms": 2,
+      "historical_false_alarm_rate_pct": 20.0
+    },
+    "residual": {
+      "anytime_false_alarms": 2,
+      "anytime_false_alarm_rate_pct": 20.0,
+      "historical_false_alarms": 2,
+      "historical_false_alarm_rate_pct": 20.0
+    }
+  },
+  "failure": {
+    "raw": {
+      "early_warnings_before_label": 0,
+      "detected_by_trajectory_end": 0,
+      "median_lead_before_label_pct": null
+    },
+    "residual": {
+      "early_warnings_before_label": 0,
+      "detected_by_trajectory_end": 0,
+      "median_lead_before_label_pct": null
+    }
+  },
+  "per_case": [
+    {
+      "split": "test",
+      "case": 4,
+      "n_snapshots": 104,
+      "first_fault_snapshot": 87,
+      "raw": {
+        "historical_alarm_snapshot": 91,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "FS": {
+            "n_monitor": 44,
+            "n_completed_blocks": 4,
+            "baseline": 1.6590155790685541,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -4.171481076115569,
+            "bounded_excess_mean": 0.029156939904400804,
+            "completed_block_mean_max": 0.07891814051024555,
+            "n_completed_blocks_above_null_mean": 1,
+            "log_e_history": [
+              -1.4101029577552384,
+              -1.6133887860586418,
+              -3.02349174381388,
+              -4.171481076115569
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": 91,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "FS": {
+            "n_monitor": 44,
+            "n_completed_blocks": 4,
+            "baseline": 1.6590155790685541,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -4.171481076115569,
+            "bounded_excess_mean": 0.029156939904400804,
+            "completed_block_mean_max": 0.07891814051024555,
+            "n_completed_blocks_above_null_mean": 1,
+            "log_e_history": [
+              -1.4101029577552384,
+              -1.6133887860586418,
+              -3.02349174381388,
+              -4.171481076115569
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "test",
+      "case": 5,
+      "n_snapshots": 147,
+      "first_fault_snapshot": 125,
+      "raw": {
+        "historical_alarm_snapshot": 135,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 87,
+            "n_completed_blocks": 8,
+            "baseline": 11.560032339372155,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 74,
+            "historical_alarm_snapshot": 135,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": 0.09832094669202718,
+            "final_log_e": 0.09832094669202718,
+            "bounded_excess_mean": 0.044708150713064276,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 1,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.24516070816675,
+              0.09832094669202718
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": 135,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 87,
+            "n_completed_blocks": 8,
+            "baseline": 1.0000000041001296,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": 74,
+            "historical_alarm_snapshot": 135,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": 0.12816174527612745,
+            "final_log_e": 0.12816174527612745,
+            "bounded_excess_mean": 0.044922375719959017,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 2,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.21531990958265,
+              0.12816174527612745
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "test",
+      "case": 8,
+      "n_snapshots": 245,
+      "first_fault_snapshot": 230,
+      "raw": {
+        "historical_alarm_snapshot": 91,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 185,
+            "n_completed_blocks": 18,
+            "baseline": 1.7944741113523983,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 175,
+            "historical_alarm_snapshot": 236,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -17.183794295701603,
+            "bounded_excess_mean": 0.01605636971249135,
+            "completed_block_mean_max": 0.18125988624340458,
+            "n_completed_blocks_above_null_mean": 1,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -6.971950159149657,
+              -8.382053116904896,
+              -9.69913372944977,
+              -11.109236687205009,
+              -12.519339644960247,
+              -13.929442602715486,
+              -15.339545560470725,
+              -16.749648518225964,
+              -18.159751475981203,
+              -19.56985443373644,
+              -20.97995739149168,
+              -22.39006034924692,
+              -23.80016330700216,
+              -17.183794295701603
+            ]
+          },
+          "FS": {
+            "n_monitor": 180,
+            "n_completed_blocks": 18,
+            "baseline": 1.802756852050779,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -0.17996045147275308,
+            "final_log_e": -4.0167174925257765,
+            "bounded_excess_mean": 0.045604137249076346,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 7,
+            "log_e_history": [
+              -0.17996045147275308,
+              -0.24003507824804582,
+              -1.5713384260040877,
+              -2.9102375594674617,
+              -4.3203405172227,
+              -5.6134912766495715,
+              -6.98665394975127,
+              -7.29993996627684,
+              -8.592583582985226,
+              -9.776256071681207,
+              -9.247912454862266,
+              -9.093949274741139,
+              -10.453882052271574,
+              -11.863985010026813,
+              -13.274087967782052,
+              -14.643163721493355,
+              -13.360199147384554,
+              -4.0167174925257765
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": 228,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 185,
+            "n_completed_blocks": 18,
+            "baseline": 1.0000000129483115,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": 175,
+            "historical_alarm_snapshot": 236,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -17.37227095251083,
+            "bounded_excess_mean": 0.015196465563281377,
+            "completed_block_mean_max": 0.18113461292070546,
+            "n_completed_blocks_above_null_mean": 1,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.74144140857334,
+              -21.15154436632858,
+              -22.56164732408382,
+              -23.971750281839057,
+              -17.37227095251083
+            ]
+          },
+          "FS": {
+            "n_monitor": 180,
+            "n_completed_blocks": 18,
+            "baseline": 1.0000001950496424,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": 167,
+            "historical_alarm_snapshot": 228,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -0.8855860925615502,
+            "final_log_e": -8.5055696081306,
+            "bounded_excess_mean": 0.0333975876683,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 2,
+            "log_e_history": [
+              -0.8855860925615502,
+              -1.781286487487998,
+              -2.9366218859733157,
+              -4.2496206421944205,
+              -5.659723599949659,
+              -7.069826557704898,
+              -8.360037210608972,
+              -9.366936333022457,
+              -10.547577867053837,
+              -11.956298989091351,
+              -12.745644105901683,
+              -13.517404633311594,
+              -14.901706963832464,
+              -16.311809921587702,
+              -17.72191287934294,
+              -19.13201583709818,
+              -17.849051262989377,
+              -8.5055696081306
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 1,
+      "n_snapshots": 122,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 0.056985955586983175,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.423735544658587,
+            "bounded_excess_mean": 0.000554902160391242,
+            "completed_block_mean_max": 0.0034403933944257004,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.6035296291481105,
+              -7.0136325869033485,
+              -8.423735544658587
+            ]
+          },
+          "FS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 0.05693527761985025,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -7.910288289042999,
+            "bounded_excess_mean": 0.0075877116267477835,
+            "completed_block_mean_max": 0.03399726267158905,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.496202375955113,
+              -6.500185331287761,
+              -7.910288289042999
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 1.000010631084983,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.438561341528807,
+            "bounded_excess_mean": 0.0003332278619484199,
+            "completed_block_mean_max": 0.0020660127440802036,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.61835542601833,
+              -7.028458383773568,
+              -8.438561341528807
+            ]
+          },
+          "FS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 1.0000010220390672,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4032853191836772,
+            "final_log_e": -8.006079195514928,
+            "bounded_excess_mean": 0.006443106263482313,
+            "completed_block_mean_max": 0.025639976261327524,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4032853191836772,
+              -2.8133882769389156,
+              -4.223491234694154,
+              -5.482225252814596,
+              -6.5959762377596896,
+              -8.006079195514928
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 2,
+      "n_snapshots": 124,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 64,
+            "n_completed_blocks": 6,
+            "baseline": 0.5963118414445725,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          },
+          "FS": {
+            "n_monitor": 64,
+            "n_completed_blocks": 6,
+            "baseline": 0.5723345292337063,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 64,
+            "n_completed_blocks": 6,
+            "baseline": 0.5963118414445725,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          },
+          "FS": {
+            "n_monitor": 64,
+            "n_completed_blocks": 6,
+            "baseline": 0.5723345292337063,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 3,
+      "n_snapshots": 117,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 57,
+            "n_completed_blocks": 5,
+            "baseline": 0.11151520363008008,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3148167112638827,
+            "final_log_e": -6.89642957346471,
+            "bounded_excess_mean": 0.0024954873308289265,
+            "completed_block_mean_max": 0.008742463706509062,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3148167112638827,
+              -2.6788776669425083,
+              -4.088980624697747,
+              -5.499083582452986,
+              -6.89642957346471
+            ]
+          },
+          "FS": {
+            "n_monitor": 59,
+            "n_completed_blocks": 5,
+            "baseline": 0.10368770897888417,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3412061602032301,
+            "final_log_e": -6.649300969659068,
+            "bounded_excess_mean": 0.017058393181096417,
+            "completed_block_mean_max": 0.026830713929700555,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3412061602032301,
+              -2.7513091179584688,
+              -4.148292895775927,
+              -5.550718465588533,
+              -6.649300969659068
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 57,
+            "n_completed_blocks": 5,
+            "baseline": 1.0000002370857248,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3548804786808237,
+            "final_log_e": -6.822719274780835,
+            "bounded_excess_mean": 0.0036819964725732924,
+            "completed_block_mean_max": 0.009256670010508028,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3548804786808237,
+              -2.693467583851394,
+              -4.103570541606633,
+              -5.513673499361872,
+              -6.822719274780835
+            ]
+          },
+          "FS": {
+            "n_monitor": 59,
+            "n_completed_blocks": 5,
+            "baseline": 1.0000003604857297,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3863416485903706,
+            "final_log_e": -6.453278075580156,
+            "bounded_excess_mean": 0.017515892598379636,
+            "completed_block_mean_max": 0.045612216629486155,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3863416485903706,
+              -2.796444606345609,
+              -4.206547564100847,
+              -5.616650521856085,
+              -6.453278075580156
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 4,
+      "n_snapshots": 122,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "FS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 1.5014251067064737,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.091333026730817,
+            "bounded_excess_mean": 0.0050418647591396895,
+            "completed_block_mean_max": 0.031259561506666075,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -3.861024153465101,
+              -5.2711271112203395,
+              -6.681230068975578,
+              -8.091333026730817
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "FS": {
+            "n_monitor": 62,
+            "n_completed_blocks": 6,
+            "baseline": 1.000006003778073,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.104297491410021,
+            "bounded_excess_mean": 0.004883879342321571,
+            "completed_block_mean_max": 0.03028005192239374,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -3.8739886181443053,
+              -5.284091575899543,
+              -6.694194533654782,
+              -8.104297491410021
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 6,
+      "n_snapshots": 157,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 97,
+            "n_completed_blocks": 9,
+            "baseline": 6.010172521647005,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -12.690926619797148,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148
+            ]
+          },
+          "FS": {
+            "n_monitor": 100,
+            "n_completed_blocks": 10,
+            "baseline": 2.1657148738775387,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3980191048386472,
+            "final_log_e": -13.68723138142023,
+            "bounded_excess_mean": 0.0036850699525908122,
+            "completed_block_mean_max": 0.02,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3980191048386472,
+              -2.8081220625938856,
+              -3.9917945512898676,
+              -5.4018975090451065,
+              -6.812000466800345,
+              -8.046819550399274,
+              -9.456922508154513,
+              -10.867025465909752,
+              -12.27712842366499,
+              -13.68723138142023
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 97,
+            "n_completed_blocks": 9,
+            "baseline": 6.010172521647005,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -12.690926619797148,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148
+            ]
+          },
+          "FS": {
+            "n_monitor": 100,
+            "n_completed_blocks": 10,
+            "baseline": 2.1657148738775387,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.3980191048386472,
+            "final_log_e": -13.68723138142023,
+            "bounded_excess_mean": 0.0036850699525908122,
+            "completed_block_mean_max": 0.02,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.3980191048386472,
+              -2.8081220625938856,
+              -3.9917945512898676,
+              -5.4018975090451065,
+              -6.812000466800345,
+              -8.046819550399274,
+              -9.456922508154513,
+              -10.867025465909752,
+              -12.27712842366499,
+              -13.68723138142023
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 7,
+      "n_snapshots": 126,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": 91,
+        "anytime_alarm_snapshot": 71,
+        "axes": {
+          "Lower": {
+            "n_monitor": 66,
+            "n_completed_blocks": 6,
+            "baseline": 0.016358137292057096,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": 10,
+            "anytime_alarm_snapshot": 71,
+            "maximum_log_e": 44.23794908517749,
+            "final_log_e": 44.23794908517749,
+            "bounded_excess_mean": 0.18181818181818177,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 6,
+            "log_e_history": [
+              6.447587677653645,
+              15.791069332512421,
+              25.1345509873712,
+              34.47803264222998,
+              43.821514297088754,
+              44.23794908517749
+            ]
+          },
+          "Upper": {
+            "n_monitor": 66,
+            "n_completed_blocks": 6,
+            "baseline": 0.02417997522791822,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": 10,
+            "anytime_alarm_snapshot": 71,
+            "maximum_log_e": 44.51323238441512,
+            "final_log_e": 44.51323238441512,
+            "bounded_excess_mean": 0.1829081664852124,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 6,
+            "log_e_history": [
+              6.447587677653645,
+              15.791069332512421,
+              25.1345509873712,
+              34.47803264222998,
+              43.821514297088754,
+              44.51323238441512
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": 91,
+        "anytime_alarm_snapshot": 71,
+        "axes": {
+          "Lower": {
+            "n_monitor": 66,
+            "n_completed_blocks": 6,
+            "baseline": 0.016358137292057096,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": 10,
+            "anytime_alarm_snapshot": 71,
+            "maximum_log_e": 44.23794908517749,
+            "final_log_e": 44.23794908517749,
+            "bounded_excess_mean": 0.18181818181818177,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 6,
+            "log_e_history": [
+              6.447587677653645,
+              15.791069332512421,
+              25.1345509873712,
+              34.47803264222998,
+              43.821514297088754,
+              44.23794908517749
+            ]
+          },
+          "Upper": {
+            "n_monitor": 66,
+            "n_completed_blocks": 6,
+            "baseline": 0.02417997522791822,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 30,
+            "historical_alarm_snapshot": 91,
+            "anytime_alarm_monitor_index": 10,
+            "anytime_alarm_snapshot": 71,
+            "maximum_log_e": 44.51323238441512,
+            "final_log_e": 44.51323238441512,
+            "bounded_excess_mean": 0.1829081664852124,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 6,
+            "log_e_history": [
+              6.447587677653645,
+              15.791069332512421,
+              25.1345509873712,
+              34.47803264222998,
+              43.821514297088754,
+              44.51323238441512
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 8,
+      "n_snapshots": 252,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 192,
+            "n_completed_blocks": 19,
+            "baseline": 1.9495638415212695,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -26.770617526566724,
+            "bounded_excess_mean": 0.00010412420443791509,
+            "completed_block_mean_max": 0.00199918472520797,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.72010273779053,
+              -21.13020569554577,
+              -22.540308653301008,
+              -23.950411611056246,
+              -25.360514568811485,
+              -26.770617526566724
+            ]
+          },
+          "FS": {
+            "n_monitor": 178,
+            "n_completed_blocks": 17,
+            "baseline": 2.1129688313067216,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.089367191445588,
+            "final_log_e": -21.934708328305447,
+            "bounded_excess_mean": 0.010046619769390284,
+            "completed_block_mean_max": 0.027830039325715993,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.089367191445588,
+              -2.175104085178862,
+              -3.5852070429341003,
+              -4.995310000689338,
+              -6.302055409280634,
+              -7.712158367035872,
+              -8.895830855731854,
+              -10.305933813487092,
+              -11.716036771242331,
+              -13.12613972899757,
+              -14.309812217693551,
+              -15.586739146360944,
+              -16.996842104116183,
+              -18.406945061871422,
+              -19.56736335091348,
+              -20.751035839609465,
+              -21.934708328305447
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 192,
+            "n_completed_blocks": 19,
+            "baseline": 1.0000003243851152,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -26.766907150643277,
+            "bounded_excess_mean": 0.0001221023663233745,
+            "completed_block_mean_max": 0.0023443654334087904,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.716392361867083,
+              -21.12649531962232,
+              -22.53659827737756,
+              -23.9467012351328,
+              -25.35680419288804,
+              -26.766907150643277
+            ]
+          },
+          "FS": {
+            "n_monitor": 178,
+            "n_completed_blocks": 17,
+            "baseline": 1.0000000252007575,
+            "condition_residual_used": true,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -23.941578058429634,
+            "bounded_excess_mean": 0.00015841536744170542,
+            "completed_block_mean_max": 0.0028197935404623564,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.430445523122007,
+              -9.840548480877246,
+              -11.250651438632485,
+              -12.660754396387723,
+              -14.070857354142962,
+              -15.480960311898201,
+              -16.89106326965344,
+              -18.30116622740868,
+              -19.711269185163918,
+              -21.121372142919157,
+              -22.531475100674395,
+              -23.941578058429634
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 9,
+      "n_snapshots": 477,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": 441,
+        "anytime_alarm_snapshot": 461,
+        "axes": {
+          "DS": {
+            "n_monitor": 417,
+            "n_completed_blocks": 41,
+            "baseline": 0.5416754040005691,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 417,
+            "historical_alarm_snapshot": 478,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -14.809835293281797,
+            "bounded_excess_mean": 0.036526061194990266,
+            "completed_block_mean_max": 0.19297368833304382,
+            "n_completed_blocks_above_null_mean": 8,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.53241909579807,
+              -20.906213109226776,
+              -22.316316066982015,
+              -23.726419024737254,
+              -25.136521982492493,
+              -26.54662494024773,
+              -27.95672789800297,
+              -29.36683085575821,
+              -30.77693381351345,
+              -32.18703677126869,
+              -33.59713972902392,
+              -35.00724268677916,
+              -36.41734564453439,
+              -37.59817859044751,
+              -38.68415587541789,
+              -39.526564134164595,
+              -40.67560574926378,
+              -41.72947617490454,
+              -42.58304958690957,
+              -42.73544442930396,
+              -43.51522429685969,
+              -43.33354378678082,
+              -42.91954166346171,
+              -35.75235238684889,
+              -29.726681332620853,
+              -24.46192365894791,
+              -23.093093379229522,
+              -14.809835293281797
+            ]
+          },
+          "FS": {
+            "n_monitor": 449,
+            "n_completed_blocks": 44,
+            "baseline": 0.7898983930184851,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 380,
+            "historical_alarm_snapshot": 441,
+            "anytime_alarm_monitor_index": 400,
+            "anytime_alarm_snapshot": 461,
+            "maximum_log_e": 15.86582438735173,
+            "final_log_e": 15.86582438735173,
+            "bounded_excess_mean": 0.04798421956777776,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 12,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.74144140857334,
+              -21.15154436632858,
+              -22.56164732408382,
+              -23.971750281839057,
+              -25.381853239594296,
+              -26.791956197349535,
+              -28.202059155104774,
+              -29.612162112860013,
+              -31.02226507061525,
+              -32.43236802837049,
+              -33.842470986125726,
+              -35.25257394388096,
+              -36.662676901636196,
+              -38.07277985939143,
+              -39.44362948377506,
+              -40.23967804993094,
+              -41.39364640771885,
+              -42.37853471255799,
+              -42.69787516913517,
+              -42.04220529632511,
+              -39.17929143307916,
+              -35.88299145838323,
+              -28.370406786673225,
+              -19.660726293053976,
+              -10.317244638195199,
+              -3.869656960541554,
+              5.473824694317224,
+              7.968650307231384,
+              6.558547349476145,
+              6.522342732492951,
+              15.86582438735173
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": 441,
+        "anytime_alarm_snapshot": 461,
+        "axes": {
+          "DS": {
+            "n_monitor": 417,
+            "n_completed_blocks": 41,
+            "baseline": 0.5416754040005691,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 417,
+            "historical_alarm_snapshot": 478,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -14.809835293281797,
+            "bounded_excess_mean": 0.036526061194990266,
+            "completed_block_mean_max": 0.19297368833304382,
+            "n_completed_blocks_above_null_mean": 8,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.53241909579807,
+              -20.906213109226776,
+              -22.316316066982015,
+              -23.726419024737254,
+              -25.136521982492493,
+              -26.54662494024773,
+              -27.95672789800297,
+              -29.36683085575821,
+              -30.77693381351345,
+              -32.18703677126869,
+              -33.59713972902392,
+              -35.00724268677916,
+              -36.41734564453439,
+              -37.59817859044751,
+              -38.68415587541789,
+              -39.526564134164595,
+              -40.67560574926378,
+              -41.72947617490454,
+              -42.58304958690957,
+              -42.73544442930396,
+              -43.51522429685969,
+              -43.33354378678082,
+              -42.91954166346171,
+              -35.75235238684889,
+              -29.726681332620853,
+              -24.46192365894791,
+              -23.093093379229522,
+              -14.809835293281797
+            ]
+          },
+          "FS": {
+            "n_monitor": 449,
+            "n_completed_blocks": 44,
+            "baseline": 0.7898983930184851,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": 380,
+            "historical_alarm_snapshot": 441,
+            "anytime_alarm_monitor_index": 400,
+            "anytime_alarm_snapshot": 461,
+            "maximum_log_e": 15.86582438735173,
+            "final_log_e": 15.86582438735173,
+            "bounded_excess_mean": 0.04798421956777776,
+            "completed_block_mean_max": 0.2,
+            "n_completed_blocks_above_null_mean": 12,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431,
+              -9.87072070428667,
+              -11.28082366204191,
+              -12.690926619797148,
+              -14.101029577552387,
+              -15.511132535307626,
+              -16.921235493062863,
+              -18.3313384508181,
+              -19.74144140857334,
+              -21.15154436632858,
+              -22.56164732408382,
+              -23.971750281839057,
+              -25.381853239594296,
+              -26.791956197349535,
+              -28.202059155104774,
+              -29.612162112860013,
+              -31.02226507061525,
+              -32.43236802837049,
+              -33.842470986125726,
+              -35.25257394388096,
+              -36.662676901636196,
+              -38.07277985939143,
+              -39.44362948377506,
+              -40.23967804993094,
+              -41.39364640771885,
+              -42.37853471255799,
+              -42.69787516913517,
+              -42.04220529632511,
+              -39.17929143307916,
+              -35.88299145838323,
+              -28.370406786673225,
+              -19.660726293053976,
+              -10.317244638195199,
+              -3.869656960541554,
+              5.473824694317224,
+              7.968650307231384,
+              6.558547349476145,
+              6.522342732492951,
+              15.86582438735173
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 10,
+      "n_snapshots": 117,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 57,
+            "n_completed_blocks": 5,
+            "baseline": 2.7612999545584276,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -7.0505147887761925,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 57,
+            "n_completed_blocks": 5,
+            "baseline": 2.7612999545584276,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -7.0505147887761925,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "train",
+      "case": 14,
+      "n_snapshots": 127,
+      "first_fault_snapshot": null,
+      "raw": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 67,
+            "n_completed_blocks": 6,
+            "baseline": 1.3179260086054683,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          },
+          "FS": {
+            "n_monitor": 67,
+            "n_completed_blocks": 6,
+            "baseline": 1.7552701624456495,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          }
+        }
+      },
+      "residual": {
+        "historical_alarm_snapshot": null,
+        "anytime_alarm_snapshot": null,
+        "axes": {
+          "DS": {
+            "n_monitor": 67,
+            "n_completed_blocks": 6,
+            "baseline": 1.3179260086054683,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          },
+          "FS": {
+            "n_monitor": 67,
+            "n_completed_blocks": 6,
+            "baseline": 1.7552701624456495,
+            "condition_residual_used": false,
+            "historical_alarm_monitor_index": null,
+            "historical_alarm_snapshot": null,
+            "anytime_alarm_monitor_index": null,
+            "anytime_alarm_snapshot": null,
+            "maximum_log_e": -1.4101029577552384,
+            "final_log_e": -8.460617746531431,
+            "bounded_excess_mean": 0.0,
+            "completed_block_mean_max": 0.0,
+            "n_completed_blocks_above_null_mean": 0,
+            "log_e_history": [
+              -1.4101029577552384,
+              -2.820205915510477,
+              -4.230308873265715,
+              -5.640411831020954,
+              -7.0505147887761925,
+              -8.460617746531431
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "interpretation": "This is an independent industrial healthy-censored validation. The e-process control remains conditional on bounded excesses, a correct null mean, and effectively independent blocks; the SCA channels are positions, not collocated axes on one bearing.",
+  "generated_at_utc": "2026-10-24T08:50:47.096759+00:00"
+}

@@ -1,0 +1,116 @@
+{
+  "protocol_status": "frozen public secondary external replication",
+  "post_hoc_tuning_allowed": false,
+  "inputs": [
+    {
+      "path": "results/results_run_to_failure_public_locked_validation_unsw_test1.json",
+      "sha256": "1fa8eac425ac5540770a2a7d8bf1d1517086d0bf32bc01403324a34432947d88"
+    },
+    {
+      "path": "results/results_run_to_failure_public_locked_validation_ferrara_e6.json",
+      "sha256": "0d43126ef70caa061e04ecfeae25ae263757f6862b706729e3579ed8f62801f6"
+    },
+    {
+      "path": "results/results_run_to_failure_public_locked_validation_kaist.json",
+      "sha256": "edadd723188a2f225466058da2a072ed085e2a3f4c4a42c658b1b354b08b00fe"
+    },
+    {
+      "path": "results/results_run_to_failure_public_locked_validation_ldm_upb.json",
+      "sha256": "647a95c3d67ddf1236c743f825bd46d4a87fee3034b010818a5e5b482cd2560b"
+    }
+  ],
+  "datasets": [
+    {
+      "dataset": "unsw_test1",
+      "n_failed": 1,
+      "n_protocol_eligible": 0,
+      "historical_detected": 0,
+      "hierarchical_n_evaluable": 0,
+      "hierarchical_detected": 0,
+      "ineligible_bearings": [
+        {
+          "bearing_id": "Test 1",
+          "n_monitor": 20,
+          "reason": "fewer than 30 monitored snapshots"
+        }
+      ]
+    },
+    {
+      "dataset": "ferrara_e6",
+      "n_failed": 1,
+      "n_protocol_eligible": 1,
+      "historical_detected": 1,
+      "hierarchical_n_evaluable": 0,
+      "hierarchical_detected": 0,
+      "ineligible_bearings": []
+    },
+    {
+      "dataset": "kaist",
+      "n_failed": 1,
+      "n_protocol_eligible": 1,
+      "historical_detected": 1,
+      "hierarchical_n_evaluable": 1,
+      "hierarchical_detected": 1,
+      "ineligible_bearings": []
+    },
+    {
+      "dataset": "ldm_upb",
+      "n_failed": 11,
+      "n_protocol_eligible": 11,
+      "historical_detected": 11,
+      "hierarchical_n_evaluable": 11,
+      "hierarchical_detected": 11,
+      "ineligible_bearings": []
+    }
+  ],
+  "n_result_files": 4,
+  "n_public_failed": 14,
+  "n_protocol_eligible": 13,
+  "historical_detected": 13,
+  "hierarchical_n_evaluable": 12,
+  "hierarchical_detected": 12,
+  "hierarchical_no_later_than_historical": 12,
+  "hierarchical_earlier_than_historical": 2,
+  "median_historical_lead_pct_life": 94.3359375,
+  "median_hierarchical_lead_pct_life": 95.11704937234795,
+  "false_alarm_endpoint": {
+    "evaluable": false,
+    "reason": "no public independent healthy censored multi-axis fleet",
+    "normal_state_stress_test": {
+      "path": "results/results_run_to_failure_cwru_normal_stress.json",
+      "sha256": "2f06448143afe3e78f7357fd019756518fa8a41afcdd1f36cf3e13e5893d519c",
+      "axis_level": {
+        "n_axes": 6,
+        "historical_false_alarms": 0,
+        "false_alarm_rate_pct": 0.0,
+        "wilson_95_pct": [
+          0.0,
+          39.03
+        ]
+      },
+      "machine_level": {
+        "n_machines": 3,
+        "historical_false_alarms": 0,
+        "historical_false_alarm_rate_pct": 0.0,
+        "cross_axis_false_alarms": 0,
+        "cross_axis_false_alarm_rate_pct": 0.0,
+        "hierarchical_false_alarms": 0,
+        "hierarchical_false_alarm_rate_pct": 0.0,
+        "historical_wilson_95_pct": [
+          0.0,
+          56.15
+        ],
+        "hierarchical_wilson_95_pct": [
+          0.0,
+          56.15
+        ]
+      },
+      "interpretation": "steady-state normal-condition stress test only; not a healthy censored-fleet validation and not evidence of finite conformal false-alarm control"
+    }
+  },
+  "main_method_upgrade": {
+    "supported": false,
+    "reason": "public evidence is a small secondary replication and does not satisfy multi-bearing, multi-rig, healthy-fleet false-alarm, or finite-conformal requirements"
+  },
+  "generated_at_utc": "2026-10-24T05:41:11.532504+00:00"
+}

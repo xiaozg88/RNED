@@ -1,0 +1,246 @@
+{
+  "models": {
+    "deep_svdd": [
+      {
+        "seed": 0,
+        "zero_fa_threshold": 0.3095511198043823,
+        "total_detected": 1,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "median_lead_pct_life": null
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "median_lead_pct_life": null
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 1,
+            "detection_rate": 7.6923076923076925,
+            "median_lead_pct_life": 11.224489795918368
+          }
+        }
+      },
+      {
+        "seed": 1,
+        "zero_fa_threshold": 0.07902153581380844,
+        "total_detected": 22,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 13,
+            "detection_rate": 76.47058823529412,
+            "median_lead_pct_life": 58.8768898488121
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 2,
+            "detection_rate": 50.0,
+            "median_lead_pct_life": 8.78246468368869
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 7,
+            "detection_rate": 53.84615384615385,
+            "median_lead_pct_life": 7.888631090487239
+          }
+        }
+      },
+      {
+        "seed": 2,
+        "zero_fa_threshold": 0.25902318954467773,
+        "total_detected": 2,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 0,
+            "detection_rate": 0.0,
+            "median_lead_pct_life": null
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 1,
+            "detection_rate": 25.0,
+            "median_lead_pct_life": 3.2467532467532467
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 1,
+            "detection_rate": 7.6923076923076925,
+            "median_lead_pct_life": 1.5873015873015872
+          }
+        }
+      }
+    ],
+    "lstm_ae": [
+      {
+        "seed": 0,
+        "zero_fa_threshold": 243779.7965643823,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      },
+      {
+        "seed": 1,
+        "zero_fa_threshold": 244030.95743373345,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      },
+      {
+        "seed": 2,
+        "zero_fa_threshold": 244202.84484369998,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      }
+    ],
+    "mlp_ae": [
+      {
+        "seed": 0,
+        "zero_fa_threshold": 244065.1130975333,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      },
+      {
+        "seed": 1,
+        "zero_fa_threshold": 242651.8957411576,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      },
+      {
+        "seed": 2,
+        "zero_fa_threshold": 242866.81555391764,
+        "total_detected": 20,
+        "total_n": 34,
+        "per_dataset": {
+          "femto": {
+            "n": 17,
+            "n_detected": 8,
+            "detection_rate": 47.05882352941177,
+            "median_lead_pct_life": 25.69324303301967
+          },
+          "ims": {
+            "n": 4,
+            "n_detected": 3,
+            "detection_rate": 75.0,
+            "median_lead_pct_life": 0.20753512132822477
+          },
+          "xjtu": {
+            "n": 13,
+            "n_detected": 9,
+            "detection_rate": 69.23076923076923,
+            "median_lead_pct_life": 1.6129032258064515
+          }
+        }
+      }
+    ]
+  },
+  "n_failed_bearings": 34,
+  "n_censored_bearings": 8
+}

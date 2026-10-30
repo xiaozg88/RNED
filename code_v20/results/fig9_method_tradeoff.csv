@@ -1,0 +1,9 @@
+method,family,detections_of_34,macro_median_lead_pct_life
+Excess rate,ours,31,36.0
+Shewhart,classical,25,1.1
+EWMA,classical,25,1.6
+CUSUM,classical,21,16.3
+MLP-AE,deep,20,1.2
+LSTM-AE,deep,20,1.2
+Transformer-AE,deep,20,1.6
+TranAD,deep,20,1.6

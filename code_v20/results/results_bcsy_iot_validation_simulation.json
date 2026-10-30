@@ -1,0 +1,982 @@
+{
+  "schema_version": "1.0",
+  "simulation_only": true,
+  "created_at_utc": "2026-10-26T14:16:07.786311+00:00",
+  "seed": 20261026,
+  "frozen_detector": {
+    "baseline_slice": [
+      10,
+      60
+    ],
+    "monitor_start_snapshot": 60,
+    "earliest_update": 30,
+    "raw_threshold": 0.042407782315012556,
+    "rms_threshold_multiplier": 1.2,
+    "retuning_allowed": false
+  },
+  "multi_rig_healthy_censored_simulation": {
+    "design": {
+      "n_rigs": 8,
+      "healthy_machines_per_rig": 3,
+      "failures_per_rig": 1,
+      "axes_per_machine": 2,
+      "healthy_lengths_snapshots": [
+        220,
+        500
+      ],
+      "failure_lengths_snapshots": [
+        520,
+        900
+      ],
+      "fault_onset_snapshots": [
+        180,
+        380
+      ],
+      "condition": "shared low-frequency sinusoid plus bounded random walk; axes have independent lognormal noise",
+      "failure": "nonlinear monotonic RMS gain after latent fault onset on one randomly selected axis",
+      "detector": "historical frozen RMS-excess-rate rule; no parameter changed"
+    },
+    "totals": {
+      "n_failed_machines": 8,
+      "detected": 8,
+      "detection_rate_pct": 100.0,
+      "detection_wilson_95_pct": [
+        67.55924351161198,
+        100.0
+      ],
+      "n_healthy_machines": 24,
+      "false_alarm_machines": 2,
+      "machine_false_alarm_rate_pct": 8.333333333333334,
+      "machine_false_alarm_wilson_95_pct": [
+        2.3158815297043307,
+        25.848802193210684
+      ],
+      "n_healthy_axes": 48,
+      "false_alarm_axes": 2,
+      "axis_false_alarm_rate_pct": 4.166666666666667,
+      "axis_false_alarm_wilson_95_pct": [
+        1.1501893489386585,
+        13.975655870455444
+      ],
+      "median_endpoint_lead_pct": 17.38646734346102,
+      "endpoint_lead_p25_pct": 13.527572913611062,
+      "endpoint_lead_p75_pct": 28.441264721456037,
+      "median_detection_lag_after_onset_snapshots": 279.0,
+      "detection_lag_p25_snapshots": 255.75,
+      "detection_lag_p75_snapshots": 374.75,
+      "detection_rate_range_across_rigs_pct": [
+        100.0,
+        100.0
+      ],
+      "machine_false_alarm_range_across_rigs_pct": [
+        0.0,
+        33.33333333333333
+      ]
+    },
+    "per_rig": [
+      {
+        "rig": "R1",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R2",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R3",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R4",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 1,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 1,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R5",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 1,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 1,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R6",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R7",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      },
+      {
+        "rig": "R8",
+        "detected_failures": 1,
+        "n_failures": 1,
+        "false_healthy_machines": 0,
+        "n_healthy_machines": 3,
+        "false_healthy_axes": 0,
+        "n_healthy_axes": 6
+      }
+    ],
+    "failure_trajectories": [
+      {
+        "rig": "R1",
+        "machine": "F1",
+        "length": 831,
+        "fault_onset": 341,
+        "fault_axis": 2,
+        "alarm_snapshot": 714,
+        "detected": true,
+        "endpoint_lead_pct": 14.07942238267148,
+        "detection_lag_after_onset": 373,
+        "axis_alarm_snapshots": [
+          null,
+          714
+        ],
+        "max_rate": 0.21350311540488146,
+        "final_gain": 3.12896101204507
+      },
+      {
+        "rig": "R2",
+        "machine": "F1",
+        "length": 739,
+        "fault_onset": 270,
+        "fault_axis": 2,
+        "alarm_snapshot": 552,
+        "detected": true,
+        "endpoint_lead_pct": 25.30446549391069,
+        "detection_lag_after_onset": 282,
+        "axis_alarm_snapshots": [
+          null,
+          552
+        ],
+        "max_rate": 0.2638495532328518,
+        "final_gain": 2.6442397515566913
+      },
+      {
+        "rig": "R3",
+        "machine": "F1",
+        "length": 851,
+        "fault_onset": 308,
+        "fault_axis": 1,
+        "alarm_snapshot": 745,
+        "detected": true,
+        "endpoint_lead_pct": 12.45593419506463,
+        "detection_lag_after_onset": 437,
+        "axis_alarm_snapshots": [
+          745,
+          null
+        ],
+        "max_rate": 0.20739595693600196,
+        "final_gain": 3.141226596648329
+      },
+      {
+        "rig": "R4",
+        "machine": "F1",
+        "length": 782,
+        "fault_onset": 257,
+        "fault_axis": 2,
+        "alarm_snapshot": 486,
+        "detected": true,
+        "endpoint_lead_pct": 37.851662404092075,
+        "detection_lag_after_onset": 229,
+        "axis_alarm_snapshots": [
+          null,
+          486
+        ],
+        "max_rate": 0.3435686129860763,
+        "final_gain": 2.90413555148954
+      },
+      {
+        "rig": "R5",
+        "machine": "F1",
+        "length": 894,
+        "fault_onset": 329,
+        "fault_axis": 1,
+        "alarm_snapshot": 709,
+        "detected": true,
+        "endpoint_lead_pct": 20.69351230425056,
+        "detection_lag_after_onset": 380,
+        "axis_alarm_snapshots": [
+          709,
+          null
+        ],
+        "max_rate": 0.16019872593045764,
+        "final_gain": 2.182932058042665
+      },
+      {
+        "rig": "R6",
+        "machine": "F1",
+        "length": 793,
+        "fault_onset": 198,
+        "fault_axis": 2,
+        "alarm_snapshot": 474,
+        "detected": true,
+        "endpoint_lead_pct": 40.22698612862547,
+        "detection_lag_after_onset": 276,
+        "axis_alarm_snapshots": [
+          null,
+          474
+        ],
+        "max_rate": 0.225591166966871,
+        "final_gain": 2.016922606317156
+      },
+      {
+        "rig": "R7",
+        "machine": "F1",
+        "length": 533,
+        "fault_onset": 244,
+        "fault_axis": 2,
+        "alarm_snapshot": 487,
+        "detected": true,
+        "endpoint_lead_pct": 8.630393996247655,
+        "detection_lag_after_onset": 243,
+        "axis_alarm_snapshots": [
+          null,
+          487
+        ],
+        "max_rate": 0.09922359063882216,
+        "final_gain": 2.0092495144972045
+      },
+      {
+        "rig": "R8",
+        "machine": "F1",
+        "length": 677,
+        "fault_onset": 323,
+        "fault_axis": 1,
+        "alarm_snapshot": 583,
+        "detected": true,
+        "endpoint_lead_pct": 13.884785819793205,
+        "detection_lag_after_onset": 260,
+        "axis_alarm_snapshots": [
+          583,
+          null
+        ],
+        "max_rate": 0.16794212782356563,
+        "final_gain": 2.6814745756738922
+      }
+    ],
+    "healthy_machines": [
+      {
+        "rig": "R1",
+        "machine": "H1",
+        "length": 326,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R1",
+        "machine": "H2",
+        "length": 225,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R1",
+        "machine": "H3",
+        "length": 406,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R2",
+        "machine": "H1",
+        "length": 243,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R2",
+        "machine": "H2",
+        "length": 230,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R2",
+        "machine": "H3",
+        "length": 490,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R3",
+        "machine": "H1",
+        "length": 441,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R3",
+        "machine": "H2",
+        "length": 235,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R3",
+        "machine": "H3",
+        "length": 473,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R4",
+        "machine": "H1",
+        "length": 480,
+        "false_alarm": true,
+        "false_axes": 1
+      },
+      {
+        "rig": "R4",
+        "machine": "H2",
+        "length": 500,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R4",
+        "machine": "H3",
+        "length": 460,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R5",
+        "machine": "H1",
+        "length": 341,
+        "false_alarm": true,
+        "false_axes": 1
+      },
+      {
+        "rig": "R5",
+        "machine": "H2",
+        "length": 331,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R5",
+        "machine": "H3",
+        "length": 334,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R6",
+        "machine": "H1",
+        "length": 298,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R6",
+        "machine": "H2",
+        "length": 477,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R6",
+        "machine": "H3",
+        "length": 411,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R7",
+        "machine": "H1",
+        "length": 452,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R7",
+        "machine": "H2",
+        "length": 448,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R7",
+        "machine": "H3",
+        "length": 351,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R8",
+        "machine": "H1",
+        "length": 455,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R8",
+        "machine": "H2",
+        "length": 346,
+        "false_alarm": false,
+        "false_axes": 0
+      },
+      {
+        "rig": "R8",
+        "machine": "H3",
+        "length": 227,
+        "false_alarm": false,
+        "false_axes": 0
+      }
+    ]
+  },
+  "network_multi_node_simulation": {
+    "design": {
+      "machines": 100,
+      "axes_per_machine": 2,
+      "cycles": 5000,
+      "axis_event_probability_per_cycle": 0.01,
+      "axis_correlation": 0.2,
+      "event_packet_bytes": 64,
+      "periodic_status_packet_bytes": 32,
+      "latency_ms": "lognormal(mu=3.4, sigma=0.65)",
+      "latency_median_mean_variance_ms": [
+        30.0,
+        37.0,
+        720.3
+      ],
+      "stale_event_threshold_ms": 100.0,
+      "retry_wait_ms": 0.0,
+      "completion_time_rule": "first delivered packet latency; unavailable events are censored at 1000 ms",
+      "deduplication": "receiver keeps the first event ID and discards later duplicate payloads",
+      "acknowledgement": "each successful data or ACK transmission is lost independently"
+    },
+    "scenarios": [
+      {
+        "loss_rate_pct": 0.0,
+        "retries": 0,
+        "n_events": 9785,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 3.3929483903934594,
+        "latency_p50_ms": 29.89272796053865,
+        "latency_p95_ms": 88.59156567757418,
+        "latency_p99_ms": 136.4730548509147,
+        "completion_latency_p50_ms_censored_at_1000": 29.89272796053865,
+        "completion_latency_p95_ms_censored_at_1000": 88.59156567757418,
+        "completion_latency_p99_ms_censored_at_1000": 136.4730548509147,
+        "event_packet_bytes": 626240,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.043
+      },
+      {
+        "loss_rate_pct": 0.0,
+        "retries": 1,
+        "n_events": 9770,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 2.9580348004094166,
+        "latency_p50_ms": 30.02824114391241,
+        "latency_p95_ms": 85.70685911301966,
+        "latency_p99_ms": 138.6660902647892,
+        "completion_latency_p50_ms_censored_at_1000": 30.02824114391241,
+        "completion_latency_p95_ms_censored_at_1000": 85.70685911301966,
+        "completion_latency_p99_ms_censored_at_1000": 138.6660902647892,
+        "event_packet_bytes": 625280,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.046
+      },
+      {
+        "loss_rate_pct": 0.0,
+        "retries": 2,
+        "n_events": 9802,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 3.111609875535605,
+        "latency_p50_ms": 29.99950374005504,
+        "latency_p95_ms": 85.75158578603428,
+        "latency_p99_ms": 138.2790254664766,
+        "completion_latency_p50_ms_censored_at_1000": 29.99950374005504,
+        "completion_latency_p95_ms_censored_at_1000": 85.75158578603428,
+        "completion_latency_p99_ms_censored_at_1000": 138.2790254664766,
+        "event_packet_bytes": 627328,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.03960000000001
+      },
+      {
+        "loss_rate_pct": 0.0,
+        "retries": 3,
+        "n_events": 9806,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 3.069549255557822,
+        "latency_p50_ms": 30.054272036436316,
+        "latency_p95_ms": 87.59387318691516,
+        "latency_p99_ms": 132.71045655758434,
+        "completion_latency_p50_ms_censored_at_1000": 30.054272036436316,
+        "completion_latency_p95_ms_censored_at_1000": 87.59387318691516,
+        "completion_latency_p99_ms_censored_at_1000": 132.71045655758434,
+        "event_packet_bytes": 627584,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.03880000000001
+      },
+      {
+        "loss_rate_pct": 1.0,
+        "retries": 0,
+        "n_events": 9917,
+        "delivery_ratio_pct": 98.88070989210446,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 3.2772007663607945,
+        "latency_p50_ms": 30.314959694384157,
+        "latency_p95_ms": 87.64134826192466,
+        "latency_p99_ms": 135.03372615821758,
+        "completion_latency_p50_ms_censored_at_1000": 30.56155234503836,
+        "completion_latency_p95_ms_censored_at_1000": 94.16302751146036,
+        "completion_latency_p99_ms_censored_at_1000": 1000.0,
+        "event_packet_bytes": 634688,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.0166
+      },
+      {
+        "loss_rate_pct": 1.0,
+        "retries": 1,
+        "n_events": 9862,
+        "delivery_ratio_pct": 99.97972013790306,
+        "duplicate_ratio_pct": 1.0646927600892313,
+        "stale_event_ratio_pct": 3.3157574528493208,
+        "latency_p50_ms": 29.709303688940807,
+        "latency_p95_ms": 87.68875440364148,
+        "latency_p99_ms": 134.76740669585072,
+        "completion_latency_p50_ms_censored_at_1000": 29.71964168294206,
+        "completion_latency_p95_ms_censored_at_1000": 88.02197920444104,
+        "completion_latency_p99_ms_censored_at_1000": 135.26371562096426,
+        "event_packet_bytes": 644160,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.987
+      },
+      {
+        "loss_rate_pct": 1.0,
+        "retries": 2,
+        "n_events": 9844,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.8533116619260463,
+        "stale_event_ratio_pct": 3.199918732222674,
+        "latency_p50_ms": 29.68842428524754,
+        "latency_p95_ms": 88.03026552981058,
+        "latency_p99_ms": 135.63276736609907,
+        "completion_latency_p50_ms_censored_at_1000": 29.68842428524754,
+        "completion_latency_p95_ms_censored_at_1000": 88.03026552981058,
+        "completion_latency_p99_ms_censored_at_1000": 135.63276736609907,
+        "event_packet_bytes": 640768,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.99759999999999
+      },
+      {
+        "loss_rate_pct": 1.0,
+        "retries": 3,
+        "n_events": 9756,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 0.984009840098401,
+        "stale_event_ratio_pct": 3.2492824928249284,
+        "latency_p50_ms": 29.77657971956414,
+        "latency_p95_ms": 86.76712132654006,
+        "latency_p99_ms": 135.79285023627668,
+        "completion_latency_p50_ms_censored_at_1000": 29.77657971956414,
+        "completion_latency_p95_ms_censored_at_1000": 86.76712132654006,
+        "completion_latency_p99_ms_censored_at_1000": 135.79285023627668,
+        "event_packet_bytes": 638080,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.006
+      },
+      {
+        "loss_rate_pct": 5.0,
+        "retries": 0,
+        "n_events": 9788,
+        "delivery_ratio_pct": 94.72823865958317,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 3.1671434409480996,
+        "latency_p50_ms": 30.096763619296638,
+        "latency_p95_ms": 87.13038876127747,
+        "latency_p99_ms": 142.0124042496073,
+        "completion_latency_p50_ms_censored_at_1000": 31.55449091544913,
+        "completion_latency_p95_ms_censored_at_1000": 1000.0,
+        "completion_latency_p99_ms_censored_at_1000": 1000.0,
+        "event_packet_bytes": 626432,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.0424
+      },
+      {
+        "loss_rate_pct": 5.0,
+        "retries": 1,
+        "n_events": 9833,
+        "delivery_ratio_pct": 99.65422556696838,
+        "duplicate_ratio_pct": 4.840842062442794,
+        "stale_event_ratio_pct": 2.8577239906437506,
+        "latency_p50_ms": 29.27907787411508,
+        "latency_p95_ms": 85.59493080932661,
+        "latency_p99_ms": 134.10587464163171,
+        "completion_latency_p50_ms_censored_at_1000": 29.35257472009385,
+        "completion_latency_p95_ms_censored_at_1000": 87.4107715380738,
+        "completion_latency_p99_ms_censored_at_1000": 148.20305982634852,
+        "event_packet_bytes": 693696,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.8322
+      },
+      {
+        "loss_rate_pct": 5.0,
+        "retries": 2,
+        "n_events": 9694,
+        "delivery_ratio_pct": 99.98968434082938,
+        "duplicate_ratio_pct": 4.621415308438209,
+        "stale_event_ratio_pct": 3.1565917062100266,
+        "latency_p50_ms": 29.358936838080474,
+        "latency_p95_ms": 86.4363594489012,
+        "latency_p99_ms": 132.53923728278093,
+        "completion_latency_p50_ms_censored_at_1000": 29.36073062980398,
+        "completion_latency_p95_ms_censored_at_1000": 86.49623400447682,
+        "completion_latency_p99_ms_censored_at_1000": 132.60063842451075,
+        "event_packet_bytes": 685248,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.8586
+      },
+      {
+        "loss_rate_pct": 5.0,
+        "retries": 3,
+        "n_events": 9987,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 5.28687293481526,
+        "stale_event_ratio_pct": 2.843696805847602,
+        "latency_p50_ms": 29.498030044566374,
+        "latency_p95_ms": 84.62783549956883,
+        "latency_p99_ms": 133.19314507641622,
+        "completion_latency_p50_ms_censored_at_1000": 29.498030044566374,
+        "completion_latency_p95_ms_censored_at_1000": 84.62783549956883,
+        "completion_latency_p99_ms_censored_at_1000": 133.19314507641622,
+        "event_packet_bytes": 710208,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.78059999999999
+      },
+      {
+        "loss_rate_pct": 10.0,
+        "retries": 0,
+        "n_events": 9829,
+        "delivery_ratio_pct": 89.9074168277546,
+        "duplicate_ratio_pct": 0.0,
+        "stale_event_ratio_pct": 2.574015667921457,
+        "latency_p50_ms": 29.51886028259535,
+        "latency_p95_ms": 85.31722656038511,
+        "latency_p99_ms": 132.21903537822934,
+        "completion_latency_p50_ms_censored_at_1000": 32.47729249588912,
+        "completion_latency_p95_ms_censored_at_1000": 1000.0,
+        "completion_latency_p99_ms_censored_at_1000": 1000.0,
+        "event_packet_bytes": 629056,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 98.0342
+      },
+      {
+        "loss_rate_pct": 10.0,
+        "retries": 1,
+        "n_events": 9688,
+        "delivery_ratio_pct": 98.99876135425268,
+        "duplicate_ratio_pct": 7.617671345995046,
+        "stale_event_ratio_pct": 3.1275805119735756,
+        "latency_p50_ms": 29.09489334883766,
+        "latency_p95_ms": 86.17297970849734,
+        "latency_p99_ms": 141.64871133306286,
+        "completion_latency_p50_ms_censored_at_1000": 29.36128993706152,
+        "completion_latency_p95_ms_censored_at_1000": 92.61191397122853,
+        "completion_latency_p99_ms_censored_at_1000": 511.12364251242957,
+        "event_packet_bytes": 733696,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.7072
+      },
+      {
+        "loss_rate_pct": 10.0,
+        "retries": 2,
+        "n_events": 10072,
+        "delivery_ratio_pct": 99.96028594122319,
+        "duplicate_ratio_pct": 9.382446386020652,
+        "stale_event_ratio_pct": 2.9289118347895156,
+        "latency_p50_ms": 28.750527649017812,
+        "latency_p95_ms": 83.97286433511434,
+        "latency_p99_ms": 131.60524908746322,
+        "completion_latency_p50_ms_censored_at_1000": 28.76063766129376,
+        "completion_latency_p95_ms_censored_at_1000": 84.09832356292915,
+        "completion_latency_p99_ms_censored_at_1000": 132.8990929331971,
+        "event_packet_bytes": 786688,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.54159999999999
+      },
+      {
+        "loss_rate_pct": 10.0,
+        "retries": 3,
+        "n_events": 9924,
+        "delivery_ratio_pct": 100.0,
+        "duplicate_ratio_pct": 9.64328899637243,
+        "stale_event_ratio_pct": 2.7912132204756146,
+        "latency_p50_ms": 28.50664824604246,
+        "latency_p95_ms": 84.69922396041841,
+        "latency_p99_ms": 129.13857240086932,
+        "completion_latency_p50_ms_censored_at_1000": 28.50664824604246,
+        "completion_latency_p95_ms_censored_at_1000": 84.69922396041841,
+        "completion_latency_p99_ms_censored_at_1000": 129.13857240086932,
+        "event_packet_bytes": 780608,
+        "periodic_status_bytes": 32000000,
+        "byte_compression_ratio_pct": 97.5606
+      }
+    ],
+    "interpretation": "Network results are packet-level simulations, not measurements on a real MQTT/CoAP deployment."
+  },
+  "fleet_event_budget_simulation": {
+    "design": {
+      "machines": 100,
+      "axes_per_machine": 2,
+      "cycles": 5000,
+      "axis_event_probabilities": [
+        0.001,
+        0.005,
+        0.01,
+        0.02
+      ],
+      "axis_correlations": [
+        0.0,
+        0.2,
+        0.5,
+        0.8
+      ],
+      "correlation_model": "bivariate Gaussian copula with common correlation",
+      "budget_rule": "report load and the probability that at least 5% of machines emit an any-axis event in a cycle"
+    },
+    "scenarios": [
+      {
+        "axis_event_probability": 0.001,
+        "axis_correlation": 0.0,
+        "mean_axis_events_per_cycle": 0.1988,
+        "p95_axis_events_per_cycle": 1.0,
+        "mean_any_axis_machines_per_cycle": 0.1988,
+        "p95_any_axis_machines_per_cycle": 1.0,
+        "probability_any_axis_machines_ge_5pct": 0.0,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 100.0
+      },
+      {
+        "axis_event_probability": 0.001,
+        "axis_correlation": 0.2,
+        "mean_axis_events_per_cycle": 0.1934,
+        "p95_axis_events_per_cycle": 1.0,
+        "mean_any_axis_machines_per_cycle": 0.1924,
+        "p95_any_axis_machines_per_cycle": 1.0,
+        "probability_any_axis_machines_ge_5pct": 0.0,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.001,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 99.48024948024948
+      },
+      {
+        "axis_event_probability": 0.001,
+        "axis_correlation": 0.5,
+        "mean_axis_events_per_cycle": 0.203,
+        "p95_axis_events_per_cycle": 1.0,
+        "mean_any_axis_machines_per_cycle": 0.1968,
+        "p95_any_axis_machines_per_cycle": 1.0,
+        "probability_any_axis_machines_ge_5pct": 0.0,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0062,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 96.84959349593495
+      },
+      {
+        "axis_event_probability": 0.001,
+        "axis_correlation": 0.8,
+        "mean_axis_events_per_cycle": 0.2024,
+        "p95_axis_events_per_cycle": 1.0,
+        "mean_any_axis_machines_per_cycle": 0.1738,
+        "p95_any_axis_machines_per_cycle": 1.0,
+        "probability_any_axis_machines_ge_5pct": 0.0,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0286,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 83.54430379746836
+      },
+      {
+        "axis_event_probability": 0.005,
+        "axis_correlation": 0.0,
+        "mean_axis_events_per_cycle": 1.0036,
+        "p95_axis_events_per_cycle": 3.0,
+        "mean_any_axis_machines_per_cycle": 1.002,
+        "p95_any_axis_machines_per_cycle": 3.0,
+        "probability_any_axis_machines_ge_5pct": 0.0034,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0016,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 99.84031936127744
+      },
+      {
+        "axis_event_probability": 0.005,
+        "axis_correlation": 0.2,
+        "mean_axis_events_per_cycle": 1.017,
+        "p95_axis_events_per_cycle": 3.0,
+        "mean_any_axis_machines_per_cycle": 1.0062,
+        "p95_any_axis_machines_per_cycle": 3.0,
+        "probability_any_axis_machines_ge_5pct": 0.003,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0108,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 98.92665474060823
+      },
+      {
+        "axis_event_probability": 0.005,
+        "axis_correlation": 0.5,
+        "mean_axis_events_per_cycle": 1.023,
+        "p95_axis_events_per_cycle": 3.0,
+        "mean_any_axis_machines_per_cycle": 0.9716,
+        "p95_any_axis_machines_per_cycle": 3.0,
+        "probability_any_axis_machines_ge_5pct": 0.0026,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0514,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 94.70975710168794
+      },
+      {
+        "axis_event_probability": 0.005,
+        "axis_correlation": 0.8,
+        "mean_axis_events_per_cycle": 0.999,
+        "p95_axis_events_per_cycle": 3.0,
+        "mean_any_axis_machines_per_cycle": 0.8338,
+        "p95_any_axis_machines_per_cycle": 3.0,
+        "probability_any_axis_machines_ge_5pct": 0.0024,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.1652,
+        "p95_cross_axis_confirmed_machines_per_cycle": 1.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 80.18709522667307
+      },
+      {
+        "axis_event_probability": 0.01,
+        "axis_correlation": 0.0,
+        "mean_axis_events_per_cycle": 1.993,
+        "p95_axis_events_per_cycle": 5.0,
+        "mean_any_axis_machines_per_cycle": 1.9838,
+        "p95_any_axis_machines_per_cycle": 4.0,
+        "probability_any_axis_machines_ge_5pct": 0.0484,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.0092,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 99.53624357294082
+      },
+      {
+        "axis_event_probability": 0.01,
+        "axis_correlation": 0.2,
+        "mean_axis_events_per_cycle": 2.0102,
+        "p95_axis_events_per_cycle": 5.0,
+        "mean_any_axis_machines_per_cycle": 1.9772,
+        "p95_any_axis_machines_per_cycle": 4.0,
+        "probability_any_axis_machines_ge_5pct": 0.0482,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.033,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 98.3309730932632
+      },
+      {
+        "axis_event_probability": 0.01,
+        "axis_correlation": 0.5,
+        "mean_axis_events_per_cycle": 1.982,
+        "p95_axis_events_per_cycle": 5.0,
+        "mean_any_axis_machines_per_cycle": 1.8514,
+        "p95_any_axis_machines_per_cycle": 4.0,
+        "probability_any_axis_machines_ge_5pct": 0.0406,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.1306,
+        "p95_cross_axis_confirmed_machines_per_cycle": 1.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 92.94587879442584
+      },
+      {
+        "axis_event_probability": 0.01,
+        "axis_correlation": 0.8,
+        "mean_axis_events_per_cycle": 1.966,
+        "p95_axis_events_per_cycle": 5.0,
+        "mean_any_axis_machines_per_cycle": 1.6062,
+        "p95_any_axis_machines_per_cycle": 4.0,
+        "probability_any_axis_machines_ge_5pct": 0.0224,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.3598,
+        "p95_cross_axis_confirmed_machines_per_cycle": 1.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 77.59930270202963
+      },
+      {
+        "axis_event_probability": 0.02,
+        "axis_correlation": 0.0,
+        "mean_axis_events_per_cycle": 3.9628,
+        "p95_axis_events_per_cycle": 7.0,
+        "mean_any_axis_machines_per_cycle": 3.9228,
+        "p95_any_axis_machines_per_cycle": 7.0,
+        "probability_any_axis_machines_ge_5pct": 0.3584,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.04,
+        "p95_cross_axis_confirmed_machines_per_cycle": 0.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 98.98032017946365
+      },
+      {
+        "axis_event_probability": 0.02,
+        "axis_correlation": 0.2,
+        "mean_axis_events_per_cycle": 3.9312,
+        "p95_axis_events_per_cycle": 8.0,
+        "mean_any_axis_machines_per_cycle": 3.823,
+        "p95_any_axis_machines_per_cycle": 7.0,
+        "probability_any_axis_machines_ge_5pct": 0.332,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.1082,
+        "p95_cross_axis_confirmed_machines_per_cycle": 1.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 97.1697619670416
+      },
+      {
+        "axis_event_probability": 0.02,
+        "axis_correlation": 0.5,
+        "mean_axis_events_per_cycle": 4.0268,
+        "p95_axis_events_per_cycle": 8.0,
+        "mean_any_axis_machines_per_cycle": 3.6824,
+        "p95_any_axis_machines_per_cycle": 7.0,
+        "probability_any_axis_machines_ge_5pct": 0.3106,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.3444,
+        "p95_cross_axis_confirmed_machines_per_cycle": 2.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 90.64740386704322
+      },
+      {
+        "axis_event_probability": 0.02,
+        "axis_correlation": 0.8,
+        "mean_axis_events_per_cycle": 3.9764,
+        "p95_axis_events_per_cycle": 8.0,
+        "mean_any_axis_machines_per_cycle": 3.1444,
+        "p95_any_axis_machines_per_cycle": 6.0,
+        "probability_any_axis_machines_ge_5pct": 0.209,
+        "mean_cross_axis_confirmed_machines_per_cycle": 0.832,
+        "p95_cross_axis_confirmed_machines_per_cycle": 2.0,
+        "event_reduction_by_cross_axis_confirmation_pct": 73.5402620531739
+      }
+    ]
+  },
+  "evidence_boundary": {
+    "supports": "protocol-level sensitivity, false-alarm, packet-load, and budget stress testing under stated synthetic mechanisms",
+    "does_not_support": [
+      "completion of independent multi-rig frozen validation",
+      "real healthy-censored fleet validation",
+      "real MQTT/CoAP or multi-hop network measurement",
+      "MCU energy, ADC, gateway, cloud, or maintenance-workflow validation"
+    ],
+    "required_real_validation": "Pre-register the protocol, obtain an independent multi-rig multi-axis cohort with healthy censoring and trustworthy fault onset, run once without tuning, and record all alarms and network/edge costs."
+  },
+  "script_sha256": "9f308451083e30cd1dca2916a87c8c5f3a60435a05ae3c1327dc6230366f4334"
+}

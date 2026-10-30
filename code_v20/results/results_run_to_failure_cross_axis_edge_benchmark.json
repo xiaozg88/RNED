@@ -1,0 +1,51 @@
+{
+  "platform": "NVIDIA Orin NX Developer Kit",
+  "protocol": {
+    "implementation": "stateful constant-time historical cumulative mean plus 10-snapshot rolling mean",
+    "decision": "historical OR cross-axis",
+    "axis_counts": [
+      2,
+      4
+    ],
+    "rms_dtype": "float32"
+  },
+  "detector_incremental_update": {
+    "axes_2": {
+      "incremental_update_us": 36.1272,
+      "memory_bytes_state": 352
+    },
+    "axes_4": {
+      "incremental_update_us": 38.0579,
+      "memory_bytes_state": 704
+    }
+  },
+  "windows": {
+    "ims": {
+      "samples": 20480,
+      "rms_extraction_1_axis_ms": 0.04143,
+      "rms_plus_incremental_hierarchy_k4_ms": 0.09256,
+      "incremental_detector_share_k4_ms": 0.05113
+    },
+    "xjtu": {
+      "samples": 32768,
+      "rms_extraction_1_axis_ms": 0.05448,
+      "rms_plus_incremental_hierarchy_k4_ms": 0.10695,
+      "incremental_detector_share_k4_ms": 0.05248
+    },
+    "femto": {
+      "samples": 2560,
+      "rms_extraction_1_axis_ms": 0.02368,
+      "rms_plus_incremental_hierarchy_k4_ms": 0.07174,
+      "incremental_detector_share_k4_ms": 0.04806
+    }
+  },
+  "sustained_rms_plus_hierarchy_k4": {
+    "seconds": 45.0,
+    "window_samples": 2560,
+    "throughput_windows_per_s": 13684.3,
+    "power_idle_mw": 5949.0,
+    "power_load_mw": 6474.5,
+    "power_delta_mw": 525.5,
+    "energy_per_window_mj": 0.0384
+  }
+}

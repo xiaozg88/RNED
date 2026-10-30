@@ -1,0 +1,1042 @@
+{
+  "protocol": {
+    "wake_ratio": 1.2,
+    "diagnostic_interval": 20,
+    "confirmation_events": 3,
+    "secondary_ratio": 1.2,
+    "minimum_monitor_updates": 30,
+    "baseline_snapshots": [
+      11,
+      60
+    ]
+  },
+  "thresholds": {
+    "raw_rms": 0.042407782315012556,
+    "env_kurtosis": 0.4014534749550757,
+    "fault_harmonic_ratio": 0.03247361990300139
+  },
+  "primary": {
+    "detected": "31/34",
+    "median_lead_pct_life": 28.81679389312977,
+    "per_dataset_detection": {
+      "ims": "4/4",
+      "xjtu": "13/13",
+      "femto": "14/17"
+    },
+    "triggers": {
+      "ims_test1_b3": {
+        "monitor_index": 2084,
+        "axis": "5"
+      },
+      "ims_test1_b4": {
+        "monitor_index": 1492,
+        "axis": "7"
+      },
+      "ims_test2_b1": {
+        "monitor_index": 661,
+        "axis": "1"
+      },
+      "ims_test3_b3": {
+        "monitor_index": 6249,
+        "axis": "3"
+      },
+      "xjtu_Bearing1_1": {
+        "monitor_index": 29,
+        "axis": "H"
+      },
+      "xjtu_Bearing1_2": {
+        "monitor_index": 29,
+        "axis": "H"
+      },
+      "xjtu_Bearing1_3": {
+        "monitor_index": 29,
+        "axis": "H"
+      },
+      "xjtu_Bearing1_4": {
+        "monitor_index": 61,
+        "axis": "H"
+      },
+      "xjtu_Bearing2_1": {
+        "monitor_index": 403,
+        "axis": "H"
+      },
+      "xjtu_Bearing2_2": {
+        "monitor_index": 29,
+        "axis": "H"
+      },
+      "xjtu_Bearing2_3": {
+        "monitor_index": 98,
+        "axis": "H"
+      },
+      "xjtu_Bearing2_5": {
+        "monitor_index": 90,
+        "axis": "H"
+      },
+      "xjtu_Bearing3_1": {
+        "monitor_index": 2408,
+        "axis": "H"
+      },
+      "xjtu_Bearing3_2": {
+        "monitor_index": 1823,
+        "axis": "H"
+      },
+      "xjtu_Bearing3_3": {
+        "monitor_index": 286,
+        "axis": "H"
+      },
+      "xjtu_Bearing3_4": {
+        "monitor_index": 1397,
+        "axis": "V"
+      },
+      "xjtu_Bearing3_5": {
+        "monitor_index": 29,
+        "axis": "V"
+      },
+      "femto_Bearing1_3": {
+        "monitor_index": 1575,
+        "axis": "H"
+      },
+      "femto_Bearing1_4": {
+        "monitor_index": 1047,
+        "axis": "H"
+      },
+      "femto_Bearing1_5": {
+        "monitor_index": 2403,
+        "axis": "H"
+      },
+      "femto_Bearing1_6": {
+        "monitor_index": 2388,
+        "axis": "H"
+      },
+      "femto_Bearing1_7": {
+        "monitor_index": 2193,
+        "axis": "H"
+      },
+      "femto_Bearing2_3": {
+        "monitor_index": 206,
+        "axis": "V"
+      },
+      "femto_Bearing2_4": {
+        "monitor_index": 691,
+        "axis": "H"
+      },
+      "femto_Bearing2_5": {
+        "monitor_index": 29,
+        "axis": "V"
+      },
+      "femto_Bearing2_6": {
+        "monitor_index": 636,
+        "axis": "V"
+      },
+      "femto_Bearing2_7": {
+        "monitor_index": 102,
+        "axis": "V"
+      },
+      "femto_Bearing3_3": {
+        "monitor_index": 29,
+        "axis": "V"
+      },
+      "femto_Bearing1_1": {
+        "monitor_index": 2143,
+        "axis": "H"
+      },
+      "femto_Bearing1_2": {
+        "monitor_index": 29,
+        "axis": "V"
+      },
+      "femto_Bearing2_1": {
+        "monitor_index": 91,
+        "axis": "V"
+      },
+      "femto_Bearing2_2": {
+        "monitor_index": 152,
+        "axis": "V"
+      },
+      "femto_Bearing3_1": {
+        "monitor_index": 438,
+        "axis": "V"
+      },
+      "femto_Bearing3_2": {
+        "monitor_index": 1564,
+        "axis": "V"
+      }
+    },
+    "early_pseudo_health": {
+      "axis_false_alarms": 10,
+      "n_pseudo_health_axes": 54,
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "bearing_false_alarms": 6,
+      "n_pseudo_health_bearings": 27,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "false_alarm_bearing_ids": [
+        "xjtu_Bearing1_2",
+        "xjtu_Bearing1_3",
+        "xjtu_Bearing2_2",
+        "femto_Bearing2_5",
+        "femto_Bearing3_3",
+        "femto_Bearing1_2"
+      ],
+      "scope": "first 90 monitoring windows (snapshots 61-150)"
+    },
+    "ims_censored_full_life": {
+      "axis_false_alarms": 0,
+      "n_censored_axes": 10,
+      "bearing_false_alarms": 0,
+      "n_censored_bearings": 8
+    }
+  },
+  "state_machine": {
+    "detected": "33/34",
+    "median_lead_pct_life": 30.73277433467007,
+    "per_dataset_detection": {
+      "ims": "4/4",
+      "xjtu": "13/13",
+      "femto": "16/17"
+    },
+    "rescued_bearings": [
+      "femto_Bearing1_5",
+      "femto_Bearing1_6"
+    ],
+    "missed_bearings": [
+      "femto_Bearing2_4"
+    ],
+    "advanced_feature_computations": 1024,
+    "advanced_feature_duty_cycle_pct": 0.9314001928289461,
+    "n_watch_events": 27157,
+    "n_watch_entries": 1301,
+    "n_diagnostic_tag_axes": 23,
+    "mean_axis_duty_cycle_pct": 1.6095490420894465,
+    "triggers": {
+      "ims_test1_b1": {
+        "axis": "1",
+        "monitor_index": 2096,
+        "snapshot": 2156,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test1_b2": {
+        "axis": "3",
+        "monitor_index": 2096,
+        "snapshot": 2156,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test1_b3": {
+        "axis": "5",
+        "monitor_index": 1840,
+        "snapshot": 1900,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 12.213740458015268
+      },
+      "ims_test1_b4": {
+        "axis": "7",
+        "monitor_index": 1400,
+        "snapshot": 1460,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 33.20610687022901
+      },
+      "ims_test2_b1": {
+        "axis": "1",
+        "monitor_index": 661,
+        "snapshot": 721,
+        "source": "primary_rms",
+        "lead_pct_life": 28.463203463203463
+      },
+      "ims_test2_b2": {
+        "axis": "2",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test2_b3": {
+        "axis": "3",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test2_b4": {
+        "axis": "4",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b1": {
+        "axis": "1",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b2": {
+        "axis": "2",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b3": {
+        "axis": "3",
+        "monitor_index": 6249,
+        "snapshot": 6309,
+        "source": "primary_rms",
+        "lead_pct_life": 0.23946360153256704
+      },
+      "ims_test3_b4": {
+        "axis": "4",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "xjtu_Bearing1_1": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 53.96825396825397
+      },
+      "xjtu_Bearing1_2": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 71.2871287128713
+      },
+      "xjtu_Bearing1_3": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 70.40816326530613
+      },
+      "xjtu_Bearing1_4": {
+        "axis": "H",
+        "monitor_index": 61,
+        "snapshot": 121,
+        "source": "primary_rms",
+        "lead_pct_life": 1.6129032258064515
+      },
+      "xjtu_Bearing2_1": {
+        "axis": "H",
+        "monitor_index": 403,
+        "snapshot": 463,
+        "source": "primary_rms",
+        "lead_pct_life": 6.496519721577727
+      },
+      "xjtu_Bearing2_2": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 71.2871287128713
+      },
+      "xjtu_Bearing2_3": {
+        "axis": "H",
+        "monitor_index": 98,
+        "snapshot": 158,
+        "source": "primary_rms",
+        "lead_pct_life": 79.28118393234672
+      },
+      "xjtu_Bearing2_5": {
+        "axis": "H",
+        "monitor_index": 90,
+        "snapshot": 150,
+        "source": "primary_rms",
+        "lead_pct_life": 67.74193548387096
+      },
+      "xjtu_Bearing3_1": {
+        "axis": "H",
+        "monitor_index": 2408,
+        "snapshot": 2468,
+        "source": "primary_rms",
+        "lead_pct_life": 2.824858757062147
+      },
+      "xjtu_Bearing3_2": {
+        "axis": "H",
+        "monitor_index": 1823,
+        "snapshot": 1883,
+        "source": "primary_rms",
+        "lead_pct_life": 25.164203612479476
+      },
+      "xjtu_Bearing3_3": {
+        "axis": "H",
+        "monitor_index": 286,
+        "snapshot": 346,
+        "source": "primary_rms",
+        "lead_pct_life": 8.038585209003216
+      },
+      "xjtu_Bearing3_4": {
+        "axis": "V",
+        "monitor_index": 1397,
+        "snapshot": 1457,
+        "source": "primary_rms",
+        "lead_pct_life": 3.986254295532646
+      },
+      "xjtu_Bearing3_5": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 46.2962962962963
+      },
+      "femto_Bearing1_3": {
+        "axis": "H",
+        "monitor_index": 1575,
+        "snapshot": 1635,
+        "source": "primary_rms",
+        "lead_pct_life": 31.965442764578835
+      },
+      "femto_Bearing1_4": {
+        "axis": "H",
+        "monitor_index": 1047,
+        "snapshot": 1107,
+        "source": "primary_rms",
+        "lead_pct_life": 23.464912280701753
+      },
+      "femto_Bearing1_5": {
+        "axis": "V",
+        "monitor_index": 2380,
+        "snapshot": 2440,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 0.9571369121930919
+      },
+      "femto_Bearing1_6": {
+        "axis": "V",
+        "monitor_index": 2360,
+        "snapshot": 2420,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 1.1725293132328307
+      },
+      "femto_Bearing1_7": {
+        "axis": "H",
+        "monitor_index": 2193,
+        "snapshot": 2253,
+        "source": "primary_rms",
+        "lead_pct_life": 0.2728512960436562
+      },
+      "femto_Bearing2_3": {
+        "axis": "V",
+        "monitor_index": 206,
+        "snapshot": 266,
+        "source": "primary_rms",
+        "lead_pct_life": 89.12928759894459
+      },
+      "femto_Bearing2_4": {
+        "axis": "H",
+        "monitor_index": 691,
+        "snapshot": 751,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "femto_Bearing2_5": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 98.71168369613505
+      },
+      "femto_Bearing2_6": {
+        "axis": "V",
+        "monitor_index": 636,
+        "snapshot": 696,
+        "source": "primary_rms",
+        "lead_pct_life": 0.7800312012480499
+      },
+      "femto_Bearing2_7": {
+        "axis": "V",
+        "monitor_index": 102,
+        "snapshot": 162,
+        "source": "primary_rms",
+        "lead_pct_life": 40.0
+      },
+      "femto_Bearing3_3": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 92.24598930481284
+      },
+      "femto_Bearing1_1": {
+        "axis": "H",
+        "monitor_index": 1900,
+        "snapshot": 1960,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 30.73277433467007
+      },
+      "femto_Bearing1_2": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 96.42416769420468
+      },
+      "femto_Bearing2_1": {
+        "axis": "V",
+        "monitor_index": 91,
+        "snapshot": 151,
+        "source": "primary_rms",
+        "lead_pct_life": 89.30669800235017
+      },
+      "femto_Bearing2_2": {
+        "axis": "V",
+        "monitor_index": 152,
+        "snapshot": 212,
+        "source": "primary_rms",
+        "lead_pct_life": 79.37584803256445
+      },
+      "femto_Bearing3_1": {
+        "axis": "V",
+        "monitor_index": 438,
+        "snapshot": 498,
+        "source": "primary_rms",
+        "lead_pct_life": 3.7362637362637363
+      },
+      "femto_Bearing3_2": {
+        "axis": "V",
+        "monitor_index": 1420,
+        "snapshot": 1480,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 9.95561192136969
+      }
+    },
+    "early_pseudo_health": {
+      "axis_false_alarms": 10,
+      "n_pseudo_health_axes": 54,
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "bearing_false_alarms": 6,
+      "n_pseudo_health_bearings": 27,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "false_alarm_bearing_ids": [
+        "xjtu_Bearing1_2",
+        "xjtu_Bearing1_3",
+        "xjtu_Bearing2_2",
+        "femto_Bearing2_5",
+        "femto_Bearing3_3",
+        "femto_Bearing1_2"
+      ],
+      "scope": "first 90 monitoring windows (snapshots 61-150)"
+    },
+    "ims_censored_full_life": {
+      "axis_false_alarms": 0,
+      "n_censored_axes": 10,
+      "bearing_false_alarms": 0,
+      "n_censored_bearings": 8
+    }
+  },
+  "adaptive_state_machine": {
+    "detected": "34/34",
+    "median_lead_pct_life": 32.144982857126955,
+    "per_dataset_detection": {
+      "ims": "4/4",
+      "xjtu": "13/13",
+      "femto": "17/17"
+    },
+    "rescued_bearings": [
+      "femto_Bearing1_5",
+      "femto_Bearing1_6",
+      "femto_Bearing2_4"
+    ],
+    "rescue_lead_pct_life": {
+      "femto_Bearing1_5": 1.373283395755306,
+      "femto_Bearing1_6": 0.7537688442211056,
+      "femto_Bearing2_4": 0.1447178002894356
+    },
+    "rescue_interpretation": "nominal end-of-life coverage rescue; all three rescued bearings are tagged within 1.4% of failure",
+    "missed_bearings": [],
+    "advanced_feature_computations": 1319,
+    "advanced_feature_duty_cycle_pct": 1.1997234905677538,
+    "mean_axis_duty_cycle_pct": 2.1127125478279924,
+    "n_diagnostic_tag_axes": 31,
+    "state_transition_counts": {
+      "watch": 1224,
+      "escalated": 74,
+      "normal": 1157
+    },
+    "early_pseudo_health": {
+      "axis_false_alarms": 10,
+      "n_pseudo_health_axes": 54,
+      "axis_false_alarm_rate_pct": 18.51851851851852,
+      "bearing_false_alarms": 6,
+      "n_pseudo_health_bearings": 27,
+      "bearing_false_alarm_rate_pct": 22.22222222222222,
+      "scope": "first 90 monitoring windows (snapshots 61-150)"
+    },
+    "ims_censored_full_life": {
+      "axis_false_alarms": 0,
+      "n_censored_axes": 10,
+      "bearing_false_alarms": 0,
+      "n_censored_bearings": 8
+    },
+    "triggers": {
+      "ims_test1_b1": {
+        "axis": "1",
+        "monitor_index": 2096,
+        "snapshot": 2156,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test1_b2": {
+        "axis": "3",
+        "monitor_index": 2096,
+        "snapshot": 2156,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test1_b3": {
+        "axis": "5",
+        "monitor_index": 1140,
+        "snapshot": 1200,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 45.61068702290076
+      },
+      "ims_test1_b4": {
+        "axis": "7",
+        "monitor_index": 1385,
+        "snapshot": 1445,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 33.92175572519084
+      },
+      "ims_test2_b1": {
+        "axis": "1",
+        "monitor_index": 661,
+        "snapshot": 721,
+        "source": "primary_rms",
+        "lead_pct_life": 28.463203463203463
+      },
+      "ims_test2_b2": {
+        "axis": "2",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test2_b3": {
+        "axis": "3",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test2_b4": {
+        "axis": "4",
+        "monitor_index": 924,
+        "snapshot": 984,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b1": {
+        "axis": "1",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b2": {
+        "axis": "2",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "ims_test3_b3": {
+        "axis": "3",
+        "monitor_index": 6249,
+        "snapshot": 6309,
+        "source": "primary_rms",
+        "lead_pct_life": 0.23946360153256704
+      },
+      "ims_test3_b4": {
+        "axis": "4",
+        "monitor_index": 6264,
+        "snapshot": 6324,
+        "source": "primary_rms",
+        "lead_pct_life": null
+      },
+      "xjtu_Bearing1_1": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 53.96825396825397
+      },
+      "xjtu_Bearing1_2": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 71.2871287128713
+      },
+      "xjtu_Bearing1_3": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 70.40816326530613
+      },
+      "xjtu_Bearing1_4": {
+        "axis": "H",
+        "monitor_index": 61,
+        "snapshot": 121,
+        "source": "primary_rms",
+        "lead_pct_life": 1.6129032258064515
+      },
+      "xjtu_Bearing2_1": {
+        "axis": "H",
+        "monitor_index": 403,
+        "snapshot": 463,
+        "source": "primary_rms",
+        "lead_pct_life": 6.496519721577727
+      },
+      "xjtu_Bearing2_2": {
+        "axis": "H",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 71.2871287128713
+      },
+      "xjtu_Bearing2_3": {
+        "axis": "H",
+        "monitor_index": 90,
+        "snapshot": 150,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 80.97251585623678
+      },
+      "xjtu_Bearing2_5": {
+        "axis": "H",
+        "monitor_index": 90,
+        "snapshot": 150,
+        "source": "primary_rms",
+        "lead_pct_life": 67.74193548387096
+      },
+      "xjtu_Bearing3_1": {
+        "axis": "H",
+        "monitor_index": 2408,
+        "snapshot": 2468,
+        "source": "primary_rms",
+        "lead_pct_life": 2.824858757062147
+      },
+      "xjtu_Bearing3_2": {
+        "axis": "H",
+        "monitor_index": 1823,
+        "snapshot": 1883,
+        "source": "primary_rms",
+        "lead_pct_life": 25.164203612479476
+      },
+      "xjtu_Bearing3_3": {
+        "axis": "H",
+        "monitor_index": 286,
+        "snapshot": 346,
+        "source": "primary_rms",
+        "lead_pct_life": 8.038585209003216
+      },
+      "xjtu_Bearing3_4": {
+        "axis": "V",
+        "monitor_index": 1397,
+        "snapshot": 1457,
+        "source": "primary_rms",
+        "lead_pct_life": 3.986254295532646
+      },
+      "xjtu_Bearing3_5": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 46.2962962962963
+      },
+      "femto_Bearing1_3": {
+        "axis": "H",
+        "monitor_index": 1485,
+        "snapshot": 1545,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 35.85313174946004
+      },
+      "femto_Bearing1_4": {
+        "axis": "H",
+        "monitor_index": 1047,
+        "snapshot": 1107,
+        "source": "primary_rms",
+        "lead_pct_life": 23.464912280701753
+      },
+      "femto_Bearing1_5": {
+        "axis": "V",
+        "monitor_index": 2370,
+        "snapshot": 2430,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 1.373283395755306
+      },
+      "femto_Bearing1_6": {
+        "axis": "H",
+        "monitor_index": 2370,
+        "snapshot": 2430,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 0.7537688442211056
+      },
+      "femto_Bearing1_7": {
+        "axis": "H",
+        "monitor_index": 2170,
+        "snapshot": 2230,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 1.318781264211005
+      },
+      "femto_Bearing2_3": {
+        "axis": "V",
+        "monitor_index": 206,
+        "snapshot": 266,
+        "source": "primary_rms",
+        "lead_pct_life": 89.12928759894459
+      },
+      "femto_Bearing2_4": {
+        "axis": "V",
+        "monitor_index": 690,
+        "snapshot": 750,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 0.1447178002894356
+      },
+      "femto_Bearing2_5": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 98.71168369613505
+      },
+      "femto_Bearing2_6": {
+        "axis": "V",
+        "monitor_index": 636,
+        "snapshot": 696,
+        "source": "primary_rms",
+        "lead_pct_life": 0.7800312012480499
+      },
+      "femto_Bearing2_7": {
+        "axis": "V",
+        "monitor_index": 102,
+        "snapshot": 162,
+        "source": "primary_rms",
+        "lead_pct_life": 40.0
+      },
+      "femto_Bearing3_3": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 92.24598930481284
+      },
+      "femto_Bearing1_1": {
+        "axis": "H",
+        "monitor_index": 1910,
+        "snapshot": 1970,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 30.368209989063068
+      },
+      "femto_Bearing1_2": {
+        "axis": "V",
+        "monitor_index": 29,
+        "snapshot": 89,
+        "source": "primary_rms",
+        "lead_pct_life": 96.42416769420468
+      },
+      "femto_Bearing2_1": {
+        "axis": "V",
+        "monitor_index": 91,
+        "snapshot": 151,
+        "source": "primary_rms",
+        "lead_pct_life": 89.30669800235017
+      },
+      "femto_Bearing2_2": {
+        "axis": "V",
+        "monitor_index": 152,
+        "snapshot": 212,
+        "source": "primary_rms",
+        "lead_pct_life": 79.37584803256445
+      },
+      "femto_Bearing3_1": {
+        "axis": "V",
+        "monitor_index": 438,
+        "snapshot": 498,
+        "source": "primary_rms",
+        "lead_pct_life": 3.7362637362637363
+      },
+      "femto_Bearing3_2": {
+        "axis": "V",
+        "monitor_index": 1390,
+        "snapshot": 1450,
+        "source": "diagnostic_tag",
+        "lead_pct_life": 11.857958148383005
+      }
+    }
+  },
+  "fleet_budget": {
+    "interpretation": "post-hoc full-time operating curve; not a frozen deployable state machine",
+    "budgets": {
+      "5.0%": {
+        "threshold": 3.1511247502755704,
+        "detected": "32/34",
+        "median_lead_pct_life": 30.391118328854304,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "15/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 3,
+        "combined_detector_early_axis_false_alarms": 12,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 2,
+        "combined_detector_early_bearing_false_alarms": 7,
+        "n_pseudo_health_bearings": 27
+      },
+      "10.0%": {
+        "threshold": 1.9572011299995344,
+        "detected": "32/34",
+        "median_lead_pct_life": 37.55654509471303,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "15/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 6,
+        "combined_detector_early_axis_false_alarms": 15,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 4,
+        "combined_detector_early_bearing_false_alarms": 9,
+        "n_pseudo_health_bearings": 27
+      },
+      "18.5%": {
+        "threshold": 0.8935641339016275,
+        "detected": "34/34",
+        "median_lead_pct_life": 61.817059674810594,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "17/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 10,
+        "combined_detector_early_axis_false_alarms": 17,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 7,
+        "combined_detector_early_bearing_false_alarms": 10,
+        "n_pseudo_health_bearings": 27
+      },
+      "25.0%": {
+        "threshold": 0.5603003289589908,
+        "detected": "34/34",
+        "median_lead_pct_life": 68.87096774193549,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "17/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 14,
+        "combined_detector_early_axis_false_alarms": 21,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 10,
+        "combined_detector_early_bearing_false_alarms": 13,
+        "n_pseudo_health_bearings": 27
+      },
+      "35.0%": {
+        "threshold": 0.2999662541019494,
+        "detected": "34/34",
+        "median_lead_pct_life": 69.07504937458854,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "17/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 19,
+        "combined_detector_early_axis_false_alarms": 25,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 14,
+        "combined_detector_early_bearing_false_alarms": 15,
+        "n_pseudo_health_bearings": 27
+      }
+    },
+    "leave_dataset_out_18_5pct": {
+      "xjtu->femto": {
+        "threshold": 0.2349270155719934,
+        "detected": "34/34",
+        "median_lead_pct_life": 69.07504937458854,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "17/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 20,
+        "combined_detector_early_axis_false_alarms": 25,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 14,
+        "combined_detector_early_bearing_false_alarms": 15,
+        "n_pseudo_health_bearings": 27,
+        "calibration_dataset": "xjtu",
+        "target_dataset": "femto",
+        "target_axis_false_alarms": 16,
+        "n_target_axes": 34,
+        "target_dataset_detection": {
+          "femto": "17/17"
+        }
+      },
+      "femto->xjtu": {
+        "threshold": 1.5670883859026348,
+        "detected": "33/34",
+        "median_lead_pct_life": 53.96825396825397,
+        "per_dataset_detection": {
+          "ims": "4/4",
+          "xjtu": "13/13",
+          "femto": "16/17"
+        },
+        "diagnostic_score_early_axis_false_alarms": 8,
+        "combined_detector_early_axis_false_alarms": 16,
+        "n_pseudo_health_axes": 54,
+        "diagnostic_score_early_bearing_false_alarms": 6,
+        "combined_detector_early_bearing_false_alarms": 10,
+        "n_pseudo_health_bearings": 27,
+        "calibration_dataset": "femto",
+        "target_dataset": "xjtu",
+        "target_axis_false_alarms": 1,
+        "n_target_axes": 20,
+        "target_dataset_detection": {
+          "xjtu": "13/13"
+        }
+      }
+    }
+  },
+  "cross_axis_sensitivity": {
+    "rule": "same-axis frozen tag + instantaneous harmonic corroboration on another axis",
+    "detected": "33/34",
+    "median_lead_pct_life": 28.463203463203463,
+    "per_dataset_detection": {
+      "ims": "4/4",
+      "xjtu": "13/13",
+      "femto": "16/17"
+    },
+    "early_pseudo_health_bearing_false_alarms": 6,
+    "n_pseudo_health_bearings": 27,
+    "corroborated_tag_axes": 15,
+    "verdict": "reject: no false-alarm reduction and lower median lead than the same-axis state machine"
+  },
+  "event_pair_benchmark": {
+    "platform": "Linux-5.10.104-tegra-aarch64-with-glibc2.29",
+    "samples": 32768,
+    "repeats": 100,
+    "advanced_pair_ms_per_invocation": 7.298226489801891,
+    "amortized_ms_per_monitored_window_at_5pct_schedule": 0.36491132449009456,
+    "amortized_ms_per_monitored_window_at_measured_duty": {
+      "fixed_state": 0.06797569559910804,
+      "adaptive_state": 0.0875585375929917
+    },
+    "measured_duty_cycle_pct": {
+      "fixed_state": 0.9314001928289461,
+      "adaptive_state": 1.1997234905677538
+    },
+    "note": "secondary cost is an upper-bound synthetic estimate; deployment must compute it from the raw event window"
+  },
+  "integrity_checks": {
+    "minimum_stream_length_70": true,
+    "baseline_uses_snapshots_11_to_60_only": true,
+    "event_mode_updates_secondary_only_at_diagnostic_indices": true,
+    "pseudo_health_uses_monitor_updates_1_to_90": true,
+    "primary_alarm_starts_after_30_monitor_updates": true,
+    "diagnostic_trigger_starts_after_30_monitor_updates": true,
+    "no_future_rows_enter_early_life_baseline": true
+  }
+}

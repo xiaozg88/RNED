@@ -1,0 +1,57 @@
+{
+  "protocol": {
+    "status": "frozen before public external testing",
+    "protocol_sha256": "17093080415341caed1d50d798a807214ad48bb4794bad1ea7c778e8ac9cf839",
+    "feature": "per-axis RMS",
+    "baseline": "median(rms[10:60])",
+    "excess_ratio_threshold": 1.2,
+    "window": 10,
+    "cross_axis_statistic": "second-largest axis recent excess mean",
+    "decision": "historical OR cross-axis threshold crossing",
+    "minimum_monitor_snapshots": 30,
+    "frozen_historical_threshold": 0.042407782315012556,
+    "frozen_cross_axis_threshold": 0.24602807750741573,
+    "post_hoc_tuning_allowed": false
+  },
+  "inputs": [
+    {
+      "path": "RNED/data/features/kaist_features.csv",
+      "sha256": "44159a84c04021fbf53f8d837b5f60349be14aa4d63fc8d84a9e993f60898fb4"
+    }
+  ],
+  "n_failed": 1,
+  "n_protocol_eligible": 1,
+  "historical_detected": 1,
+  "hierarchical_n_evaluable": 1,
+  "hierarchical_detected": 1,
+  "median_hierarchical_lead_pct_life": 7.246376811594203,
+  "per_bearing": [
+    {
+      "bearing_id": "B1",
+      "dataset": "kaist",
+      "group": "run_to_failure",
+      "n_axes": 2,
+      "n_monitor": 69,
+      "protocol_eligible": true,
+      "historical_max": 0.1882588489101366,
+      "historical_alarm_index": 64,
+      "historical_detected": true,
+      "historical_lead_pct_life": 7.246376811594203,
+      "cross_axis_evaluable": true,
+      "cross_axis_max": 0.33973132676732165,
+      "cross_axis_alarm_index": 68,
+      "cross_axis_detected": true,
+      "cross_axis_lead_pct_life": 1.4492753623188406,
+      "hierarchical_alarm_index": 64,
+      "hierarchy_evaluable": true,
+      "hierarchical_detected": true,
+      "hierarchical_lead_pct_life": 7.246376811594203
+    }
+  ],
+  "false_alarm_endpoint": {
+    "evaluable": false,
+    "reason": "public run-to-failure inputs contain no independent healthy censored fleet"
+  },
+  "interpretation": "locked external failure-only replication; cross-axis hierarchy is evaluable only for bearings with at least two axes; not sufficient for main-method upgrade",
+  "generated_at_utc": "2026-10-22T07:32:33.858990+00:00"
+}
